@@ -405,9 +405,13 @@ Error message and password prompt
 
 <li>$:/state/toc/openlayer-openlayer.view--1141087289</li>
 
+<li>$:/state/toc/todo-docker.todo--482740329</li>
+
 <li>$:/state/toc/todo-limix.wiki--1739403098</li>
 
 <li>$:/state/toc/todo-limix.wiki-1058788311</li>
+
+<li>$:/state/toc/todo-postgresql.install.source--482740329</li>
 
 <li>$:/state/toc/todo-vim--482740329</li>
 
@@ -719,6 +723,8 @@ Error message and password prompt
 
 <li>issues</li>
 
+<li>java.misc</li>
+
 <li>javascript</li>
 
 <li>limix.misc</li>
@@ -760,6 +766,8 @@ Error message and password prompt
 <li>mysql.database</li>
 
 <li>mysql.dump</li>
+
+<li>mysql.function.date</li>
 
 <li>mysql.glossary</li>
 
@@ -817,8 +825,6 @@ Error message and password prompt
 
 <li>osm.osm2pgsql.install</li>
 
-<li>osm.properties</li>
-
 <li>osm.schema</li>
 
 <li>osm.schema.domain</li>
@@ -870,6 +876,8 @@ Error message and password prompt
 <li>postgresql.issue</li>
 
 <li>postgresql.psql</li>
+
+<li>postgresql.tour</li>
 
 <li>redis</li>
 
@@ -944,8 +952,6 @@ Error message and password prompt
 <li>ubuntu.todo</li>
 
 <li>udig</li>
-
-<li>Untitled</li>
 
 <li>vim</li>
 
@@ -7095,11 +7101,15 @@ Error message and password prompt
 <div bag="default" created="20160417044421808" creator="limix" modified="20160514093947051" modifier="limix" revision="1" title="$:/DefaultTiddlers">
 <pre>[[limix.wiki]]</pre>
 </div>
-<div status="complete" title="$:/Import">
-<pre>The following tiddlers were imported:
-
-# [[Untitled]]
-# [[engine-components-flow.png]]</pre>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;text&quot;: &quot;&lt;pre&gt;&lt;code&gt;drop database if exists `permission`;\nCREATE DATABASE `permission` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;&lt;/code&gt;&lt;/pre&gt;&quot;,
+            &quot;title&quot;: &quot;Untitled&quot;
+        }
+    }
+}</pre>
 </div>
 <div bag="default" revision="0" title="$:/isEncrypted">
 <pre>no</pre>
@@ -10000,7 +10010,7 @@ Error message and password prompt
 <div created="20160423014245865" creator="limix" modified="20160614202344669" modifier="limix" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div bag="default" created="20160417044928803" creator="limix" modified="20160718033222723" modifier="limix" revision="0" title="$:/state/sidebar">
+<div bag="default" created="20160417044928803" creator="limix" modified="20160815030100853" modifier="limix" revision="0" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20160423042126297" creator="limix" modified="20160423042128942" modifier="limix" title="$:/state/tab--1031830929">
@@ -10051,8 +10061,8 @@ Error message and password prompt
 <div created="20160518073833415" creator="limix" modified="20160519020531425" modifier="limix" title="$:/state/tab-1369327157">
 <pre>openlayer.map</pre>
 </div>
-<div created="20160608112848447" creator="limix" modified="20160722083312791" modifier="limix" title="$:/state/tab-1417311473">
-<pre>osm.schema.domain</pre>
+<div created="20160608112848447" creator="limix" modified="20160815030043131" modifier="limix" title="$:/state/tab-1417311473">
+<pre>osm.misc</pre>
 </div>
 <div created="20160423042714929" creator="limix" modified="20160423042716211" modifier="limix" title="$:/state/tab-1462765338">
 <pre>docker.install.linux</pre>
@@ -10099,11 +10109,11 @@ Error message and password prompt
 <div created="20160518074806523" creator="limix" modified="20160518074806523" modifier="limix" title="$:/state/tab-977820467">
 <pre>mapnik.install</pre>
 </div>
-<div bag="default" created="20160417045715996" creator="limix" modified="20160625033126968" modifier="limix" revision="3" title="$:/state/tab/moresidebar-401116514">
+<div bag="default" created="20160417045715996" creator="limix" modified="20160815015105273" modifier="limix" revision="3" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div bag="default" created="20160417045702279" creator="limix" modified="20160725130839905" modifier="limix" revision="4" title="$:/state/tab/sidebar--1835078512">
-<pre>todo</pre>
+<div bag="default" created="20160417045702279" creator="limix" modified="20160815015103082" modifier="limix" revision="4" title="$:/state/tab/sidebar--1835078512">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div bag="default" created="20160417044824502" creator="limix" modified="20160423043357202" modifier="limix" revision="1" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10231,11 +10241,17 @@ Error message and password prompt
 <div created="20160524015557990" creator="limix" modified="20160524015557990" modifier="limix" title="$:/state/toc/openlayer-openlayer.view--1141087289">
 <pre>open</pre>
 </div>
+<div created="20160815015509722" creator="limix" modified="20160815015511112" modifier="limix" title="$:/state/toc/todo-docker.todo--482740329">
+<pre>close</pre>
+</div>
 <div created="20160427011212946" creator="limix" modified="20160427011213141" modifier="limix" title="$:/state/toc/todo-limix.wiki--1739403098">
 <pre>close</pre>
 </div>
 <div created="20160423153516010" creator="limix" modified="20160423153516926" modifier="limix" title="$:/state/toc/todo-limix.wiki-1058788311">
 <pre>close</pre>
+</div>
+<div created="20160815015527117" creator="limix" modified="20160815015527117" modifier="limix" title="$:/state/toc/todo-postgresql.install.source--482740329">
+<pre>open</pre>
 </div>
 <div created="20160625033049545" creator="limix" modified="20160625033049545" modifier="limix" title="$:/state/toc/todo-vim--482740329">
 <pre>open</pre>
@@ -10243,7 +10259,7 @@ Error message and password prompt
 <div bag="default" created="20160417044412911" creator="l" modified="20160417044413452" modifier="limi" revision="0" title="$:/status/UserName">
 <pre>limix</pre>
 </div>
-<div list="ext limix.wiki" title="$:/StoryList">
+<div list="geo.glossary osm.misc osm" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20160417044558629" creator="limix" modified="20160725125719152" modifier="limix" revision="0" title="$:/temp/advancedsearch">
@@ -10664,8 +10680,8 @@ This plugin contains tools to help slice up long texts into individual tiddlers.
 <div created="20160519075043527" creator="limix" modified="20160519075052529" modifier="limix" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div bag="default" created="20160417045758551" creator="limix" modified="20160729060458648" modifier="limix" revision="7" title="$:/temp/search">
-<pre>ext</pre>
+<div bag="default" created="20160417045758551" creator="limix" modified="20160815030213415" modifier="limix" revision="7" title="$:/temp/search">
+<pre>SRS</pre>
 </div>
 <div created="20160423032049173" creator="limix" modified="20160423032049174" modifier="limix" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/http://tiddlywiki.com/library/v5.1.11/index.html" url="http://tiddlywiki.com/library/v5.1.11/index.html">
 <pre>loaded</pre>
@@ -10820,16 +10836,39 @@ export JAVA_HOME=/usr/local/jdk1.7.0_51
 export PATH=${PATH}:${ANT_HOME}/bin
 ```</pre>
 </div>
-<div created="20160625070600828" creator="limix" modified="20160625142752065" modifier="limix" tags="apt" title="apt">
-<pre>!! 样例
+<div created="20160625070600828" creator="limix" modified="20160812015757220" modifier="limix" tags="apt" title="apt">
+<pre>!! 历史发展
+最开始的时候GNU/linux只支持tar.gz,源代码编译安装模式,debian出现之后,人们认为需要有一种机制,用来管理计算机上的软件包,人们称为dpkg,后来redhat也着手建立自己的包管理系统rpm。接着很快陷入新的窘境,希望通过快捷高效的方式来安装软件包,所以出现了APT(Advanced Packaging Tool).
+
+!! 源
 ```
+main Canonical支持的开源软件
+universe 社区维护的开源软件
+restricted 设备的专有驱动
+multiverse 有版权和合法限制的源
+source 源代码
+```
+
+!! 样例
+```
+// 安装
 sudo apt-get install libboost-all-dev
 sudo apt-get install aptitude
-aptitude search boost
 
-sudo apt-get autoclean 清理旧版本的软件缓存
+// 卸载
+// APT会把已装或已卸的软件都备份在硬盘上
+apt-get remove packagename 保留配置文件
+apt-get –purge remove packagename 删除配置文件
+sudo apt-get autoclean 清理旧版本的软件缓存,清理掉已卸载的备份
 sudo apt-get clean 清理所有软件缓存
 sudo apt-get autoremove 删除系统不再使用的孤立软件
+
+// 查询
+apt-cache search string
+aptitude search boost
+
+// 软件包
+dpkg -L package 列出软件包中所有的文件
 ```</pre>
 </div>
 <div created="20160614133314803" creator="limix" modified="20160614133342781" modifier="limix" tags="cas conf" title="cas.conf">
@@ -10848,11 +10887,11 @@ TGC:Ticket granting cookie-&gt;cas server 向用户发送的cookie 用户持有�
 PGT:cas_client持有的代理用户的凭证
 PGT URL:cas_server可以通过PGT_URL向用户提供PGT,表示一个代理服务</pre>
 </div>
-<div created="20160614115422136" creator="limix" modified="20160615054128214" modifier="limix" tags="cas misc" title="cas.misc">
+<div created="20160614115422136" creator="limix" modified="20160815015223613" modifier="limix" tags="cas misc" title="cas.misc">
 <pre>```
 User:多个
 Web应用:多个
-SSO认证中心:1个,SSO认证中心通过一些方法告诉Web应用,当前访问用户究竟是不是
+SSO认证中心:1个,SSO认证中心通过一些方法告诉Web应用,当前访问用户
 ```
 
 Web应用不处理User的登录,SSO认证中心和应用之间建立信任关系,认证中心的判断必须被应用信任
@@ -13899,7 +13938,7 @@ shape文件由{{geo.glossary##ESRI}}开发, 实际只有一个图层,shapefile�
 对于集成版本的geoWebCache的配置
 </pre>
 </div>
-<div created="20160511014759818" creator="limix" modified="20160608113046663" modifier="limix" tags="geo glossary" title="geo.glossary" type="application/x-tiddler-dictionary">
+<div created="20160511014759818" creator="limix" modified="20160815025323101" modifier="limix" tags="geo glossary" title="geo.glossary" type="application/x-tiddler-dictionary">
 <pre>animate:动画
 animation:动画
 arcGrid:a coverage file format created by ESRI
@@ -13916,6 +13955,7 @@ disk quotas:磁盘配额
 DPI:[Dots Per Inch]每英寸打印的点
 ESRI:Environmental Systems Research Institute-美国环境系统研究所公司
 feature:要素,LIMIX_TODO:有哪些常见的要素?
+footway:人行道
 geographic:地理
 geometry:几何图形
 GCS:[geographic coordinate system][地里空间坐标系]又称球面坐标,使用经纬度坐标描述地球上某一点所处的位置,某一个地理坐标系是基于一个基准面定义的.
@@ -13925,6 +13965,8 @@ GML:Geography MarkupLanguage 地理标记语言
 gridSet:EPSG:4326,EPSG:900913
 grid:网格
 ground resolution:地面分辨率,一个像素(pixel)代表的地面尺寸(米), 屏幕距离P/(72*39.3701) 
+highway:道路
+
 imagery:影像-通过各种遥感设备,传感器,或者照相机得到的电子的或者纸质的图片,最小单元为像素,参考raster栅格最小单元像元.
 JTS:Java Topology Suite
 KML:Keyhole标记语言,OGC维护的国际标准,可以将Google Maps理解为KML浏览器
@@ -13940,7 +13982,7 @@ OGC:开放地理空间信息联盟
 openGis:OGI标准
 openlayer:Web GIS 客户端开发提供的javascript库
 overlay:覆盖
-OSM:OpenStreetMap,开源wiki地图
+OSM:OpenStreetMap-开源WIKI地图
 OWS: OGC Web service is an OGC Standard
 PCS:[projection coordinate system][投影坐标系统]又称平面直角坐标,使用基于x,y值的坐标系统来描述地球上某个点所处的位置.是从地球的近似椭体投影得到的,平面坐标系统的投影通常是以米为单位的
 pixel:像素
@@ -13948,6 +13990,7 @@ pre-rendered:预渲染
 projection:投影,国内谷歌,高德,腾讯,用标准-墨卡托投影
 raster:栅格(一种数据模型),特指影像的存储方式,栅格最小单元,像元.cell,对应影像最小单元像素.
 panning the map:移动地图
+residential:居住区
 rotation:旋转
 restaurant:餐厅
 resolution:分辨率,地图实际高度或者实际宽度,和div(以像素大小)的比值,其中地图大小为米,每个像元代表的实地距离.
@@ -14400,6 +14443,13 @@ checkState(boolean) 校验对象状态是否合法
 &gt; 字体错误 grep &quot;DejaVu Sans Bold&quot; *
 &gt; 查询是否安装字体: fc-list | grep dejavu | grep sans</pre>
 </div>
+<div created="20160810054815249" creator="limix" modified="20160810054946781" modifier="limix" tags="java" title="java.misc">
+<pre>java 开启远程DEBUG
+
+```
+-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=2345
+```</pre>
+</div>
 <div created="20160716122340113" creator="limix" modified="20160716122909040" modifier="limix" tags="javascript" title="javascript" type="text/vnd.tiddlywiki">
 <pre>```javascript
 // 定义匿名函数
@@ -14729,15 +14779,63 @@ set global sql_mode=`STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_
 
 </pre>
 </div>
-<div created="20160618151008200" creator="limix" modified="20160711085711156" modifier="limix" tags="mysql database" title="mysql.database">
+<div created="20160618151008200" creator="limix" modified="20160815021352926" modifier="limix" tags="mysql database" title="mysql.database">
 <pre>```
-drop database `permission`
+drop database if exists `permission`;
 CREATE DATABASE `permission` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 ```</pre>
 </div>
 <div created="20160618122934872" creator="limix" modified="20160618123124129" modifier="limix" tags="mysql dump" title="mysql.dump">
 <pre>```
 mysqldump -u username -p dbname table1 table2 ...-&gt; BackupName.sql
+```</pre>
+</div>
+<div created="20160815021416074" creator="limix" modified="20160815024817784" modifier="limix" tags="mysql function date" title="mysql.function.date">
+<pre>!! 函数date_format
+```
+DATE_FORMA T(date, format) 
+```
+
+
+!! 常见格式
+```
+%Y-%m-%d %H:%i%S.%f
+```
+
+!! 参考
+```
+格式 	描述
+%a	缩写星期名
+%b	缩写月名
+%c	月，数值
+%D	带有英文前缀的月中的天
+%d	月的天，数值(00-31)
+%e	月的天，数值(0-31)
+%f	微秒
+%H	小时 (00-23)
+%h	小时 (01-12)
+%I	小时 (01-12)
+%i	分钟，数值(00-59)
+%j	年的天 (001-366)
+%k	小时 (0-23)
+%l	小时 (1-12)
+%M	月名
+%m	月，数值(00-12)
+%p	AM 或 PM
+%r	时间，12-小时（hh:mm:ss AM 或 PM）
+%S	秒(00-59)
+%s	秒(00-59)
+%T	时间, 24-小时 (hh:mm:ss)
+%U	周 (00-53) 星期日是一周的第一天
+%u	周 (00-53) 星期一是一周的第一天
+%V	周 (01-53) 星期日是一周的第一天，与 %X 使用
+%v	周 (01-53) 星期一是一周的第一天，与 %x 使用
+%W	星期名
+%w	周的天 （0=星期日, 6=星期六）
+%X	年，其中的星期日是周的第一天，4 位，与 %V 使用
+%x	年，其中的星期一是周的第一天，4 位，与 %v 使用
+%Y	年，4 位
+%y	年，2 位
 ```</pre>
 </div>
 <div created="20160618123252276" creator="limix" modified="20160618123318942" modifier="limix" tags="mysql glossary" title="mysql.glossary">
@@ -14747,17 +14845,8 @@ mysqldump -u username -p dbname table1 table2 ...-&gt; BackupName.sql
 <div created="20160618123654687" creator="limix" modified="20160618150627415" modifier="limix" tags="" title="mysql.issues">
 <pre></pre>
 </div>
-<div created="20160617212451210" creator="limix" modified="20160618152531903" modifier="limix" tags="mysql" title="mysql.misc">
-<pre>```
-// 创建数据库
-DROP DATABASE IF EXISTS `limix`; 
-CREATE DATABASE `limix`
-CHARACTER SET `utf8`
-COLLATE `utf8_general_ci`;
-```
-
-大小写配置
-</pre>
+<div created="20160617212451210" creator="limix" modified="20160815021408520" modifier="limix" tags="mysql" title="mysql.misc">
+<pre></pre>
 </div>
 <div created="20160618145658656" creator="limix" modified="20160625024623877" modifier="limix" tags="mysql password" title="mysql.password">
 <pre>```
@@ -14997,9 +15086,9 @@ map.addOverlay(popup);
 
 </pre>
 </div>
-<div created="20160513032344750" creator="limix" modified="20160520011348384" modifier="limix" tags="geo osm module" title="osm">
+<div created="20160513032344750" creator="limix" modified="20160815025403859" modifier="limix" tags="geo module" title="osm">
 <pre>!! 关于
-{{geo.glossary##OSM}}
+OSM:{{geo.glossary##OSM}}
 
 &lt;&lt;tabs &quot;[tag[osm]]&quot;&gt;&gt;</pre>
 </div>
@@ -15057,12 +15146,12 @@ java.lang.IllegalStateException
 	at com.sun.proxy.$Proxy29.getMap(Unknown Source)
 ```</pre>
 </div>
-<div created="20160709021011976" creator="limix" modified="20160722030048468" modifier="limix" tags="osm misc" title="osm.misc">
+<div created="20160709021011976" creator="limix" modified="20160815030439286" modifier="limix" tags="osm misc" title="osm.misc">
 <pre>```
-1. crs和srs具有什么却别有联系?
-Coordinate Reference System 坐标参考系统
-常说的CRS指的是水平坐标参考系统
-SRS 空间坐标参考系统-其中WMS1.1 中的描述文件是SRS, 而1.3.0 中使用的是CRS
+1. crs和srs具有什么区别联系?
+   CRS Coordinate Reference System 坐标参考系统
+   SRS Spatial Reference System 空间坐标参考系统
+   在wms地图服务中,wms1.1请求参数是srs,而在wms接口中使用crs参数
 
 2. 更改地图名称
    // 登录到用户
@@ -15134,10 +15223,6 @@ Could NOT find PostgreSQL (missing: PostgreSQL_LIBRARY
 PostgreSQL_INCLUDE_DIR
 </pre>
 </div>
-<div created="20160520072850408" creator="limix" modified="20160520073912049" modifier="limix" tags="osm properties" title="osm.properties" type="application/x-tiddler-dictionary">
-<pre>access:permissive:自由
-highway:道路;residential,标示居住区;footway,人行道;service</pre>
-</div>
 <div created="20160517141557436" creator="limix" modified="20160525043814214" modifier="limix" tags="geo osm schema" title="osm.schema" url="http://wiki.openstreetmap.org/wiki/Osm2pgsql/schema">
 <pre>```
  public | planet_osm_line    | table | gis
@@ -15202,8 +15287,9 @@ private
 agricultural
 officia</pre>
 </div>
-<div created="20160522053912344" creator="limix" modified="20160522055440942" modifier="limix" tags="tag highway osm" title="osm.tag.highway">
-<pre>``` 道路标记
+<div created="20160522053912344" creator="limix" modified="20160815025508354" modifier="limix" tags="tag highway osm" title="osm.tag.highway">
+<pre>```
+道路标记
 highway=motorway fast, restricted access road 高速公路
 highway=trunk most important in standard road network
 highway=primary …down to…
@@ -15213,12 +15299,6 @@ highway=unclassified least important in standard road network
 highway=residential smaller road for access mostly to residential properties 住户拥有
 highway=service smaller road for access, often but not exclusively to non-residential properties 小道,只提供道路
 ```
-
-我国公路等级划分为
-
-* 高速公路 20年等 
-* 一级公路 20年等
-* 二级公路 
 
 
 </pre>
@@ -15230,7 +15310,7 @@ highway=service smaller road for access, often but not exclusively to non-reside
 <div created="20160513113353007" creator="limix" modified="20160520011452737" modifier="limix" tags="geo osm tile" title="osm.tile.arch" type="image/png">
 <pre>iVBORw0KGgoAAAANSUhEUgAAAf4AAADnCAIAAABwo6OVAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wBGQ0QAhVNp38AACAASURBVHja7H13fFzF1faZuWX3btPuanclrXqXbNlywR0Lg7FNL6GEkFASQkkhb8oHpDuQACEhCbwkeWkpEAIkBDBg3HHvXbZ6bytptb3v3jLz/bEuspFk2WBsnH1+/sm7d+fOnXLnmTNnzpyDKKWQQgoppJDCfxNwqglSSCGFFFLUn0IKKaSQQor6U0ghhRRSSFF/CimkkEIKKepPIYUUUkghRf0ppJBCCimkqD+FFFJIIYUU9aeQQgoppJCi/hRSSCGFFD4rsKkmSCGFFD6n8LoHt29Zb7Oke/0hvU4TCARNxjSdTnNmuRGiIISAUoQxUApACaEIIYwZjJEsSQohCCGiKGpBQylRFMKyTCIexwxDFIXjVQhRWVaIonAchzCjKLIsyxgzHMeRM/KbQBS5etbCFPWnkEIKKRxH46G9fo9r3Yp3ZBl4NZ+eUcBKXozRmeWWoHw4HBF0xkTILYLK6Y3OnVLU744okcF+p7962kXACAND7rkzq3fu2ucZ7JozfeKqLYcWL17S3d2dk5sbHayv74lUTygQDJnbd+zKNVGJt2bac6Wor77uUGVR1pnNR2FZNW/exZ9606GUD58UUkjhc4o1K9/78x+f4XmexVhWFIbBlEIsHmcZFmNMKWUYLMsKyzKKQgghGCcZD7EsgxCSZTn5WVEIZjDQ4+B5jlIqy4RhMEIIARAABiOMkKwQosgMyymKwjAMACSnGllRGIahlCKEMEKSrDAMRggoBQCqkDNhWkWWfvizJy+aMTMl9aeQQgopHJXTJXrnHV9euWaDLxCcPLlqz/7arAzb9TVz3V5vc0uHyWzsaO/Spala27sW1MyZWFHW0d0jqIVoLLp1254hl/urd97a1Ny+a8/+ubNn9DkGqiaWcTxXkJezZfvuuvrm+XNnev1+vU63a8+Bc1VBURRZ5qzsyKak/hRSSOHzipamuuXL3+c5LinC8zwnSTJCiBDCMJhQihFmGAwAsqwoioIxBoQQAMMwGKNEQmRZFmOsKAoAEEIQQgohKhUPFBRFwRjJCuHYT1dEpkfXCeNKPP2iuTNnz0lRfwoppJDCEcQjgUQsGA5HdDqtmBBZjkUIYYwR0D19SoGJ0eJEPBYzmoy+5jY1kYWK8sMtvTzHTigvppRyHAcAGGNZlimlAJRSyjBsUpMjSZJarY7FoiqVWpYkzDDJW6LRKMMwyXspoYQShmEURUlyKc+rAGhSYE+mIYQwQJ7e0DUj1zC/zEbigdW/fm/BT2+BhMyrNICAyDJmGErISfNDQpQNOvXufYcunn/Jp950KePOFC4EOAOB2p4efzQKAClp5r8ICGKxWCAQwBgHAgG/P4AZJhzy8yx6fbtn0B/3+3wulxdj7O7efqjFgVWq9zbUrd7eqkuz6I3WPfsP9Q249x44HIyKCnCI1WgNVsegmxMMTnfAYLLtr62PidDjcAIrBMIJilV79h+KiVRvtHZ0O9o6+7zBCGKF7j6nTDmVJk3QmXfs3rdn/6EDhxo5tb6usbW+qc3lDXKcujOi2eVWdfcOJIjqb0X/9rb16g0mQogkSbygQ5jVGa3D/+mN1l6fMjDoPFstlxonKXx+QSkVZbm2p8cdDlNKWYbJNpkqsrJYjAEAEEo10YUNRQwzNA4IU0JQsruTm6oAiMcgUwAECFFFQawKQKaygtQ6AAqSCACAMZwoa48uJCM4o31aQMnSIGAxUAqSAlQBVTrIwWOlhaN7wR+/VxTl3fvqzobUn9rmTeFzyfhJfW6b09nmdFJI6m9BIaTL7Xb6/eV2e47ZnEyWaq4LGK+9v+3uex8DlrkwqxeK0tgmODvSeYr6U/hcYigYbHA4oqIIR9k9+T8CiCvK4d5eh9c7ITtbLwiptrqAwXEM6DUXLPUDAFXO0uI1Rf0pfM7k/Zgo1jscrlBoRKE+eYUCuMPh7a2tuenppZmZ3FFr61QD/peASRrtiBJwLOCRdjSHW9lQyjB4PHb3DMYP3nXdM8//G1T8sXtBVh7+1i16fRo++u5Jorh+5+Hs8OCbBxzAYiBkwbzqjTsOA6HAYKAAlALLLJhdPXtKWTgcrm8f2LDj4IivOyQPGKeoP4X/WsZPang6Xa7G/n50FMNHMgWa1KsihJLpFUo7XK7BQKA8KyvbZEqx/38R9TOMVlDdcf2lqzbsiUpyMBzR67QshuKC7NqGDr83UDWxRK/T7Nh1CHgOABgGK0Q5ZbaKojzz/L8/fr2rq4tluGAwqBAiqNWTq6tFQsoFxZhpMQh8js1AEZednWE0aAeGvAyDdYK6s8+ZSCRWrliZkZkZE8/BqiW1zZvC54P63aHQ4b6+uCSNwuCUEiASAQRAKOIxUAoEKKWIYRgGpQnCpNzclP7nAsPr72/88tcfHUHhw3NTq0rLi3KyMy3NbT3L31uflpsZi8YlWc5INwZj8Wi/S2M1S5RSSuVIDHgWRHkcojJz8dwpsbi4b8dBYI4+NLmRewZS9ymPCwQjdPD9bTsPz7u4JkX9KfyXUT5AVBSbBgb6fb7kgno0yZ3IBCEAjCihgIDEFVbDUaBUVAgBzGGOZfLS00syMliGSYn/5zMO7Nqwe+f2nvZ6hBhJlvNKqoJDnYaRnLJxHKcVVCOqcyilsqwohNgy7FSRgNOGfIOY1zGcOl2vCidI0NXt9oVLKydnZWXF4nGLxfrBO2+kp1tsFlNzx8DiK67o73dk27MP7FwXo9rSQnu6La++vi7k7rEXTigsKvG6HHWHDqXpVGdQQYzoC5tCm/a1pag/hRRGWl8T0uVyNQ4MoNEZ//hYR0AVQiQCGJLrAobFOp7jGUQAIQoJWQ7FJJ5jLyouNOt0KfY/b7Fh1bsfLnsTM8yQy5dhs/T3DxQW5JyxU7YBp5cQYBlQqVQJURwY8hblZcbioiCoiUI4Fg26/MFwtCDbmlM0sa3xYI7dOuAKJGJRQoFQUl6c39c/xHJsNBKNJuSKktzuXmc4GjXotDzPWdPTzoj64Z398dpO36mp3/n+th1nhfpTuv4Uzl9ghDQsq0SjrEaTlFFG5GuapHpKCaHAIo5lsvUadyyh5VirRo0AJKJEJCUkSUCJHAmBLKfa9nxGnHBhIvT2OBIJcSg0wLHsBxv2X3f14tb2zkAgpOI5t9dXXJjf0dVjs6SbzUafPyCoBVmROzt7ZUXOz8tBCDo6ezIzrEMuj9ViTjMYGMDAaA61dWfabL2ehMfjjcXjwx86FOjd3dALAIfaB4dfb+n1Dv/aOXCUr4dCAADQeyYSN0BfMO3c0m+K+lM4f0EIqd2z59CePZbc3OyJE5nk0fkTdf3JKYHICiAAhKw6tYplgqIkKopCqCcaZxksKgQA5FisY9/+gNslu93XXHMNwzCpFj4/IcuyJMbj8Vg8LtqzbPv2H5o+bfKevfvNZhNRZECcoOJ3792PEDKl6RVZRkBjsYgoShjTWChq0Gva2rtlSURALeY0o0EfjUWzMm3rN2zlVbzZaPD6/Pm52Y0t7eeqgohSjEzjnibOVhk+qcLnhz/8oVqtPuFS3hTw9EDE+zHxjEL11bD/XWDHoSA7MXEcgAHgjv5YqshBS4GCsTUacGtNvryp4YMfGIhsVmS57OJ8hlvY8NFzVUt0davdLJ+soWLMvlWtyx1sjlLyp0lXcYkQDLWDq2Mqr7kUwABwCOA/Z8G1xYIFCxYsWJAaz2eMQ4cOrV+/PhSJFFVXm3Jykge4hk8AiqRgFjMMFhgsExqVZI7BhUadimF8cXEgHNNj1NbY1Hn4sNFonF9TM2PGjJS1z3lN/YkIkDg6ekaXJpd2AJQCxyJCKKUIYUQUgjmOIqCSDEQGAFEa73ru4+dnRztROzY0akaRqahQhuU4gY2HYnAqVyIYIbVBL+RdGkfaU+QeilD32m07Dp2nCp+nnnrq5Evz7oLWbTA00ibGl63wz1+PN+thif9YcFGnnHii/JJk/0z09l138HEKsKN49h+lxK9DQ1lll3x91+urC2de1vm4GQBsJd/TfnQvQjPsEzt2vgayCNcv/dXK34IYBQCAX4KtBKyFkFH2le6tifYdtybrAiCehVc5Rf1nDErp5MmTCwsL9+zZs3fvXkdLS+nMmbxWizA+Rt8IIxJXZEWSeAwUOBXLIsQiLCpyQhS14eCuHTslSZ5fUzNr1iyDwZDi/fOd+hU54PUGAsHMzAyP24MZbDKbw0GfKS3tN6vDl5WpbdgvSUp2Tlbbvz5Ii3jT7/jSC2+uz7SY77zpSgBobGxkWdbtdhcVF2sEDcuygqBub2/Lzcsf6O/Pz8/ftWuX3W5PJBIlJSUDgwMGfVpt7cHs7Oz8/PzGxkZCiMlkMplMvb29mVlZGkHAmNm6dQvLsizLTpkyta7uEMtxxjRjXl7e7f+oq8o23pQdybcJi774i2eferCirDwWjSlE1uqMkpgQtIaTardud/PlM7MumjrxQId/yoQiQuj+urZEYiTiYZSz18hnR+GDmU/9BFqA4Ru79kLf4eTXeoD65Kf2na+r9exVP3r8nR935U/b0rmb1Zofzpn8G0H/h4Mf/AEAOnbBou/evesN2nPwlSO8n1TVtcFQG9SvnQzw4I+21D45f2L1NWaNaVCKQdNGCLtTI/CzZ/nRjmjp9frLLrts0qRJK1as2L9qVXZZWc7EiYhlk/IVAkAqrOV5BrBIFEkhGHCnP2Rj6P4tO/q6e0pKSq688sqsrKzheZ5WMVL4bF8FUKlUarWKUipoBI7jiKLo9EZCaY4ebFpQg5BIBCilaRP5ITzfIsnVpcVEIbKUoJRk2iym9PTS0mKiyJRSSkES40WFBYoi5+XaJTE+a9YMoigYIb/PnWm1EELmzp1NFEVKxCorypKaRkJIWUmRQhRKZSLLNTXzkysPWZKmTZuqyDKDcSTgqckXJmSwZSVFfp/vpz/KqywqSoiioNUDIFlKcLxaEuMn1e3ymWVd7fVbN+8FpNvW3QeAgGNH1usEImfPD9WnoPBBM+8GnQYYDlgeAIDhnu0+4I8Fl5bNB6oAZmDzyxD2AAAD8D/Tblyz/9268Ur9z8E/Hzzy+dqfwYqnQBlFKLeVCJWXRje9BAAPGu04q+K5xvXDK/Ygr6Gzb/8jwqAxwc5/gq/v+K251QWcKpI1of7AMoj6gROgYgHYSh5v2aJOhH8w1PYJ22fp0qW/+MUvUsN5NPgikZaBAbvJlGM2n5JzCSGtra3r1q0bcrsrZ80yZGZShIBQIhNexWhYNtugFRXCEKV2/8GDB2ptNtvll19eUVGBMR6D6Akh/R5fw2B/kc1WaLUwOHX691ziwOHGN97/iDkdk57zwFJxvOb9CVF++pE7Dje0TZk+65SJQ96+Qw0d56uFz55XTrrQAdAHAO3bj3yfeydklt0GYJUSs9p3hADqPvV6DLXFbCWovGbW9Juv2vcORsxJnfCcGIV978L0L8DKp+CimyE9HxIRaNpYOdg0OOW6JR/88juKUq63eXkB/ANweCUA1Fdfa6j9IDUOz56AHxfFtqGhPq9XIcQVDvd5veV2u1GjwSeq8k9YT2JcXl6ek5Ozc+fO3bt3q3S6nIlVeqOR4RkOY4SQJEkDvY7a/Qei0VhNTc2cOXP0ev3YhQnGog0ORyAc1ai4IZ+n3+cvs9qspjRm9GKkcFbR2OH47QvvXcBO2f6w9OvhSGxc88lZe/3OisLn2ZO+b38VAOYBPAjwNMCyiYugaPawIvDw7s9OuuNqgAKAP3HDdo851Skm1bpVMP2mXYdW7LrhUVj+OCz+Hqx9Fugwj6wRD+x/F675MSx/4siVwhlbCqa//cEvHwb4oHufP7ca0vNgxq2gTf/y2j8wmHk+NQrPkoCEULfb3ep0xkUR4yOxT72RyI7W1hyzudJu58c86KjRaBYuXFhdXb1mzZqD69ZWVVdVTZsWRyjo9a9cv3egp2fSpEmLFi3KyMgYe+6hlDT3D3hCgSydJldr1nBMRJR7gpGdHe3ZaaaJeTkatSrF/ueVyAAInUaQq2T68SSLxkErfJyjTyAQAFDxgBjgmaRWCkTxuDOfYVI9iDIgBCwDan7kxykSwuc4VspnZ9y5HOAnAN+/6JbGvW9B/doTflv4bRDShot2sxs+KmdVj2x8/mWAx5Ji/fZX12aWf7msZqwJgBL3UPsbr3/nwVuegjV/gGk3wP5lJ3Re2A2bXoYlP4DVvwMASM+3eI+Y5R4EgN5aAICGdQAw1ZSNew++mhpsZwHecLixvz8Qi1FKh+thkgzb5/W6gsFyu91uNDLD9nJPmjkopRaL5bbbbmtqatq4ceMH/3k3Mzu7r6vTZDTdfvvtVVVVzCgu245djEbDwVDAzFGT2cAzDKWUAAg8W2Y25Bm0/eHo7s62fIs1Pz0doZT+57wAz/NiNDZv1qS6pq6APwgce8SHvqwAxwDGIMlAadItD1DK89x4bH4YhvnWt2773xfeOsEpWzQxsP8v5nRbMBgkhKjVaoM541cvvv0/gd3Wf7RnGIQ8m/7mqxf+9i/vnuSZ56mfPzC9UKvTGzYdGnjkqb+et4352VH/aoDVAFBeA3vfOvm3j/540oWfmXNhyrXl6//sOHplZuXlwQ3/B45T6IrmADgBwbKlcOfzk1779m2YpYq4FOD4TnloCHb/C654GPoOQXAIOnYlL/8I4DDA8qOp/p/PkRppn7KGByChKG2Dg71er0wIOpGIj5vrIJRQlNqenl6Pp9JuN2o0YyyEEUITJkwoLCzcvn377t27Z82cNW/evGMantHIWpakQMgjixKiRKag4hmMUDQhMgxDgSJAap7JT9NERKXD6XR4faUZGVaDIWllmKL/c4vL5k836TXchCJZVg42dWo0ap7BJYXZ+w+3BX2BqkllpjTtlq0HgWcBjVf5jjAacHovnjd1685Dx7VMWnXWjPsAKCAMCIBSECVQ8z8DBjjUEwj0dA1s3dUELOPoPeKP00UpsMwjjz0PmAGFAKIjrAn+C6n/WDMf+/hzc24nIf/IKB2hh/RWsBQ1lx+JTXPtQNNFifCjo3ekDuCHAP0AXQCtQKFjF6z67cX2ig8Y9sfNm2SABoCJx1L7+t5a9Zt5meX2weZHbSV1vOatikuzh9pQ88bliUhqdJ1FDc/AYFyRks41iUIoIMwgqhDEIAAghCTjGVEAjMAXCm9vbc1LT6/MymJZdgz7H7VavXDhwoULF8Lo233HtnODIZ8iJmSqIAZxmE+IktPlMadbPImEIxQTZZkBRIGqeTYaUwBBLCbtCrRnW80TsrMFnk+J/+cWnT0Dg2pVps1k0mnSTYbqicUeb2DH/sZZVaXWzPS33/3o2isuvvHaS8LR2Nr1u4EfF7/JorR1bx0FGLa7gAAACAGgAEfVBgwGSQaQQRp2c3KdoddCQoSECBr1EbrnmFONiHO8k/HZUr9KB97j555DOZN87TvB3TkC9YtRyCwHd2fyWyDqD9OxTFy1AJ0AfwF4HGBF8tLO1xdOvf6nXfuCAHdNv6l739vD098DoHW2wpIfhNf/2VU2H9Y9++38aTD1etj5+rE0fzZlq22lX5txC8hisq+e3PNWgd76pQPLUiNw/NI+IOSPRuv6+oLRKAUAAgiBwLLpepVFq3ZGYv2BCJEIZrFexRNK9TzHIhQQRUkmUVHucroG/f7yjKysdNNobvePXRmbl/3hoBQPE6IQoiiU8iyjEKTiOb1e6+wfTLOY0tUqXwJHwwlWxcRlijmczBwDDAYCnnC4yGrNTU9XcVxqAjhn1N/e8/iP73vt/fW+QBgjpEiyVlDPmlJx7aK5jkGX2Wa+9doFOp3m9fc2jN8sckJ5gWPQE/D4j2iKAAAoRBPNm/6XVwlpaQaGYfV63Yj3KlKisXbX5Guf+OXP77vp0qqf/WnZ26u2j0cU8vr279ge4suGsoRqu7b680n9M+6C4U71EmEIuoBhoPbDj1cYhjnF/kPOZGjaNMKhXwCYfDVse+WYCeZmgM1Fs2HHP0crgg+ABfgGwD+GXcw48F6b0V6pM39/39vPWIs3uY6f2w4CBCmBpo2/nXrdk5TmmXKtnPCTgabJSdskAABYhhhtxA2vfevYXW8CzJ7xxdTwGz/vK5TW9/b2+/3KEYmecixmMTYLvI7nNBybo9fyGDuCEYlQA8dlp2l5lgn4gyqMmDQdRdDjD8cTUm1Pjy8aLMm0a1SqMfbuRtLsAwCNJRKhiD8ajbIMaFXqhEJYBYuyIggYAQgqdWG+nlCiVXE2UR7gOXc0RiSCOXwsQ4SQrChNg4N9Pl9FVlZGWlqqe88BW7EYpemfeuk/GCAuShRg9db9CqGU0s176zFGDGbu+H9PgyQzKl6l09Dxxd1taOlmWAa4E8mQY19etkOvT6OE0NFXk23NDb0dzSColq3e6vb4tu1rHGddeDZ/cmWFSzaxkv5zK/WfZNyJMGjTgcgw/x4Q0gAoCEZgOUhErl/++JTWbY8eSykYQE6MnKd9Amz4v9E0RR+HCPDCxy7OB4CQ65mM0u/Ovh206bDvHfCfqMHv3gfd+8Izbx0KOf/p6/0bwHBPenZFMsiSGmApwL8BDgDUAtQWXgR7/pUahOPBUCi0t6ODAGCEkhoexKKCNJ1VK8iEUqJEEzGO43LTdCpFVKt4KQHhSJyJUSFNRSkddA4iTjCqeL+kxCkdCkdiPZ1pWn1lds7pKJpoPB7tdw1oeJ5nMcYolkgIvIpwQMKgJCirwRxClFKMsIrlZUWeYDMNhHhHKBKKiAw/zL0zQojSqCju7eoqttkqsrJSgv9njGg0DgAjH3wFIAolCgEAYBlFURRFOSJujuMtURRyQkqEgGN/+9K41/cM2lffsa++Y7zpMXI4ve5gfKgtYi+0gvHCUPhQAmEXAMCWv5z0S17eVI0u/fh3tT7peQMApgMsAsAAywEOfSzLpwG+vvF5a8290mlZRDFcR8vWg/EgFM+Bjt1QXgO9tdDfcFKqx7v2w9w7YfPLJ60+MuSEGrPcjFsZlrfveO0AAABEdrymAfDlT8/v3hdKjcWx1XsYs4lEnGEQywFQSikL2BWJM4RQhExagcGYEpqgoqAVVAyHRZEKSNDwiYis02lLjbpgMMTyXJ4lrXHIJ0okEvFZOJ4Qgk/jNUCiKPc7XGaTnuGwWWcAoApVMMIqLaMQgigolCYjAcRicZkoMUZKU/POSPQkT9GUUkBIkeWoy6WoVDQzM0X9Zw1o5A31C6PBEQJCRbWqrq4v02zMzDd/bqX+ceO5oTaoWgIjnZPKB9gAoAbIATgEoJbFxLAdgP8H8KO+w9JRLw7jRxkAufJh2PwyXPMTWPe/UDgTpAS4TvTYN9QGQ23oS8+o3vjukTPXvPYeOTEU9f0t4lX113un3zQNoJrhnlAkY2+tDMDO+YrUvS81QMeGz+3evmKF3pyeWzXRlpHBqZCKZW1agciyz+sxqHiVildkWaZIkeMMo2I1XNwTp0bWE3YbGUsknFAExsyyYVEKRmNDTU29be1Z9qx77rnndKgfwuHI5nUf6bTawuKCnJwcluNlRc7NsoVjCTEWNxp1PM9HRVGhxOELBEIRgliZ4SgFfHTT74hmH6FEMNh54EDI66V+f2VZ2ee0X1avXr1kyZLzeruCyqDEAD62EaoooChHwmMhdCTorqKArADHAiHAMEcNexAQArICPAcIQCGgEKAEKADPQkwEngMWA6AjpjsIAUZHouYy+HgELlE6km1SHRRPAMskI+se0UMk1Y+ycuS6KAHPgSQDAmDZkecqOQaA0jBTWm5x9TURpRiYC536k6uyES9vBLjk6IdygB273vgpwJ+HJZDO6GlycvEx5XpY/jhc+TDsehNK5oAUBf/ASSl/8MZ3f1w8e7KttI/lIBZM763FmLUWTF/qqNcPNhkQbqq6Amo/SBZDEvQpZj/F4KW0oKDge9///qpVqw5v3FhRWT5jxkWmNG0sIfEsV5iXKypKJJogRAGGEXg1QZRhsT5DIyVkjUrTO9Cdk5vb19sn6w1dPb21+w4CIQsvXzh//nx0OodsKaV2u/2hhx766KOPtm/f7hx0zZgxjSDU7vTwApdtNu5tbFUZTTGJUAQMgyhWY545Gl+bHhP25URisLW1u6HBZrPdfPPNVVVVn9+ueeONN7785S8/9dRT99xzz/laRgYwD/hkRiwusufZbZ19gwzCwXDU5fICxtnZlskVhTsPNNksxt5+VzQa5zhWkhWL1VBemLNtbz0oJCvbmmk1pxt1gNDeQy03XTl/y+7Dnb2DkiQLgurSOVOC4UggFOVZRqsRuh3O7j5n8okXz5+WbjJ0O5wHD7cCwM23XN7U3qtRq1o6+/z+ECBk0GuCoWhZZU5Lh0Oj5hfMqd606/ApnLJhCRBgCuo0jVLPATo3Lig+DR8+45cddBaY/WVYd/S0753Pw6sPfBa1tBTAxCXQuhVufhLe+wVULoRVvx3PfWaAhwTD320lhY66isrLnmnfBQvu+3nz5q8w7LSWLeFT3RsCkC5oHz5jU/CR2OiK0tvbu2zZMlFMTJ1abTKb0wxpauBZgVWrWYxRJBqniOVYYDAmlAajMX9U5AhJM+v8Hs9H6zZFwpHCwsJrr702bZTN1fHMBJRSr9f79ttv+3zestKS7PxclUZwySDKRFEIwghhlHyVjxvvU0oBiKIE+vs7Dx3iWXbOnDnTp0/XarUjP/Ho/vP5bP5PKd23b9+MGTMAgGXZX//61z/4wQ/Ot0LWNrS+vWr7GYflOs8RF6XHH7zuww9XT5lUzKhUKlW6JSt/1DWrz1Fb336eBmhE2myI9o8r6V0vwiv3Hfk8725o3QJDn1W0hNKLQaUFSuCS++HVB+ALvxrnrMPymtuKZhc0b1Jb8n+aOxn2L7MD3ABAAf6S9PA884ugPVlbhyl1t21/pe/Q9y5g6qcUEArFYhzLqke3dzzqMoHu3r17zZo1er2uZv687NycWEhkeazTXUsh6wAAIABJREFU8omEpBAIhcOAQKvVtXt9QVHBhLQfPODu67VZrYsXLy4rKxs7f1kSCaU8rxqNdo8F+Tp8+PCHH37IsszsmRdpsjP7A3GggFk84lwS8/l66us9/f0VlZVXXnllenr62MXo8XjsJhM7yiHk8wcGgyEUOr5X9ZOf/OSxxx7D502xFVliWG48MscYBT6fuyASGFj1zn+mLbxEr2b0aZkqVfrnk/oL5sOcmwBj6G8EhMDXBz0HATHg6To56XBPnDc+Bu8uPaNQ9meK+V+DxvWQPx0u+yb/24Xfn35TYN/bdQBbRkleLaQdjAUeqPn685tfhhMJ5W6Amrl3PmQr9ugs8O+HQRzhINjsqTdMrlslsOobHv6fBRcW9ScHVTSRaB8a6vV4MUKV2fbc9HR8qhVAPB5/9913W1paystKSkqKLOlmnVabkKlGzRJK99c1KWqNzPOe7p7OQ7Uqjpt38cVjaHiO+YBzBfy+UJBjEMerC20ZDMOOJngn33ZK6cqVKw8cOGBIT88qr9CazYCOT1FJtb4UjfY3NTna2ux2+6JFi0pLS8duk0A0eri3NxCLYYQmZmdnm83MeTkBJIv09NNPP/TQQyf99MADDzz55JNGo/GcF3s06q9vc6h4lmFwYbZ1R227VlBNLsvpc3qD4bjdanR6gxo1n5BkoFCYnX4+R2GL+Pu3b99ozMjItIo+b+HkKRWjU39fbX3H+Ur9J70lQhrkTQWiQGYpsCpACDg1IKza9eY3imau3PdO87mifgBY/D3Y8RpMv/EKQ+Zt2/9x97Qbn1rz+0eO/XrpN4FTA1VATgDg7N7a5xFy24pbBprvBfrXjl2/AgCA54tnT2/fue6S+57a9KJ/9EddD2C1FD4pxS3fvQ8uFOo/rsPxeducQ7F4AjPYoOIooSqVuionW6NSjy2FUUq7urpWrVoVCgYnTCifNm2KRq0KxRIhSeoNhINub9fhw4lIuKKi4tJLLx1Nyk7q3wkhvS5Pu9MpUoVnMKWgZZV8o0mnN2o1ulM6XnY6natWrepzOGwFBRklJYxKlUyqSJK/v7+3sZFFaNasWTNmzNBoNGNkFZektsFBh88nHwspRalBECbY7SadDp8f1H+s/O+9994rr7zy7rvvjpbylltueeqppwoLC89bqf9TEfnP7fQW8fdv27elxED9BZCTNsnGT/zsqf8sbPPGAtC8EQCg9QR5Wle1ZCrDhQGaz+E7te0VmHkbbHrxNiJfozX/omf/O1f/GCJeSM8DVgX/OkHp6QC4XW14RGN8R4w8OdQOX/gVvPNTAOiNh+vSsvSbXoyP+aglAJekZfxHbfgS0Avj/E9ytHgjkfq+vkAsBgpBGJtUvE0nqBhMAaJBFxX0gtbAYGYMEaGwsPCBBx7YvXv36jVr2to7y6dPpwajlBD7Dh9ydneZzeYbvvjF0tLS0eKwJ4shiomDPb1DgZBNrzKp1QLLqlmWUopZHA0Ho8GgyWJV8eoxqpORkXHXXXcdOHBgxYoV7t7e/EmTzHl5YZer69Ahl8Mxbfr0RYsWmc3mkeWbo+hxu1udzpgkJc8uHFkdIhSMxXa2t2ebTBNzckY7hPxZor6+/sUXX3zuuedOmfKtt95au3atz+c7D9/AHTt2lJSUmEymF154Ydq0aXPmzBlDHm3vG3rhXxse+/YX9jZ0sgyj4ri/vrvp9w/fPuQNvvz2pqXfuOHc1oUhijPNqkJeRaZwLjz9fLbbvMN1/Tc8Cst+8VlL/QCg0sKVj1y97OeTa+57kuPB2QY+BzhGMRvVmuH3DnjlfrT91RfnfGXfjteeB7gDYPa8u1lf348a1iWPAmQCfBXg7wAXAdiTh8tufOyZA+9fzqmrWrf+eOnSxz/nUn+SuWKi2OZ09nm9yT4jMkEYGQW+wKgXWCYuSQLHY4wogEqtUwtalIx2OrpcFolEVq9eXV9fb8rK9PYPqNXqmTNn1tTUJN04jypaiOKg1zvg93mCUV7F8ixTaU3jMIMBMMYxMU4Jw7LAsSzPC7ygZRlubPFQkqRVq1YdPnxYpdGEAoGszMyFCxcWFRWNrTHwRSINDkcgFhtrU5dSjHGl3Z5tMrGf7QSQfFYwGPzjH//49NNPj5/K7Xb717/+9UcfffS8lfrHWf0x5IaNe5ouuaj8XEr9gf51779XOn1qLKPLLlRlaaouCKl/DM4d5sAHdJbPkvcXAbyeN+0ug22Frfi9Ha9WZZQVb34Rlu6HV++HS++H17494l2VEe+GX83O6K3dNPmq5Z27d0274Xfurhs4dee2v5flTvnZvLtAYwS1odzVMZXldjdtvJ5V6TJKX8idAu/+/D8ALgAYFkr+80v6hNI+j6fV6UxI0rHxhDCihBBCEQCDsYbnFUokSWEwjkYC8URUo9HzvBqNLjHodLqbbrpp8uTJ69atq6ysXLBggc1mG0OtrxDS5/W2OZ2RWBwpwPIMFUlYUuoGfRl6waoRiCxjQAgBx7CUQiweSogxQW1gVWp2dP8/PM9fd911U6ZMWbt27bTq6rlz56rV6pFFIkohGWHG6ez3+yVFQWPzB0IKpXV9fb0ez4TsbJNW+9n0FwC88MILL7744oEDB043B47jHn744fNzj1SSJFmWk+64kx2UPOGhKMqxArMsy3EcQujwgQMGszEny9brlTKN6qampmy7Pc1oTCQSuSox7Og73NM3d+6cULhTEXWOoYHC3OK4KDL9/TFR1KeboypqthSIskcI9gEiHsmkNWpJTOrqcZZPnDSUaEIYKEacMyRnabDPJMZEllebzSjqjyWMcS1j1XG20fsJSYIvjuPo3MUW+yypX3eCux72M13kbAB4OS2zqG071K26D0BXcSmwPPzmMvibD25DcOXDsPK3H5+KWgFq+hsuueqHBbUfPM2qoWF9Rzz48mXf6uvYldN70N17MJmsG+CAIaOTU28IudIDTqhdDgBbAbZeEBoeVzDYOjjoiUSYk4RxBIBRIC4e7PdYDUIazxvUvN8fTDPotSo1UBL0u1WCRqs1ji0+l5aWDt9EHY33veFwy8DAUCjEMBhRxPDYxHGcwDqjsWgw3isp8YBECAEaybdnAQIgQAiATKKKv9sRzsm0W8cM15WXl5e0cx9NYEwWrtvtbh4YEBUFjW+9m9T/BGKxrS0t+RZLRVbWWfX+tnz58ldeeeXtt98+s9uNRuMtt9yiPftT1JmB4zhZloeGhgRBYFmWEBKJRCilOTk5H2/PhpaWitLCV97dwmSmfXXe9KKiYr1e19fbixgm7PcbcrJLSopbmpsNaR5JpAWl1f7BQDSRoC0tNqPOb0MaEYlSqyhSORqJC5aIt59yJpdjCOcoPa5Gd7yBNQBgiNU2WToX6rQxn88bUAu5BbzLGUQwaE+bPhb1I1AG9NrZvihF/wXUPwzPAty66ndZc+44Es9SpT2qFkDg6oDExyzmMbt0qK3V53j9VAsFd+HMN6T4g6XzAABkEaZcC82bAWMZs1C/Nk9rgpjfCeBs2gDX/ATWPgMPlsCf/PDzyTD3jmQ0seGQAVoUqYVSuPIRePlOAAgABBo3wKwvNQ7z8dkF8GTQCQAdcIHgiPGMJDUPDAz4/YRSZqQDtElzQArgDEWHaBQzGCPAroCaCTEMo8EQ6e7NtWdY0zMEtRbONN5hXJJaBgf7/X5ZkhmMiUQQRgoh7lgCUIJSwBquxKI3cepYQJI4dSwakxWZxQyvZolC/PH4UDQ+2NaenW4ustl0avXYxRjtpxMizJxmLRBCLMP0eb3OQKDYZsuzWDiG+RTN/+vr61966aVnn332E+aj1Wq/+93vns9mkS6XS6vVJhKJYDBoNptjsRjP8y6Xy2Y7mWepnHh91YHfv7Uv11w20aIvMzARrM/MsCUSYnVNjdvtVguCz+uNxQw+XySeGFCpwMSEmSnlvas282bDky9vC/hDf/rTXZI+BycCplyLFAzbjNmOlp6BYE9OVSbPqIFAxMarcKix02/LzZP8AcE4pcQQH2obQHE9FIyhZwdOwwZ0EbvXkgADaD7n1P8EwNZjPpNPJQpRhI6e1iOQlgkMe2RBXTIHVFoAADEGrz4ArBqAPsYJs/Kn7g0MjHYY+BimT77K/d4voO+oH6BhfoR+dLKA9Djc8zf4y1dh69/hkvsgFgJOAGmkgJkbn4f/+QAKLoKuvQAAAw2w8FvD3TtfeKAAnUNDnS5XXJIQGlmrcSxYytEeBUJp0slhQlEAZC8hHK/pD0R98V4RuKKMDLNOd1rTDwXodbvbh1xRMQEEgFCBpyaDbiAQIYAwhykAlRUNhzFRZCyxaQySaZpOryiK2+eLuWMgqBxRRYormGd6vF5nMFhktRZnZIw3dF9SAlCUeodjwO9XCBmtNcY5AciENPT397t9VQW5Jo3mjJ3SJNk5HA4/99xzv/vd7zwezyfvdJ7nr7322uzs7PP5zczLyxv+NW10F6reENUaLXIi4Qq3tw5UqAsEDRtukQLxQHz35kMzzNm1zT2zZs6oPXQQY8Zmy1bzvCQqUeeQRaaSRf2bp67jVWw4FBcEbseBrukXlXEGTfMBV35p+VD94TzT5ISYQBiZK0s9h97JKSvnDFlFk6u37qkLe2KTKzI0prGWmBRBQiPoBwo6LOoyEz7FUDz/qR/P+lLR7n+dHM3y+AASjyl5vqMxfWfx945v+Y6Gxd9L3mXxdK/Mqvjw8Orh4bZGRHfUDzoLhN3jKvFfvtpfVrPjje9qLrr5SgC4+oew4ikQoycnE6PQcxBK5h6hfgDwOYBTgxS/UKk/EI32+f1xWR4vqQE6LsEiQEnzAQZLhLoSMogyRiLD+XSCoGLZ8ROlKEmuSCQuSkCoXs2zDLaq+YDHw2ImrmBKCVCKEWgQdroCaVq11WQSBLVIJLfbF02IEqLuoQAlmDVok3QpKYo3EskSRQ1/GvpGTzgcFkWSnOA+iURMKSCEZBplpUA4ZNRq4TRzO/b0l1566cUXX9y379N0JJWRkXH//fef54fRBgcHMzMzKaWyLHMc53Q6bTbbiAX2yaH/ufNqwHy/o2fR3EpVXNyudHvEGLBATaBPDE2qKvL7HTl6fjBGYrGY0+n0xhLGaCBPw0U7O8WGGMnMN9t0CQo5ubksh7sb+4hgffNfG+YvqAwHA5xKDQioItoLJnZ6Pc4oB/00rzhbXRDuH2jPV2eO/XbrlK4BUx6KCQkVBsM54P5PMzRwWTycP8bP1/wE1vzhyOerHoGo/9Q5rvkDrP8TrPnDN4vnPDNOS6S1z8D1S8df5qyWzT3lNVfs/Q9/8dfg/cfgpidGSKRI0LAOZn3p+JUPnxg55YUCLMsNGzd6OjuJLMPozsrHJu6kRggDkkLhjr179q5ZLcVPc7IkpG7jxo69uxOhSEwhCiEansm226rttokZaYKU0ECixCTIwUCOzZRm0LAswhghQIKgJooclwhVa7GgSu4KitFo94EDm9591zM4eFo1UiKRTW+9NdjcrEjSJ5HTKQAlNBr0161fv/7DFbIknS7Jrlix4tZbb0UI3X///Z+Q9zHGZWVldrv92JWampopU6acz7wfjUZ5nvf5fIFAIBQK+f1+tVrt9Xo9wxCNRo+pFlxB8fIZhddeMjnhig7I0nSmwsSyFFFdjGXS0wUOcvNNhRW2nJxMlmVNJtPE0oycsgKcky0MijiziKWKWqdTC1xmpiHgBkqRSe2/+uKsDKPa0ePAGPM8B4jh4wP7RWjwte5y7+fjksbIxHsiycBzo4tKpLZNdn/QXBaOGei52Vn5NKX+PZ4unhJ8PKDZieBUwwaTfHrbvEQ+jcTKabh6+ypAJBqgmeXy3+65/Gt/G/rPDw9d+TCs/M3J6Q6vhAdeB6Md/P0AAGlZv2zfOcDwf1bEC5L6OY6bMnny6lWrXD09ORMm6CyWsTY/x+g3StxtHY6OFiLJS5YsOS2PmwDAsuyll176/vvvt+zanltaMmfaJBXHsJgjlGg5wicklmFDkbjI8eGErBWYIb9XLaiJhPU6VZEu1x8ItvgjEkWIUm93d09DAyjKwssvN6enn1ZFTCbTZZdeunHDBq/DkVdVpU1PR6dzUvdYSkUUHY2Nru5uk8l08cUXs+xpj75rrrnmk3duRUWF3+//4he/uHjx4quuukqr1Uaj0ZKSkq985StnT+TfuXmN2+OxWsy+QEij5qNxMTfLRkaLpkkUhEc2DVAUJeD3x2JRm83mcPQrilxYWIgxxhhLssxghue55AyhU/yu2g2vbGipLMnLqbSIftJNxSIxHkPBamO+3ODoZEFwyAgzjfU9xSXFAODq6sQsp5UkrOJjjQGBY9p73Xv3Ni1eXBZwSaZMIeiOux1ec5ZPVvDqFfUOR/+cObNlX9AqMfbSCh+REFZivrApy3jKZlSrM2RdjvzhHlUND7Nmfr6pn+87fF3Vkj/UrQ5+fjju7wDQW/tWyVzIqnj0wyc6rMV3RHyQNwV6Dp40nfzvA/qZ5fNnX/pNSITBUR/Y/86golyoUr8gCLNnz54wYcLatWv3rV+fW1aWVVHBC8IpOe64UMkwwYGBvoaGgMczadKkK6+8Uq/Xn+7qgWGYvLy8Bx98cPPmzdu2bRtsb7/s0prCgrxYPK4oxJJhUAgxpqWpwkGBRYPOoVAwoTdoTQa9LDOUobwgQFgMDzidbS2ewcGKioobb7wxeTT3DFqjurp65cqVe9atyysvzywvV+l0MO58KIC3p6fj4EEEUFNTM3/+/DNzM3D33Xf//e9/P7M+zc7Ojsfj119//ezZs++9995j/fXQQw89+uijFRUVV1xxxdl7o97/918mXzR/+Ttvmk1pnN4aDbhtZs2ZKTMQos4wF/R7J5YVqFT8+yvX2yymltb2RQtmSxHPf1Zsv/OuO3v6hixW6/sb91w7o3LT9t1/3uGaPW/BO++veuQHD3rW7F8WOZiRmd3T1WkwmgtyMweGfJu277l4fs32rXsqC9Jk+QTZlQH4aEXPCSVoOf5x4+r3kh+27dr2jXt/4PYO6kzqospsr9Nvs48agQVRZMsi19QUxdv0wwICj5QSs5/86NUoZfhk+VKAXtukNzU8T8ltKn1W65ZRk57gwOdXwPLw1sPjfczNT0IsCKt+B+ORsm/7Pbz5/dOqRT7AxbNu9+96/cOv/RUGmiE0BM2bwHWCwc4EgAkzbv3Pnn+fbhN9rt23EUL6+vreW7YsFI1ml5cbs7M5lQpOVHlTQoFSQihmMFAKGEnxuKO+3u1wmIzGG264ITs7mxnFrP7I0VxZ5k8lAodCoTVr1jQ3N2VmZMybN4uqWAYhpACRFYNJ6wsEQ4GICFy6ToiEI1arieHYpgFXy8HDzt7eDKv1yquuysvL+4TFoJT29PSsWbNmcGjIXlxsKylhOO6Uhjpht7u3vj4WDBYXFy9evDg9Pf2MVUZbt26tqTm90z16vd5gMEyaNKmmpua+++77uG8Mt9s9efLkX//613fcccfZ0/bcduMSQiHpjFNRFI7jJEkmhACAQoiK5xGChCgymGEYRpYlQijHcbIicyyrKArLsrKsJFeNCCFKFI7nEgmRUKpW8ZIk8xxHKCWEMAwDkDTBQoTSRCKhUvFJkmMZLB3NhBCS9BQLABgdMa9HCGSZnJndlcVqefq5X8nOUH0MV/CKLjuH5UaNwRIN9K/dvKm6ZIqpkEOtEcOk6tFTOvfXNl5cs+C8k/oRQL6rLvn5e2MtbwwQGOYif8o18Pp3T2+GOZu4E+DXu17/2uSrbGufDVVfTcKexMIH4c0TKtQA0FA48+d7/r2GVf05u+pg3+GvXaDanpNU9nl5ed/81rf27du3etUqZ2dnflWVzmYbPjqUmMxqOYwpJRRTGGhqHuhoxwBLFi+eNWtW0m8PjG6w3+F09vl8OWZzgcWCRnfUmzz/1dnZuWHDhn//Z9nEqsq0bHteukkEsbl9yJZpzcyyhPwRS7peo1cNerzdbb2tzS2I0kWXXz5v3rwxipG82DE01Ov15phMhVbraIophFB+fv5Xv/rVurq6ZcuW+Z1Oe0VFWkYGRejjG7aUUiLLPYcODXV3W63WG2+/vaio6BP2xfz583meF0VxPIlLS0sZhrnxxhtvvfXW6urq4T+dwFkWi81mu/POO8/qizRj9pxDhxtUalU8Hp950ZRXXnvrm/fdpShk87adt9924++feZHj2MqKcr1e19LaUZKfk5+XW9/QXFZatHzFupkXTdm2c8/EyvK6huY5M6fuP1j/yPcfePb//lZTU9Pa1qEoxGaz+P3BnXv2q0bevY98BiNFrdWDQmQ9lzF4oKsMxQ/HZ0+bOQahBYPRoKSkxai+PPfcDO1PxZFDFcAUAB7gr6POiYVQuQC2/O3I12UUbjidufVLz0DYBSt++3Gp/0cao96c9+OSuSDFYdvfAeBrM7+4Z/e/Rg3ohRhYcN9J+wHXABQApAOyidFLuve7DbYFYQ/MuxP+feK65Gt/+/HB93s6dvaq9M1pWYMtmy54qX84R0ej0eXLlzc1NVlyczPLyoSjChxKKVUoAEQ8nr66Q8FAoLKy8pprrtHpdGO7OPaEQo2O/mgsHpcVQGDUCJXZ2dY0wyl1Srt37968eTNRyPTJ0y2ZZlYAk8koyxLISJaVaCz60frNHre3urp68eLFBoNh7GJ4w+GkSwaEECVEr1ZPzMlJH/3817HWWLNmzcGDB9Pt9pyJE1V6/RH9D6UUISDE3d3dU1fHc9yMGTNqamqSGp5PLlb/5Cc/eeKJsUwMysvLk6r8RYsWJfcGThlW4VMp2Nh46f+eESUp2UKEEo7lYrE4xkilUiUSCZ7nkmdHJElOms8ee7VYllWIgjEGChhjURRZjhUTIs/zhBCWZQlRKAVKKcexn6pqhB4VbseFSCT4re/cKcqyo6c5YYtmaieO4Z4h6u9fvWGXntGpp6pjTNoi++TPn9QPAI8AXMGqnBWX8pz67weWkbPx4mBmtD5wYNaoiP/c9OJF2VXlr1JQ4IYn5pct/LY/Pf8bu96YUX2NzGtETh3WW+c6W9+sXf69S+5/u3lj8kiBhuEEzHoGm5b3HVm4PISZjUTB9gl35k9/tX4dzPoS7Hrj2LNe/OtX5+RP+0v5gmxXxz8UaQaAE/4rkByKGo3m5ptv7urqWr16ddOWLVklJZaCAobjEEJiItrf2OhxODIyMr5w440FBQVjx9JKyHKzo38gEBBYXGEzKACiTAJxsX3QQZSYJS2dYdgRLe+TGc6aNausrGzDhg17aveYu80z5k6VZFng1K6g5+D+us6OLqvNdtdddxUVFY3tg16U5ZbBQYfXqxxNgzAOJRK7OzszDYayrCytSjViawCARqO57rrrpk6dunLlysYtWzKLiiyFhSzPU4Co19tz+HA0EKioqFi4cOExH3CfCr7xjW+MSP12uz2RSFx77bWzZs26//77j7HnKWn9szHpueXmG6PRuEYjUEpFURQEIal1cUfBEaDTc7DH41cLgqDT9vz11bz7v4YT8X+8v/3OG2ooMCzHybIkCJp4PM4wjCRJyX1dWZYRQgzDYIQlWZJlWRAEWZbhqIOHRCIhCAKlVJJEjuMlSeI4jhCS1DgRQpJ/KaUMwyiKIknSnp7gtk7/T68oDUUiyxqid3Rv9C9ayKl0GDOUkqSpGDqZnJhwNH5w37agP2IwaZxYk4ZOsc5AGK1Ztu6ur123r1W4clrmORnUnwL1FwFsM2X/tG7VOanAq4YMyKkqCTittmK4EwHAdQDQutUKsPPy7wy9/9heW4lsLVydN+WX+dPv8Pcf6N4LDAuEAII/NW2429Vx/5RrX7znb8Dy8P5jv5XiVk69u3H9KxMWQuEMCDrBkAHBIwz/GMAXxZipc8+fh9p2AozzFM3UC4X9k3+Lioruu+++PXv2rF2zZqi7O3/SpGgw2N/SAoqyePHimTNnHtOWfFwBkrzS7nS2Dw2JskxEwmn47kAkQ6s2a/kMrSYeEFlF9vkHNWqDRjuW+G8ymb7whS90dXWtXLXyw/dWlU0oNeh0B/YfVhTliiuvTEahGpXaKAWEOoeG2oeG4rJ8kq+4JGn2+/3uUKgoI6PYah3NoDOp/7n33ntra2vfW7bM09eXM2GCq6fH3ddnNptvv/324uLiT70jcnJyioqKOjo6junBjEZjZWXlJZdcct9991mt1mPtfF6ZaVJKA4EAw2CgEAgGMUKSFNfpjfu6wq3O+OwCm9vl1eo0OqOpmfVya9eXX734m9/8v2/cfQsAam1rTTenr/1w9WWXXd7b119RXuH3+T0uT3FxsaKQ3t4eh6Nv3ryL3W53U0un2ZJuNJqcQ06NRivJUlfvoEYjlJWVNzTUT5gwsamp0Wg0ZWZmNjQ0WCzWuj0H0tPT1Wq1w+Gw2+3l5ZVrO4YGo2qncyg9I3Oh+qNv54S/2tF50exLPc4elaCTpITJYj+pal6vu6HHzwIjS31DOyS7xRZGQ6faQqOLr5jVZWC9fOdAQlsEts+nwocxApM4xfkmUy5MvgI2vXTk63IK15zOe/nl5yDohBW/GWGb1z4RcqqgaSPM/CKs+9+T7mpZ/fudnu6Nk6+Waz94daSMf/GVP2147VtHFDfXLwVOWOKo+5IU/0PrttrLvw3+ATBkwHuPHrcuvfrHsPaZEY59jY7w0qXaCy5KF6U0Fot9+OGHDQ0NlNKqqqolS5bodLqx/ad7QqFGh8MfiSGMFEnBPCOHJVbDMbFwhk6Tk2XBmFGoTCTCIAZzrDEtneVUp9T/7NixY9u2beFweOrUqZdddplerx+V9SgAAl8kWt/d44/HMHNqY1OtSlVpt9sMhrHLEI/HV61aVVdXx6tUs2bOvOSSS84S81JKn3nmme9///sVFRWU0qQqf+rU813AUKJOhuWAEAAAjCkhR1qHQYCBShQxDFBKiYLUWkjEADCoDCAd9emC8ZF7T60hQEDOzHJJ5jVqAAAgAElEQVQIABAk47VJCigycFpgKCjykUcnPdGO2CkE3l/z3rz09Ig6LKelBw2eUyh8fI61ew7k5pbiMDVXWfIEy2ev8Pk0qP/Gp6FkKuRP/cvvlnRS+quSOYAZWHuiO5HrlsLKp45MD1f9EHKr4YUvfTrUP+NWGGgEUy7EA9C67YSfbvt93kBTMOrzB11HQgh8HO9SuPFjQ3TajeBzQCLCXXLvQ6t/Zy+r2bLzn/869utw19PjwI+WLn3iQqT+JLV1d3crinLKDUxRllsH+x1u77Hlg17FCRwDiIbjSjAupmGwaniWxZyKDf5/9q48vqrqWq8z3nPnIfcmucnNPE8khATCDOIIWhGljlAtzmhrn1qttWr71OdQfa11enVota11RAERUGQKYJhDCJnn4SZ3nocz7vfHDYiQhIBAQbN+/PTmnH3O3meffb699tprfcsdFDApHAjHm42IpJLjkpmRiXeG7PVudzgctlgso1luMRBEoXvA2twzIMnoWNDNWJL6Yhhm1mpHsv8cpcpJNpuNpulR8jieFuF5/qqrrrr11lsXLlwI3y/A+Du5yc6kyPMvj7r88AOVe26//NIJKUV5jI9TidlOCaFUujRefRoSsJzTtn7w22HvCtjy17biS3fueh9SSiHkhif2g1IPXfsg6KT6DhbozB0UEzQXgK01D+DrlU+sVxqWGVLBb/uO58+IzRw5/itvFuz+EGbfCf9afsyZO0jZr9u+UeLEhb219Sf1RPs+hWtfgA8frP73fVMA3ox4v7NpHHIPcdaMKhMAegE8APTJhJidX/YfAEhLGy2CO9ZHXXZ7Y581zaBgRF6tkZuUcgXN4DgW5VmGlGE6zBvhWwbd7n4bxnHZ2elhXgoEArlZ6U6ng1Yp6pvqLUmWxPjEUVpiMBhOYFLHIBoN9jkcDYNuUk6PnYonVszq9dr8/qz4+JzEES2zOI6bzeazYEAnSfLzzz8foyn/hE/3j3/8Y8mSJWca/dUqeZQT4AcqKpVKLmOJsC7OGO/rD1J4WjAl7kRGnLENPxw/U6PoNNxj4/Ox///PdS8CJYMNL4HKBANNIAqQXg4qU17e7I3v/+rhggvfLL8STyra/vKiz11dvyZlIPJgLoCJV15qa12MYS/EZzfozMc/+29rV6W07ehwdO4TuQ0j9eBw3Ti3fl1d/8GHFvymo7f2pB+qdjUUXHCVvZ26+6Oe+vVwYM0xmLYQ4NLCixCSSAz7izG9zpACfjtsfAUALgUoB1ieXvG+yN+fPQ2yp8GPT2JQ4g2FDvb2BllWEqVORxAh3OdmbQGe4QYL01MwhLd29cUbjQCQZdT4cEGrUQ/YnalJiSodybKR+Pg4QQS/y2OzDbB8IMGYzNBydPJgJ/Jch30gHA0PBDkcMIRjp+AuLCLUOjjY7/EUJiWZNJr/oCX99JryGxoaSktLY8z+Z/uhYvurggCiBAQOGDb8tsrh0AkCx0RROjGXBkITi7MVjGz73oajDxdlJS1dvIBlWYIgMBznOE4hZx55/KVp+albW22A0OUXT/l89TagvouKLPe7R2+VK5Rup+OPL74HsmHUUJyS+3g+RRvaG3QQ5RmCJCXhowVqUZQsEvJEAs4TvuloyEOMavMc+wL9DBh8YvctvRwCDujYOUwJWgFXPAohN0QCEPVB+SLIqoKuvRANgqevqG7Nf7dumweQq0u2kTJwHst8XAkwCWBi1tRugX06fy5woaGBEPKldO7+edbkbTX/mjH1po31G6oTMgEBEESyrTWNVmx3dFxSftWXRRfDP+4asfXDGnxicstb8LdlsPwTEDn4+tXv5Ju85c2W9S/mWBtsuqRdovBUNLAzRvl50X1AkK81bqxEUoVcBwod7P/s8ccfe+KJ3/8I0b91cLDNbpdiVt0j8V8ISbxEUrhBRoVFkeMlhiZStEolSQRCIQkhuVxGYqTd5VbKGY/Xp1AqSRz3+PwUQ2h02nhtvFZrOKlxHwh6Q2GfL8rRpKzfF/SFWcAwnMRP+UPCcTw9Li4vKQk/h+luxi5PPfXUo48+Gh8fv3//frPZfIbQP75iscMdGAb6SXLqhBxJQhqlYt3mXTIFU5SbztDUwZZuDFBqckJ9bdO0mZN27GsAAJoiOE4YE41SOApyGUgSHBU1XZqXqmOk3Nzc/v7+UDA4paoqkQkl6bDGQ/tVcrkkQcHE6X3NuzVq5TH45vUHEUI4TmjVw4eCRzk+ynITp13a3dGuZGSYGO0ftGflZHV1dWp0Rpe1jSDwhORMv9/X09ObmmrJyi+zdjUfamysqprW1dHmC4TUKgUIUacvnFdQYk5K3r1jY3xCcsGE8j07NmblFDTW7T618G9NXPKSOx8aHrdPG/QvfhY+Gr4OMBdCaunRXpIAAAk5wIbAmN4acGTb2wFJ5Zc+sF9rBlcPTFsC5qNS1HfshO69IPAgsCCJIHAw0AR1qxNvXvrfLTZRDL4TsM081L4xJ3fP1HmAEUDRL1V/eVBn+OvOLasK5jVgwd+k6cFmg33DZSz6EsHFI4yknJkgU1ypNmX6Bv83deKz657/GGA3AAA8VnSx89CXhwCKVcYXgs7G9IqJv/0GBBYI8o9/v6PE2Zkd9df21M5kNH+M+i95/PELfnC2/jEZAv3+L7ZuVScnw3etK0NxAAgAA4zEhJCg0shSNQyKRkJhVpKkhASjhJDH7dcoFAKOBwI+OaNASKw/2FhVNTU1JfWkrBPRSHTnrm05uZkcy2vUykM2rzfI4jRxChg3tJTp6akqLs5IT8d+END/0ksv/fKXv4z93r59+7Rp084m9ANgVaW5f33mV3c+8mdvIOgNhG0ON0USOIZzgqhVKyRR8ji9SUkma7+d1ijGBP0IZaUnJRr1fYOu7n7bd6r77rWz8pUVqQQA7nL70lKTW1rb8nIyTy2ClMDxg00dHC+a4/WJRr3d7ccACYKYnJ4LrGfA7vEFQqlmIy9KVps7Pk6FEEZRVHNbb3F+GseLoUg00aQPh9n2bmucTklSMoQkh9NTkJNuc7qTzaZTA2qaUT/y5EtnGPqv/xP8e4QA3Yt+Abs/HiI+O16ueBT0FiBI+Nuto1VjTIfcWY/qLYMY9qalpCgavKO/+d6vnr/0lx+tn3IFEDjwHDyz9Jf1K3wAfwPYRevf1Rge5CJpfuuAIW/hDY/sEhgQ+bu+/ovOO/A/BgtI0nWurn/7Bl9NyF2eOWWolm+TxkCFb/ALdy/ftcefVCT5BlyWkqDWPF9jAoL+S9Pm3rD3OUc7APy3PjkQCTwXHdrCqqIVyZlTPmnadDAuPejqwnJnJl8/1/Kj1Pr37NmzZcsWASCtuFgdnwAAGA4o5kiBkASAHQ6BQgIiKZxAklFOS1GWwPGEBA3Pg9Pl8wb9IIlup7unuzsSipaUlPzkJz85Kcytq6vbvHmzIPAVleUGgz5MyWze8ClAP0Io7HZ31dZGQ6GCgoKrrrrq1BSxc03WrFlzNCvcm2++uWzZstNu+h9F679kWpnN6ZYQ7K85MHFqWXFBxoDVIWLY7+6+7oJ5yy5efEkows6eWiqjyKdeeW+MWn+GJYHleKvVcTRDTnFO8sUzy5GEMAwEQQQMpJBdCg60tnXKZDRN0yRBtLZ3zpk5tamlXUbTDCNTKuWDNofD6cYA9HothuGzZ0ypb2wZHLSp1eqiglwcx1at2TB7ZhWGwcH6JoZhRFFITIxvbm7HMMwYZxi02cfiSHaG5ILZM5965sUzZusfutPIO7HmghFxP2YOmrgQnr/gBPd3doGza3Dyda49H4PaFFQzXblzCm/6c7PrI1iyGCgKcBxKSv48bRoQxKzW1jvyi2+3OSYZ064YVHbJiD01/we9TphxsxswLKkAii4GkffUrn7aN/jYs80Q8gEAEBRseh1E/p29nwhIWlb2k/zUiX9hQwu81i+5cFzzlq2MGqIBALg3VvjSB2DT6xdihNOU0VcwL65p419m/PzGPR+bEfoEoGTBw/DunfDC1t/u/t2TP0pbf0VFRXZ29pYtW/bv2GFITE4pLSEJGpcROIdMtFwSJQEHD+IwDMNoTEIgCMjBizIZw0fCOl6gMEKrk/FIuX3T1qA/YDSZFi28OiMjA07GpwUhNGHChMzMzE2bNm34alNaVnpcZh6hkJ+Umo8QAlHs2L/fOzCg0+kWXnfd0Rklz8EtlmMOut3upqam7u5uu90eCAQikUhjY2NLS0tfX5/P5zum8K233lpTU/PGG2+cHeJ+HMO+2LqnPD+jc8ABWjXL8W0d/QRJiKJ4wUW3/fTWq/sGHJ29tgkFma/99SNKO7ZUP7ygUsoFUTqGGW1SYdozD/5ckiSWjWp0cQDw1fo1H334b4TESDhs0Gv31dZPKM6vq29ITDB5vX6NWmG3O/r6rAhQeqqFIAi/P/DhJ6vy87JxDBN47lBDE0WRFEXs2rW3sCBHpZTjOO6PhFOTzbt3709PszAMFQ6HSYr8T40Hnh+R8+M0af3TlkJ7DdhahjltyoKCubD1zeEvLroIZt02a/dH/tZttSdy9XkI4KGU0uLUidaIL0MMvMho6v1tB4H/sLHxmJITAfYDpANcCCABfAjwbcrHi+6DXe+Db3CUihYk5HAq41dxqYDQH1q3zfRaN138q38JfPvGl79TTm+B4ksyq9+62lJS7rW2quMfc3VN4CIFAB/AYbq6Fejx2see+P0f4EcpMfhoa2v7+uuvrVZrWnFxUn6+wAsKjGA4HKNwpYzsDgcBEE4SgAFISOJFjCJETlSIYT7gq9mxm2GY6dOnz549+3s2o6ura+PGjR0dHVllZYm5uRI6cV5UhBAg5O7ra6mpkcnlM2fO/D7NOEPS3t7e2tra39/vdrsjkYjdbj906FBHR8fg4OBY2H6GlcrKyl27dp1G9B9J61cq5KIoCpJE4jgaw4tkubGlTIjB2tElEQJBhHD0aJeQ+3957TMP3IBhGJIQhn8LhggBRWKSFOsATJIkjCQBxxAviAJHU2QkOjKkYkcqP2l0xTFseCJrDBQMGYoIJElQBMGSFIRCBEkJAg8jxxtgGPT3D2QXTjqTWn/G5OMT2w6JKg58ttEWBN37nox4bfrkxTNuHsq/iOFAK463uP0RsFclIdB7YH7dF3dPWrRg5wcLASSApwGyAYbSPUoiAMSM+l0Aw0w4Cbmj4z4ArJl3D7z3S2j/BgAeix3a9Bo8tgdu+gs8NS12HADA0wfVb2UUX/Jcw4aKCfP31q5+SxmXaMxYYG34dvChM849dy5LbPRnZ2enpqbW19dv3LjR3tmVXlpGm0wSAkSD2SjX8bJ2jz8Y4QmaAAIjCFySJD4c2Ltvr8iykyZNmjVrll6vHwWGRFEURZ5lWZVKMxI7G0IoPT19yZIldXV1GzdudHR3W4qKNPHxGEFgh8OyEALgJcAACAzDMUAQ9rg7amvFaLS8omL27Nmnl5LhlOX1119/9NFHT0tSxpFk9+7dKSkptbW1BoPhDOr+GBaKDIWCCiCO8ZJTLIZhQJHw3XUDReJOpyvgDyYkxtvtDqVCoVQpQwFvQFKsPsROy5QnEj5eEC3plv3PvxGnIhKWXD/g4vfWNlVOyJTRNAAKBkM6nY5hmHA4LJfLCYK0Wvvj4xNCoWBNzY5LL50fjkQ4lm1qapo/f35bWxtFUXv37lm06OrWtjaSIEym+D17dk2dNj0YDH6+aqXZnFRUXJycnByJRg/W1U2ePHn//n0TSssIHNM+vLn9F5mGeMML/97fte32F/60bdvmrydWVumNST2tB1JzjuX+FAVuZ7NDw7EjmmlOzyscJeVWwQWw+fWR3xAOKuOskstgxaPfpj8cQUSAAMBSgHcA+nd9cAkABvCQXBuv0C3wDa6ZfC2IAtAMkCP5QmEQdkNCNpQvBIq5q2tvJkE/aD00fKuOXThF4XfFYEiB299buOvf92589aLDGWlcnbufy5t9ccjzpNrUlTbpJYMF0iuAj7qr39YD9Nydt+XO6wF+1OgPABRFlZeXZ2Vlbd68ubZmh86UkDuxrFCTABgK81xEEAEQAgQI+Eikr6HB0dNjNBrnX3XVES6EUXDf5bZ1dXdrdWqjYNSoDRRBIzh2noj9SZLkpEmTsrOzt27duvebb/Rmc2Z5OeAkhmGAEEPiQBM8AAASo2x3fb29p9toNM6/9tozQclwyhIIBM4o7sekr6/PYrGsW7fu9Cx0RBaEcy6hKZIEGcPwPI8QkjMMI2ckSVKqdXoC9HS0IB4PhWRRr0+IsnlXFx6wa8yS1NFh1alV+bnZjQ2HCoomABKRJCGEjHE6hBAgiIsr8nk9Trv/hhtukgROr1UDhmVmZu7YtmXajNlI4tPSru7v687Jzm5uOiSXkXPmzBF4Tq9R/ezmWwAQEgWBi1IENnlyBc9FiosK2UhIIaPunRZvTEoJBzy3T27bWfmODMNTM7I0OlM0EkjJKua56PHfnQFzYSOTkJ8m6Ecjz9hxqaNNDGoTCCww6rFTI7wL8O5LDnhmDlgPAcB8beIvUyfCrvdHXHYcLZpEMKTCvs+AoHpEwVR4IQwL/SOFjLt74ZmZaQAXAHxWermRDaGmTbdV3fDQzvc/CTrXAyyoX7ce4C2cmpA9zVC6AKbe+M2Bz28gaPjRSwx5tVrtlVdeWVZWtm7t2p3r1+FVk0uKC3UMnUiH7TjJBcJe22BH3QGlSnnppZdOnTp1dAOOIAhurzsY8gOGzPEmQRRYNuzmOY1SJ5MrMWwYav7YnxqN5oorrigrK1u7du2ezz9PSEnJLymOU8mBlvV4w0oQre2tbc2tCoXioosvnjZtGo7j51RnnjLj/8lKWVlZQUHB6TH74DQQsuPn7YsvmOLxBZvae7UqhShJAzYXiNKFsysiLNfVOxhhObfbR9EULwggStdfNe/fH38FFJmanMDI6JbW7rtvWVh7qE2UkMcXkMnogw0dAKi8JNfh9l1x4ZSP1lTnZ6UqFbJ1X9cAQZAkkWZJUMoZS6Jx/6G2Abu7ucv+zF9XjcQU/uy+Y49s2H4otkDcvu8AAMDKraM98uptxxxYtfV4QuFNY+/Ch+s3HY5g2rERdgAAQPUo5aeVZeWmGM+krf+qP8JnDw5/zjIBkgpg1wfDnzWkwtLXoG0HNG+B1m0nUeWdH8CbS0DgAADmPwybXoOIb0wXppRBfCbsXQEAcOEvYNf74D+WaOnyzKqgq2vzSEahxDzInXVB/6HbuaDcN/gTPloblzbx2j8+vPVN14E1qVz4dwBF8+5J+frldQBgyrocSbe8vXLRFSXj6H80arMse/Dgwerqao7j510wU6NR99vcu3ft4jkuPy9vzpw5J0A3hKJspKOrc9BhN8Qb4pRqdyDs93kJgohPMAU4ISxiuWZznFqNj8BSEDvI83xtbe3WrVvZaDRvQpkyPj7s9/U2HgoGgjFCtLMGsiclX3755SWXXHKma6mqqnr55ZfLy8tPi8GHyb2EHYbIAQOWAwwDkhgykBL44YMABAEYBrH4uxjBTiQKcgYAgSgBQkCSEIoMRWDFilEEAAAvAI5DlANGBqIAEgJGBoAAAYji0H8pEgg8OSe13+oePU/W+Sv3L73otsVz84rKz5jWHxx57anQwSgRa9OWQPMWwHBw951EdZOvA5VhCPcBQJ88VtyP7QQcibJLyDke9wHgRkAhgM1HHZED3CdTfZ0+aVfeLGj7Bra+sRFgIwAseQ3+cRf0HYQXLnlm1m1w/f/CnNsXvXxNim/wz0oDRIPgaP8coCSpcNE45H9X76ZpuqKiIj8/f+PGjatWrzWbE3p6+lNSLJddPeTDM5qyL0m9PZ0apUypofRRrdsVcAt4MMTjQCMgHYM+nMQxhHZ2dJi12qLkZIamR1L/SZKsrKzMy8urrq7etXNXvCnBOtCXaDYvXbo0JSXlnO3Ds+BfVFRUdO+9906aNOl0zffRlvXnYE9+/MXmxXc+dTZqkhCI4lBgwfEOP77AMTvSmE6DWB5oEgCA5YCmhtm9CIZBlAAD0Azv+KTQGCJB95k0+LAjk1MXzoM1z4wGxEoD4AR4ek+mEwU45ZVK+UL48kUAAJw8vtnpAPN1Sddj+DH7wASAYtIiw453ofmo3Cxxad/J37v1Ddj6BrxzRxxGaOJSIXMKKPSg0P4pGlr06aMw6X/GQf945FWpVFdccUVlZeXXX3+9cGFFRUXFSJ7yMewWJcnq8R7o7MIxTO6DeLWS1iopnmWQyJIgiCRO4wQa2uJDCNn8fmcwmJ2QkG40EsOp/7E/1Wr1/PnzJ06c+NVXX80vXzB16tRzzcJzjIwyO54WSU9Pv+aaa2644YbT+LpFgSdI6vhTNXXtkSg/d3J+36C7tdc+dUIWI6PWbjtYUZTO0FQgHO22OvUaZX6GWRCEU0hkP7pE2ZH5tUQxKy1JqZTXHWwFmgKWA4IAQQBGBgAgSiBJMGavTZ1em5xg1CjpKMvvb2j/zrlAGLm2+902iqJCwZAxIR5wGaad9tA1Ja/tcRr1mvt/vvDjNRutrpDbG2BkdLolYdvueuQLtu94NRhmS4oL8MRLYVi312FTXpxO6B+JFBMA1PEQYzgYVmgFSCIwqiHHnjGPo++o+fjJLNY08UOIL1NB4FiVfxrAjMIL1+54t/OYyRXgd+kVR+8lWAC85YuCNf86voY3kAjOTnAO3WMZALr48XGsH0XMZvONN944ulUBAcRSevkiEZwiQEJhCetwBpEgERLu53kRAGdIkCDmsIkhwABDEhIksbG/v8/lKrak6FVKbDjP95j/T1JS0pIlS2KpXX5Uc7DBYEAIud1D6mFSUtL06dOfeOKJs+DXjxCqmpAV+2FJNFgSDbHfl80YMpCqlUySSQeH03WdzZ4pL8nNS0+yu7zzZlVsqjlwwezK9r7Bkty0VV9sA4pISjDqtKqGxg6gyLE4HXE8f+hQ8wWzK0mCmDW5ZOuO2m+tTGoFFj8LCAJiWoskAi9AnObZr7sBJL/Hv/zhPwFOAB5zP0G93daYq1LWnF8CQQLPwxjDHU4/9NtHSIaYPR1qV414VVIhZE6G5upjCR5OKLTi26zr5oJjiZpHF+Kw3sFHgDo2ruc9Y8Z7jHr4Cey7IQt7zAUNg00b2eAJY7XUAL8BeHoc4EdV/0dn+Q9HIm6f1xbwAcsLrEBQBEgS4BiJ44lxKp2M8PujQKCuQTelVUs4jmOSJEoIJ1As63cgGFajXYfq4hlVUX4ew8hGUv+PZP0+L/ptLFMUwzB6vT6WyzAUCrndbrlcXlhYmJaWlpiYqNVqKYrS6/U7d+58//33YwugvLy8f/7zn2cnngvDsJqamoKCgs7OzlgezaysrJHccwGgvdeelRIfiXJb9jRNn5irVjIA0NHn0KrkBIFrVfLT2GbroFNGUx5vICXJhAEkmo3b9tRHI2yy2TRr5sR9dS1TSvNwAIWC2bWvAShq9LvxvFBWVtjVO8gLgtsXPHZ3ASEQj1J/SQKCx7i9iDENCNMoUSgAERa0KpDLAADoU9yoOA3QnwoQGi5l1UJV3GfBEQ39cVU3uJo2A8CwBvcTtfqwq4BMBdExk4DnzoI9HwMADpB3xaN9n/7u2AiT4ktg32cjrJu+YwFInLf8Ab+jOWCHSVcDF4GAA9gQdO0BkQd727FT1TjAfw+1MBwJ9vXZo+GQRimLN2iySMwTjoYiAgbIQNFygpYraEkCTBLzjUZGK/P4Ahwn8LwgUkAySgbH3D4u6nJSJG3z2a1Wa1lJcXKSGTvPORhMJpPdbtfpdGq1Opax1u/3h0Ihi8WSk5NjsVhMJpNCoaBpOj4+PjExMTEx0WKxJCcnDzu/vvvuuzHoLywsXLFixdnB/SGtv6oqGAyWlZVZrVaTyTRKYVGSegfdbl8wLclYlp/m9gWbOwcGnb4Fs0t/9/KKx+9aeHrb7AmEfn3ZjDc+WN/U0afVqNRyZsG8KbSM7ukbJHFcRlFOp6e8OFurVe/ac+jE+ipF1h5oiTNq/KEIz3JwtEXRHxT711ptDpfLlZqaqtNph2+PYwAkLi7rRk/f5ziOa7MXnVjZH5Va/jRAPwMwbNjArMaNn0kjMnQ/3rbjo5CneupNxxteTiD5c6Gl+lQaKglAKAAgEaC6dtVzWVOfW/AwdO19p2FDa9uOJwEASWMNGJm3/I9b34KuvdC199tuTp8EBAXFl4BMCRQD+1dBjCwaoXEMP0VoAAj7AxRIMoWGlQS73aHT63QymQajKBqPChJF4GyII0VcQLzPEwzyvEJOBgNBtVwFBDg9YblaLkgUifEKSo5kAheODFgHk5PM53vPPPjgg8FgUKlUJiYmms1ms9mcnJys0+lOTfWO7WlXVVW9/vrrWq32rK17YtntCYKIRCJ6vV4QhFhm3WOmB4VCAQAEjs+pzD/6VFrSkOfik/de/X0WncNYBwgcw7HX/72WJAmH2yci9NcP1oqiBKKEk0RNbQuGYXUtXRiOYxgwGmU0yo0OHSzHA458gTBFEfwxJWX0H/++juV4nCDE6hZpBLhoa26QBA50qtufeNti0g6p/CfG/jMJ/cezN9wHQANMZYMPATgB3vru2XsA+gHS6r54DOChhJx9J1ufIeXbbVhJAHzMjyAOFbYCGDt3AwC8dCUANM25Y13bDgAAufZbx6GjRRP/nfkpZzoQAHs+ORamYiFpR2J9c2fB5b8FLgwZFeMgfmrCsuyK1WsYGTV9aiVDK9V0PEYA4gSCId3eAM9HKY1OkrCwwCEewzBCp1G4HE4MgGQIdyCEC6yO1nEYQRp1vCBionSotSUQDBjidNnZ2efzWgg98MAD8P3yc31nPZybq9Vqf/WrX5WWlp7lB1EoFG632+v1ZmZmtra2WiyW9vb24uLi4+1+H374IUNRM2dUOqJ4KOhJjU9sbW3NzMx0uVzI6/M47DxN55eVsVFRp9kTjky2BvuUSI1hYFy1xn/5TIOCdASQIUkrD9mc0N4AACAASURBVLSLEX9Hq5A+t9zj6B0BKkRREFs6j/M8xDHpqKAfJEkIICpyJ1QZBUEAHBdEURBFOA76H3r2rbF2mZz5aM3W2Drie3b+GfFk+BPAc4n5DWrTs8fhPgC8DKAEIHNnTQWoPLjuwpO5cxHA0188qzoS/1V1A+z7dKwXV90IBz4/dmkCANHgYwA3Avyh+u3hlyCXPQA73//2z5QyUAK0bD3RlLgVPn8KvvxfaK8ZB/FTE5lMNv+yywRB+uCjlTU1O71hPyuyQV4QQNCpVSa9MchLpJzUyGVxcXKNhomwnEFhjKPjAu6IkiJTU82kkjYmx7vtTpfdum7d+nAkPHfu3LS0tPN6L/cI3J8u9dxisdx0000//elPz/6DIIQMBkMswWdOTo5cLo/h/tEv6IgnbnpW5ufVjXlV9xJgCQWCJr1eEASdVhuXlZk/fUZGfp7f5xMlXq7S8yLKNGVTEpARr6RRBwPh2jbfgDe4Z08nq0ulsy9JnTZBCHMUNoIPTCxpzNj/nYdyxjbNU0qWDTRDwDHsyU2X/drg6ZsP0BWwAwANMEaWqSqAOSIXAngKYCFAWV/dJwAHx3DhRQDvb/6/paUL1hhSjz6+qGkTI1NSU2+aZi64e8Vv/++Z1v6uvYDjQFB7Pn7E4rUWZU+vX/PsU9OWvJx/AXz1p8u91qtJWeMdGc/nzED1Y3NVJigYl1OFBovFsnTp0sbGxpUrV/YP9Gfm5JnjTBRtYGgSJBSnVUQ4TqWkOVZEJGhpGaEi2QCeyBhDYri/z6rSaSKh4KG6A4FIsKKioqqqymg0njVb9nm0jHj55Zf/U694z549xcXF3d3dCQkJoVDI6/XK5fJhsj1j8OHWvtqmNtBpSuffKTX+oWEwrCco1h8ExDh4ESMwrVa7a/fuxkZUUiL09PbG6SRzYUlX70AmjYflUmePY0JpKgZ43b79+UVJAi+SSgaECKDjNn4kEXgRcBwwABwf+hGKgkIGEjqM+ADhKFAUIAlwfCgnjCSBKAJBgISAxEFCgBDgGGA4IAQIAS+AjAJRGkpMRhDAcUM3RAAUCRgAywOBQzgKMhooAjAcMIAI+53YN0Ecom1jZKOZuP8D0B+XBo0jxigHCGqFTG285pnOjx+OAIw9ZScCmNq0uQLgEQAFQEft6rfHduGmuNTi1FLncd5EnwNMdPc+xoYIgMcBXE+UH97RxZ5TaNW6JLplC59UBAEnuLpgyvW+xo1pX754M8CrXCQ467YhqmqEQJ+cE/HXrX32HZnyzssegs8eO2r1yI+Dy/dRbwmCKCkpKSkpWbVq1f69ewaSEqeSk0hTHJAIWBQMcTTgNENp5QpcQYhRkYkjAMcpQROKhg/uO9jU0pSRkfHTG649ssk5jvsjLSP+I2KxWBiGycvLAwCO44qKioZdk+GA/fya0rsfb7x87sRbFk7u8um3BertPhHDMMAgD1cWsrqGBqtao8UxEcfxtLRUFHG3rv6UDFG9BzqTizPjKs3xJi0C0BkUFKmSxACG44DTxzuIJycbywqz+gedkSjn8Qftdjfwwm23Xfv2R19qVApBFAOBMHD8jTddtaeuRadROj3+9i4rABji1FmpST1Wu1at7OgZ0GvVKqXc4wt4fUGlklEwTGVp7lfV+1KSTMmJxgGbq63LeuGFVV5/MMJyFEnUNXZKPD97TkV3v33ZtZd+Vb33QGOnzx8EQbj6mvnBYKS1u5+mSBzHczMskSirVMhXfLF1xGUHNpovw+lL1XKMxCiLR5IFj0Bq6Q2t21dseOkUKJ3+rdB1I+nziF8JMNYYwcJ5IArQvOVLRp0Rl5pTMO8EiIwTWxo36SO+CZ7j7H3XvQgfPnh8LIIS4P+SCpVc5Kr8OXDpgyByAAAY/ngF/cRleeP4clqU08HBwc8++8ztdhcV5BcXFFIM6fH6ExINPCchDMc5iSBxRBFRPthU37pvf51KpZozZ05hYaFMJhtX9v+DMlJIl9PpjLEiC4JAURQAiKJ4tAs/QshoNALAqs8+K6iakhOv/dVzn8zMZgiNbkJp6WbvbgfHIQyxSLrCpc0qS0WSULO1Ln/itJaWZl1qjl7Jcj19yQe7fLNSw04uaWIeFwgzanlLizspUb6jur22PzASh8/5LrMqCw2kr2zKvLMI/UmFkFYO3/xzNOi/7SlYeKo9ftMr8M/lJ3dJwQWAJGjazEy5gezYGXS0n/AKOQAOcEzI78MAvwf4v9yZv+jYBcJ3PZsScuG3O+AXx/IlPf7UM0888tD4x39aoD8GEwcOHNiwYQNFkeXlZUnJyUatWkIIeOT3ByUc9VnttXX7XC5vZWXFzJkztVrteNedUKLRKMMwZxn6j9DweTwegiBYlhVFUaPRaDSa44ut/PRTKq9YPTC44NEPur96PtTnaJZCGhEdZHqQD8/VmVIYo0bJQiQy6LEx8kyCIBQU1bp/Z1x2Tlz1TltWqtfvTy7OsdqCmZkGQ7y5bsu2zOJigylt7GNv7MfPBZEkoW73lpGg/8wYfDIqR4u0uvlN8PTB67/+PtPNSV9R+VN4904AiObPhp3vjeWKYaOQ3wP45vF97lcWQeVisJQ07P3UNtA4NxZdjOHDm/W5yDiynEa7BIZhEydOLC4uXr9+/aaNW9NSLaWlZQmmOLlCxgO/adP2zq6uzMzM229fPKwb+7gMK08//XRCQsLy5cvP8guNhemO7tEfe+8iYFOY0J/rewMdA7KwW5llFnt7dDp196b6xIrsRFKnV0kIhIgoJCeBs7oFk2EYRWgd3rieajEp2S7RPoyuXfVNckaC12pT8XuzZs2QKdTD1ujyBSNRniIwk0Hb0NFPEWReRmK/zWN1evPSzV39DpvLn5OaEIpyRVlJ5+kbPzPQr0saaYMXAICPABsETcJI56/HsHiM/DNJAzccO1ByMXScvM9MzGszpQzqvzyp6xYDloITL5KyWGPuApj98cOznV3g7AKAkoprUMQ/RCxRfiW8dfP5ojuf1xMAQoiiqPnz55eVla1fv37t+vUlxYU4jh+sP0TTshgvNMMwP2ALz+l9tBj+3nPPPZWVlZWVlWez0zAMq6urA4C0tDSn00nT9JH2sCwrl8sTExMPq3sY8g6UpCVlVOQ5BnpJkDc2taWkpkyfWLa/a4A1MRoGl5GYQqPo+qLRIiFJZJjM9MzMLERRQcA6vtiskNOmzMwpF87jmncTOqOKVLIht1I5TPqdOK0KDq8Vi7MtMdNIcoI+OUEPABNyU8a+GjhnB+EZg/6R2DRxAjx9kDUN6taMdHU8rdTpkiC1DGgF0PKjF42ApKfdPd7++udm3FLktf48YH9frt+t1MHeFeUAObHMiMfLpEVQ/TYAgDEN3D0n9SiJWVO0fjukVwCtALlmSduOiK3174DdCAgARJz4do9lwgLoqz/HIWPPnj3Z2dlnM2znzKn/OI5bLJZly5bV1tauW7fO5/dPmzp17ty5KpUq9q3+gC37GIZhGJaQkJCWllZQUJCeni6TyXQ6XWJiYmZmZlFR0fGMN6NgEIZhfX19ADB79uyenh6j0Xg2u27ChAmxH1qtdjSgRFJjUEbz9o41Tx/YfyhxoN0yLSiKTba+vKL0FA6jOTFIkwjHcb2SxrNye0C52663tH6VkZ5hiTfPuXya5PVn5Zf6bd3tkkJv7wjRsrzyWcNW1dnZGYsy++CDD6655hqLxTLai0haVLf5z0XZyfsae1Ryevv+1ukTc/Izk3770ic3zK8qyj5Hl55nAPpTJkDLyOT7pAwwHC64Cl4Zkcn4z2wQbC3DZ/oF8KRMsLp6oXufF4CLEUgwarj2hZ/t+TiXpD8onAch7/TO3bN79j3HhoZ8hwQWKBkAQMllMbPP2OUvVTfCv+4FR4cBgAB4C2DSpKtvPMzOBjh5JE2NxtUd6j0gntuQsWPHjoULF3Z1dREE8YNBxtLS0qKiIr/ffySb4A9+O/fQoUMAYLPZbDbbrl27RiqmVquTk5NzcnIKCwuVSqVKpTKZTKmpqXl5eQkJ31l2NzU1AUA0Gp00aVJPT89/SlcdpVIch9Sk1KA32NoKtJwDZTpy2ZQoXkFh3KCDjY+XRF3Q45TTiGnthanTkpy+y3RdTPpkvUrBAuGsO1CUnLxzw4a6Ts+8Cyp9bjZOIWOjUdlwOxxHuFHvu+++Ey6YkHVF7EdFUToA5GcOmYDmTSkoyEz6MWn92dNh/8oRz17/v+B3wNuPnPLtn0+dCGwYwp5+gN/EDkUD8MH9v4z9bt4CAEYARXwOnj/nEnvbRVzYwbOvduycoYqjtr9zNJ/cLwFCANMBbhmpshm3QNsOAFAAvArwOoAW4PJJV8Hew6G8OdOh5l8A8E+AG99YsnjJqx9zYeg7CAIHGH5Hzb92ApxTWelomu7v78/NzW1tbcVx/IcBkRiGURQVFxf34yHdbG9vH0uxQCDQ1NTU1NS0evXq4b9/kkxMTMzOzt6zZyg9am9vb1VVVU1NzbmGWRiOe9zu4pKSzAz08VtdF18WZ6SLwz4PzshUyE/UHmAGBgdRwJeWYpq/wOeP0EqlIcHEShAOBsOA5ZeWHjxQl6WWJs0q6vL16JWyqDI60HcoPXvScAsMKRKNUhQVI5bAcRzHcVEUjx5gJElSFIVhWHCgP0KSOE1HeUGvULrdbr1ej2HYnMq8zvqDHp+3ZPIUmUzm8rRpJWN1275JBRW8JCmaW9jkOEalcfsjJrMJCw8QbEBEKMKY2QhL4oRIkHKS9NFWDGFaAXpsLkN6omRTKHjepWCS1JzXYRcTFGam+JyBfrUJwiPnThF4ENjRHU6/v6wEWGlvBXtrL0BG/tx0gnp44pVzO3e3pZStemT7oqemJtnaXl7wcMHeFctzppes+2OZQv/TsOf3x5MRJRfDB/cDAALAAbIAvDf+Bf5607cFDrt4btQmblPoPv7H3QAAZVdCRgXgxJzJ12kCjmfOvbzsnZ2dOTk5bW1tPzAF+cfjuzkwMHBa7iMIQl9fX8zac0R27ty5fPnyV1555Zx6ZEmUDDqNXqdjETahIiXKS5RGFVi3Qa/VCILIxJvsRXMTwt0KdTSkkXm6Bj0cZ9aqFMYkmZqT+X3OAWZScaFLlIJed4Q29PV0ht1YxsS49OHqau2x56YnNjQ0xCLLAoGA3W5PTk5WKpXHW9LCPC9niC+2H+wcEJZcksswTDQaJQiiu6cHAoHs0jKnw1FbW1tWpoyApqCwwOf1CYC1bt2ad/EMPxnFIz4Ego8PqmXyzg6HWt3N+sN+nQcX1A4HZyjwYojoFwVtD+ns5lVq+cGe3oQJBQ2DvUre69PBuQT9mvjht2cBgFZAwAHpFbDt7bMzXBpKF1wdcD3ftOl3AC0A17ZWw5s/09EKjUILcWm/n3RVV/XbX6dOXB90xoc9z/9mG8uG4OBa2PQaCCxkVkHbdjnAHQA4wH8B9AHcXb++EmA3AACkAyxs2vQ2gB/g7bl3weeHuZlrV0LtSgC4fsmr8I+7s2HG7afa/tOuecnl8qPRv7W1FcZDnM5D8Xg8Z/T+r776amVl5c0333xOTexEawfq6Q/s3V8voyqy8hRyKj4vF2G4bmIpRtFx4dBBL5NI0X6HMyEtLtjcnpyVzvLRUBhnGEVqGK2r3jbNoEbGhNIJWd0tnSIezDIPb8SnSCIUDKSkpPT19TEMI0mSxWKJRqNKpfL4wnYf3t7ced0dL99970++ronOnpBidYX1ep3fH5gyfbrb5ZIrFHKlsqnZmZkRtre6LSkJ1EB73tSS7gNtVr3uH//eiQHxzjs/8/moeLOSkMuVeh3pMstV0eaeHamucjoOKEoZlmp4uaHP50tJzwwFuYK8mYLIBXYdgIv+gwaf7J+AWgmSCAQJQTd0NgCuBikwTEkuDD4vTP0J/OXKU68uEAbfmImaMTX01uwDeADgAYDe/nrorx+adl776QDA5wAPJ5ZZMeUjFz4MX78V2PW3AZB/XLzg6v56wu26s2PXXoBegE8AXgB4DqBIpOnD0J8FkGnroyt/BjIlWKZAweVA0iDy0F4DOAECByIFAB3R6PcY7Vhs/J2JT6mjoyNm+RmPdTq/BCHEsuyZruWWW24pKCiYPHny2MfGgLXX7+xDAAhJGOAIEI7hCEkAGEIShn0/xjDW05+Y2i8IiouqCjDk45qtbAoGHO50i191UUqFDycoJOJx8QMD9d5okhASVn+6KifbggcJSY7j3lByvLqH5zhbW+uWFq/HXlqYau0M2nq+wXFMkpCEJBzHkYREUWAYps8tkRQBEoTCApKkqG8AAPyOLkEQj/lCo1F/f1ffwotSK8zgGGhtivMlqzURlxULsB/8fVdqWlooHJHL5YEgb+tt8Hi9YrhfpTYFHb1RCGpo4qnH5mjiEkIhNhBwK5VKAoCQuH2HBi+/rGJqrk6rZmJvXD/pwvrN76vzFxI0KbjC/1q9Y1KOWZl86hy03zek65RQQzpDtHE/SMnMzOzs7Dxz98/KyhrX/c87ufnmm995550zXQvDMN3d3SaTaYxjY/e2L1d/9tGkSZV9A46Qx0oQhM3uzC2Z7OprJE5v6nMkUbpMrQLbs//gdYsXyZUajhdoEjKLpq1d8bbb5UpNy8Akzh+MLLr2Z93d3a/871OzZs6Isnx8UtqBmg0qvQlEru5Q05XXLB3sbt51oDk50bDwqsUNdTu7u7oXXn87H/F89N7ft+2qv+v2nykUCkptkcID4YBvxcov5syebuvvPL0pwyqmTS3KL1SYdPV1fTm5prZDDrUpbdPX266/Yb4Q9snkcgzDAMOZwertfFIcrcowp3XZBuQRt51yTS1YMCLOjhrShaFxNvkfN/QDQHZ29rjuf37JlClTRnHsOY2Snp7e3Nwcc7c/oezY9PnalR9QJK4zxPf29CiUDEkQLrc3JSmBJE+ntofjeEuHleO5OJ1OFFidVu3xhTCQgmFWoWASk9N6u1pTk+IFEbV29jEyypKUYHN4KIrUqZVKvRlFHHZ30GjQdPc7WI5XKZgoy6vkVLxRRxAky0YHHR4R4QRB4BhKTohDSHJ7Aywv4jih0ygYmsZO39NggBVVVsyYN4dj+d4+r1qG8Szn6HPpEwwp2Xm9bd2WtFQEiI0EONv+9WEBJClDnUqRBiPnwGkmq3DKqUE/Of4VjUtbW1tubm5LS8s4+p8v0t3dfRZqKSoquvbaa8eI+wAwbe7lt93zIMPICIKIZTkWRQkAof0dxOG0aDiO87yAYbHQPMAwIAiCZTmapiRJwgCThgYhAgCCICQJSZJIEqQoigRBCKIIgAiCEEUJxzGE+mM/Yu5qPM/TNC3uacVx/JuD33Lx72roP6qZtSfZDe1ntJNDofD2O399/XWvzJ5bsWRRAc4Y5BoOITxoc8lKqKCANbX30TStDLXhkmqCpIlo8SRFYn8kojaoRSSdcr3j0D8uAACtra0TJkyIxVWOy7kvTz75ZG9vbyQS8Xg8/f39HR0dzc3NAKDVauVyOUIoHA4HAoHvU0VVVdU999xz4403npQhBsPQb+5f/ta77wcCQYVCXl5azAuCPxDMTE/dvHXHxRfO/sd7n1x91XxJlA4eajLodQaD7ssNW5dcfzVJ4jtq9mZlpstkVDTKkiTJ8/yGjdtSLOZ4k9HnD2Rmph04cGjpjdd89OkalVKhUMhlNG2zOxb95LKePuvna78Oh8M333jNex9+lpaSZLM7z5dXydNkIOxdseKZ3RtWN+5smnrlVas+fl+vkCXkZzXVtVKAp2RlIiBlg818crY+yEZF2tnTrxM5Qqv7PnancYPPuMEHAKC8vPy+++5bsmTJeIefFzLs+kySJKvV2t/fPzAwYLfbBwcHWZb1+/02m627u7upqcnv98vlcpVKRRBELJ3v8QkRAUChUJSUlLz88ssVFSebYA5dcvHc/v5BuVwuimJ2VlprexeO4SkWM8tyLrcnGmUZRsYLQnJSoiCITqcLASCEpldVbNhYrVQpBV4YIuhCgGEYhmMzpk3euq0GxzCEwGIxsyzn9foEQcAwXJIkgiQ4jtPrdKFQyJJs5gXRfv6A/mGtP1S395svN20OpVRdbJEP9tUnJRdRAM7BBkqnaeu0hj2B0sri+HCjT5WOaCWGAeLEDjuXrSRYGW4yF5+awWcc+sehH8rLy++9995zy5NvXM6MeDyevr6+wcPi9/uj0egXX3zR0NAQK5CQkJCTk/Ppp5/GxcWdrPWPZ0NtLYfwMRvCY3RMQ78JAokiAOAEcR6BEoZhkijiOH7KLUaSlG5OsfKOth1tpEyemawPcLgiLpKQPLGvaZczoOvo6snNUTKMIk3rwfXZCMMQQuEOhyPdJiFpYtyIudUkka/bs3Xc1j8uI+L+PffcM477PxLR6/V6vb6kpOTopUNDQ0MM+lNTUydPnvzRRx+d2q6PJKEks5njeAwDiqIkURJFkaKpIYiUJIrAvmyKKmT49HRaRDBgHdRqNQqlAiiq78WXjDcvlWtUH67cnGRJdDv98y+qis0BOI4fuYNMxrBslCBIQeAxDBNFkaIohJAkSTiOBwJ+jUYby/OO4xh5mCY6xggtk8nCoRBBkjIZI4oCQkgURZqmeZ5HCMVCsSiKwnE8RmEdiUQUCgXLskiSAMNipNaRSAQH9OZOq9XH/s9P8j0+r0at/mBL0zJ/p/XSC/BolJJrsJhWDUgSBRwfcSaTJNHudKckJ9U3H1KQGoc3culVFcF+T/qExKC1p3792vQrJ4i1vSlGZInXg0JBuwe8FKtUMxiG+dU6Ces9xtP0pGTcyfI8EIZhZKdJjtmymzhx4vLly2+55ZbxTv4RyhFwj+0T5OXlLV68+JRxPyYcx3k8Hrfbg2FYOBL2eDyBQBAAHAPdBEGSBBaICCwvAYDD7kQIenv6cRx3Ve9uSqI7P/kMI/BD3eG2gci+ZruASF7CJYzetbd26/aaN976e3tX3zv/+Neg3bNqzVqE04MOj8GUtP2b3Tv31PpD7IDdvfbLTZu3bn/2+Rc/WvGZQh334cefWm2uhua2p595Tqk2fLNr3389+GuCVn6x7qvHfv/fhxpbZQrtnv11FKMGQvbe+x/hlPzjFSv/9JdX/MHo15uq482pf33rb739dqXWSMpUjz3xhyf/51ljgiXOlPjmQWFA0jkdTqBUosDfMDt9rqFBcvitAzaRi0QCbp+rX6FQtdVtU6o0psSUYf9ptIbV+9y6OJNKj6XSRMX0gmBPpw85a6o3vvPPxvv/tFm9oTsuGpKb9BqTJuK2dQ1SdJjFcMznDCj0Mm3/91Lcxw0+57q89957vb29p+tu33zzzcqVQwxLZWVl99xzz7Jly8Y7+UcuNE2XlZUtW7bsjjvu+D64z0aC0ZA7HI4olUpJkjAMCwVDKrXqSI4disA+3ONDCK6t1EqA9/b0abQalUpp94SQo1ZpmaRWyleu3bZ20/550/IvnDXpiJ8PhuEkSXA8jyQJAHCcEEQhFi9GEGRsBRMKBTUaLUKIIHBRlASBpyhaEASbbdBiSWHZKIbhDMOEw2GcwFVKpdvtoWkqhoGxfQVAiCBJHMN4no9tQpAEgRBIkggADCN3uZwKhQLDsM2t7jpr4IELMjCKUSoVAw3rvvKKC9JLogKnUMcBQgCYy94Tn5zFc9GRmFwwDJPRVCgSjdMbUVvbQU7+0ac7VCpFblbiwkWZBoPASZzX101zswH3cv5eKkx6AhFluhHcbr+kpNkBexpXGb/k1Aw+49D/45LXX3/9rrvuiuH+8uXLb7311vP3WcZdUU+j+l9dXT1jxozveyOJ/dUfXmNkVMxr8/BrgrG8pZivJ0KIIAg4f14rQkgSxVNuc3lu/KzJxVSQHxj0JuYZbc5BHBNSchk5qX/6d18UleTqTbKiApGLhPQEdLRRarlgs8hSmjmfThvJ8nB85JShf9zW/2OU0tLS8xr3JUmqrq7etWvX4OBgSkpKjFn3RzUTxB72dD2y1Wo9khHlewlO/emVFaBWjH9iY5T7f3bRrMmlvNKeNlEQxWgyaQ4ooK/bm56WdNPtl7k8KIrZnL0yS3Zha1soy2zl8Yjrm6CUzXAqhSDaRqfBHF2pJ38wn8H4MBpjX6Wnp5+PuF9dXb1hwwaXy+X1euVy+cSJE6dMmaLX661W69KlS9Vq9W233VZWVvYjGQyRSOSuu+5avnz55MmTv//dzGbz+KfxH1JiRKVa77B2ejpkyQbwEkjkkFwj72u2GuIwHgKW5BSIysMspvW09nMmVh0tLlXv6CTKlOEmZypwEsSdIvifl9B/9Od98ODBmpqapqYmnU73wAMPxOJZxmeCkUShUCxfvvy22247L1q7ZcuWL774wul0siw7ZcqUBQsWxPwxBEGIveJQKKTVau+++265XL569epnn3125syZd9999w9bIUAIvfbaa+++++67776rVCoffPDBu+++22QynQePzHIgSodRCTuFJwel/MzMpdzwzSEJOCn2IUmCUGTI+IMQqJWjF5cxmnDQaUwgI7osSckLAwOMQqYzpQMtfrrq6+Qc/Rt/3KNUyu+9Z1pEqSNVYRxYWwjRgZYvPROzy5XC6NG8o/bxeWPrPzKsOzo61qxZ09zc7Pf7OY6bMGFCUVFRRkaGx+OJEVotXbp0zpw54yg/rMSi4c/9dtbU1Dz//PNz586dPn06QojjuLGMEJlM1t/f/9577yUmJv7Xf/1XSkrKD3UCOJ7PtaCg4K677rr33nv/o9OehJnmjGLwuWfpT3yBEEESFE5ISBIl6aRGI02Rr739KdDUyTVKEC+aU9nS2dfdOwj4cD6NwbB1/3uBUCS2NX3EmCaK4qvvrW9uaBe46JZ97UDgQBAXziq32QYPtg7IZDQbCAGOAyBdnM7r9AJNlRfnfvzi8ozsPI6N0jIGM84AjWqUpj127w33XjtVrgp0dQUpkVAb5a4BT2cf/88Ptr/wVrnHI57ttgAAIABJREFUqkwA836/XZSJGR5cawG8wyko6GZ5fLa7dkCbLsqyppcUjPixC9zBfdVlk89PW3/sNfT29r7//vttbW0ulysvL2/69Olz5szhOI7n+VixcDgsk8luv/12hUKxYcOGl19+eerUqffff/+4OegYOS9wHyG0YcOGF154YXBwMBqNjvH1YRjGcZzRaLzvvvtIknzppZdsNtvChQsXLVr0A3uJXV1dx/N4NzY2/uIXv/jFL36xYMGCn/3sZ4sXLz4HB7/D7fvgg3WlZfnhKKtSMIkJcWs37QIMy0hJDEVYluUkCV0wrXT91r0FWSmeYHjGpMLdB1qaO/u+3UQ9WdwHAJL4as0WUMgBw4DnQEYfrx2rFDTHRePjzZFIlCAIURQoilJrDRbLwYENK0mZ5qqFc32B8N6DbY8su+iNT3e39LgmleREoizL8gxDq5Tyrl5bj9Uul1GMQvmvf/7DYDBkZ2XAmKLbUMilbhuoK5pj9HfEK0yU2mu9MC9+a6vE46KL6mLlPCFilEkXf2BA0DGCJsw76ZWNCYmm6Ax5A4wM/SfolXN8lLe0tDzyyCOZmZmXXnrpxRdfzLKsKIoYhoVCw2eDCYfDU6dOnT17tsPhuO6664xG4wMPPJCenj4+AZxHEtO5CIIwm82RSMTtduP4yQWI8jy/aNEiuVxeW1u7ePHiSZMmPfzwwz8YPeD1118f5eyaNWvWrFkDAHfeeeeyZcvGQsZwejeNTyAyelbVhNLCrASj/rV/rk4ym6yDzj6rQ6dTG/Sazm7r/oaOrPSkCC909w4qZDQrCN/X4Scc/dffntxSUychdPGM8p/e/sQx6I+pFZrMhYBjw7YWKBlgLPRuj/kqXXDjU0AQQOA7dtcDhg05MCEEgAEG23fWJZVeD0fIKE5k8InV7w8HSL/a184PtB2Ix8mSCZlVWabnw10ygk3Ygmuy4hqTXAEuIiQr/5+9qwyT4tjaVS3T47azuzOzrqwrHjREgbgQ9xvl3hgkNy43xO0SAiEQg7gHCRI0CQR32GVZ9x33aa/vR5O5+7GwWYiwS/p9eHhmu6qru0veOnXq1DkNgmYz0qtN7soR2alaglj0Q+9jAR5b49PfFT5PP/30dddd197e3vfBH+vNGIaRJPnxxx+3tbVddtllp570dwrjqaeeuvHGGzmOgxAqlUq32x0MBo+3D0jdgCCIYDD43nvvmUym6dOnnwJaIBzHRbGvLhu1Wu20adPuuusui8XSy4ePHDly48aNf7bCZ8rksT9u2mNPMBcOSjfq1DNnfnzBZWcxLPfjL7sj/qDKqBdFsTA3rcPhiTPpcRw/VN86KCtFo1YGgpE92/cD7YnYDkEA9DqNv7UTYBjAcaBW9uwlWq1GEESIQYQQQgiDUBARhkHpt9htakTocPwZDMdF4bCCCAGJ/xEE8FcVOwIQRiPR3uctSeEjdPiNJVFfk7a9zRH1eHPMcbps6wveGgriCoBlK1R6DifVCT8HGxBgMYDRQJzu0tODi+lVa20XXXmswoPero6O9tyC8gEp9UMICYKw2+3BYPC4Br/UJCzLXnLJJWq1etu2bZdccsmwYcMeeOABWQvU/xE7uw8AiEajRqPRZDJ1dnZKk8Fx9R9BENRq9dSpU0mSnDlzpsPhkAxjBmIfQAitWbOm77wPAAiFQk8++eSTTz5ZWFgoGQX17P8NDQ3SWb/zzz//z66TjobWoqxkkRNW/7xzwjmnffftGnuqLdLlfu75e645b3xK2pmDLzlz9ODCa298dNJFE2oPNeemJ2Wm256b/urTM//9+GsLT6TSBKEgO9Vh1qdY49dt2HGUHJxw/QUjWI4/nkIBqVASOJj5zlKAxOceu53n+Rfnfh4M00f0v76Upc/Li4TWtkZonV2rzbU62NZDdPOYCMfQkewEPc4FEIYcXiUiWAxgAAC7aHTptPFKCkwo773zg2NL9gNA1y+KoiAIOp3OaDR2dXWdwOCPRqMFBQWlpaVut/uKK66wWq2PPvpo70KQjJMLlmX/59gLQmlTJzk5ORQKOZ1OcPwxxSQ54OKLL1ar1d9///1rr732ySefDERV2Pvvv39i9+7fv3/q1KlTp06dPHny9ddff+mll8bmgDlz5gAAnn322QsuuOBP/waC2FZVb3N5IQD761qARpU3KD0UiT707LyHHv5vwbghuw7UvT3vy+zyvMYOF0kSP23e09LhTBtR+viMeUcR2Pu0FEFajTLenLZ4zWZwVC/HUXrWM9Pr6up0Op3T6czOzqYo6jdL/fqdZ0afccHMWV8BCMcUJmTnDpr36bIjqb8PKxIA4MFtWzIr8CyPNmo1B/gQrfGrAK4yQAAUQUADAFRR9VY2hCEMQCBClKTSdAZCSUy0MRg06U+0Hfp5X5ecykqnwAVBSEpKikQiDofjeAc/hJDneb1ef++990IIH3/88XA4PH369KKiInkCGCgIh8MkSaanpzudzlAodFz6H2khTxCEKIoTJkxQKpWNjY3p6ekDrhI+/PDD31nCkiVLlixZAgC44447br755srKypdeegkAsH379k2bNg0bNuzPGw4KkgAIef0hjVrFspzD7QcQrNmwU4rYAvTaA3UtAACgVdc2d0pqdF+Ubnf7AAAnyPsAAJL4YfVmgBCgFEcXw5WK59/6nBdEJIoYjvOrd/2mGhxC2NFG7vBsAUoFIImrH35PEIXWTveJvaDRYvK2N1myMz1uL65ggRoeYZFPa7gCX0IVEgIgkuk1NFR1/vfbtf9+ULHNGMhLOkWpH+/mwRVCGIlEcBzPyMhwOp0noPw9rJhD6LrrrlOpVJLV0Kuvvmqz2WT271egKKrn8JO0N5FIJC4uzmg0dnZ2Snv+vdM9SZIqlUrSj7MsS9O0VL7f7x+INbNmzZpPP/103rx5FEVJ33LCmDNnzpw5c0jysM2MIAjPPvvsokWL/ryXX/j5ConBWztdMaH3f3R8xI8/cEhSit5TH3rx3d9TcmNb1+/SbdA0psOY+toGu4XvClhNUBT+n0SKBC4u0WvrjMsnbEkmOu28+HMGG72JFl0ocsIP7e+eO48IJSGJ/+Fw2Gw2p6SkSEHgTkyPFA6HL7jggieeeOK1116TeX9gKT1omhYEISUlJS4uTuL37i0riiKO41qtNiEhITExUaPRSNGsAoEAwzBSNpVKFQqFBuLnjxs3bu7cuaIozp07V9LPnMDud3fELKQBAIsXL66vr/8TTT9I2XPMUdiIUigsCiKamW3VAYREQUQMB0TAiqyC44GAWAGwDM9maUxDE61paUlfVh/YpARbDtV2dblP+KnEwB38GIalpqb6fD6v1/ub3C31ZunUj1KplNRHDMNEo9HfE+RMxp+EaDT6m6u3SCSiUChSU1M9Hk8wGMRxXKVSqdVqyfF6OBzurhiU+BEhRNN0XFwcRVHHsg/u/51f+nHttdded911gUDg7bffXrhwYXV1dV8Ovv0mnn322fnz58s98K+EMSNDra1UA5AEEgsTB/1m/mvHXwkAAAWHme3EJNf+LvUfIdMdMfjD4bBarU5LS6Mo6qhmD5IMSBCEwWCIj4+3WCwEQQQCgVAoRNO0VLggCHLn659N/5skKIoiTdMmkyk9PT05OVlS4zQ3NzudTmnygBBCCBmGCYfD4XCYpmlpbiBJMrYCGLirHwCAXq+fNm3a7t279+zZ8+9//9tkMqnVv8t72jvvvOPz+U5U8O/DXQwLAAC8AAQBcDyI0IevAAAiNBAEEI4ChgW88D/rFJ4HURoAAIJhwHBAWqYIAkAIMCwIhAHHA5YDDAuC4cM/WA6wv65mOB7QDAiGD//gecALQBRBjDFY7vCN4QhguP89NxQBURrQDIjQIEqDUAR0JxnpJTkehCOHX4DlAM8Djgc8D2gG0H2diYXfEXHlhDUW/V3gPSK0SM/P5jiO47iEhASWZZ1Op8TjMQ2vWq2WQvaEw2Gfzwd/hXS7dLRVpv5+iL6fOo6FaqqtrcUwDEIo/S+KYiRyWBOqVCqVSmVs5QcAoCiqu6LjFEBubu5zzz333HPPrV69+vPPP/89mwEzZsyQNn5PgIgAEnsxKNTr1HfecfmiVZuUCtKWYNZp1bdcfs7r732zZPVmwHLPPXnH9r2Hpkwa+84XK1iG27q3JhiKAJ4/Y9zQyqKcF9748LGH/nGwvkWrUb37+QqLxZSZahtWlpeWlNDp9GzcfsCWYH7ynmufeePjoaWDdlc38Dz/8XdrAcefe+bwzFT7ueOGLF+/zajTVNe3sCwfjkYbWjrrmzsBAHfceKHZoKtpbLvnxotef/ebNZt2uV0+EInuXL9gzS+7AEAqpVKvVeEYdtODr0ajDAAg1R4/+fThNMvuOlA3ekjx8vVbR1TkG3QailIEQ5HG1q7BxTkMJ7z45segDz0ZiTzLRP7wLsHQ4V6K7e9Huh599NGbb775N19SOsBFUVQgEMBxXKPRsCwrCXqSq6/YiQxJWcTzPELIbrfTNL1gwYLXX39dZtt+haeffvraa6/tY+fEMEypVNbX12MYJokCUn9Qq9XSwu4IychsNh86dMjv91911VWn5GpJ+t4FCxZ8/fXX3333HYZhx3UUQApneEI+P0RoGd2b02YRAUnSwnEgCABCwPGAUhw+SSsJ4wAAkgCCCDDs8HXJ4h7DAARAEAFCh905cDyAEOAYYDmgUAAkApYHBA4EAeA4gOAw7UoO40Txf6EDJIN3HP9f+dITWQ4oSADh4etRBuA4QAhAAEQEMAwofpWVBQEgAAQRKMjDm9W8AEQERAFADODY4fnvt/Y2nvjXNVOnjIAQx4m+OqgIhUIHDzUMHVYZ2v6jqmSE1+sXRKRSKQOBkCiKWq1mj4erCcHbiw08Am1tbQWlwwek1N/HwR9T/iYmJra1tbndbulGSQaUyjlCBpSCefb9ETL+SpywSM7zvEaj6S7gx3i/+xygUCgGusLnNzUAJ7wZgBB68cUXH3rooeN+tsD+e/rNlIL4YxnAlmDuPkhDETocoU+Nxho7rESaifqutzEYDMOGlAschxcOxyBUKSkRQEEQMAyyLI9jUKHWYBEaQAgQEAV+oCp8jleThWFYMBiMKXYkAV+6rtVqYzLgETYhMtX2N0jLshMTEY74LfUElmUlyx8cxyGEkvPnU7sOu28GTJs27eDBg++///7cuXMZhomJQUcXzUVx1qxZJ0D9NMM+9+BNJ7ZG6fnnX+pZ6GSJtiJydx4CEMdwxXHcBQCG4yocAAA02sPLBaPBKP0YaQAjbRoRAAwHSWk5A5X6T5iXJb+ekj3P0WRAFCv/lKeAAS26nnCHkVgjGAxKnuCk0Pb/6/cE8YfYwwwgHLEZ8M477/Tc5VKpVHFxcWedddafFMmn3eFzeAIdLn95drzVat24q5bheFFEhalGq822r7ZNo1Ks3VJ9zqjifYfaMpIs67YezEqNL8lN0VCYSnXKBv+iVFqN3vIXP7S/Uz9JksfL/rEY0BqNpufkIaUSSoCgEFsoyFTb36BUKo+rxWOtjGEYwzA+n0/qPEajUTrM1V2WlJJ+53mogTubnn766RMmTLBarU8//XQs1WQyaTSaCy+88K677srLy/uTlsL2BKM9wVj2a0OMLMvucPps8Ubpz6LspLoWx00XjQYA2OONAICctMRjrQ9knOLUf1yiWeyw7lEkQYSFlJ0AY5Rhy5IVK4tOS6wYNBzQssKnn0Ly1HQCTSM5eEhMTJSm/2NpDBQKxd+23aXamDFjxmE6tttJkpwyZcp9992XmJh4xAbJn/0aEu/H/sxKSeg9f6w1RYSwbt40B7Jq6OS8c3+n/t913gphSEQIIZGgVUm8n2tL16Syrrjb77vLGfB9+c33V517MehxYFhGf8BxWaR0h1arlVYMMSKI/WBZFsOwmE/QU3Wbty+LpDVr1giCkJmZSZLkFVdc8eCDD0qRTf9s0j948GAwGKRpetu2bWeddZbT6UxNTc3IyOjLvR1On8MTqG12rN9WPX5ofmunR6NSDi5MjzNqeUGY9tJnL0+f0tDmkuaDsUPy5EE0sKn/hI3uRRExhiaNlRd8TFxCSqO3S4wo442Do/YAgjwi6KFnDDtQXZ1kt8kKn36I7r6b+qjw6clZks++cDiMYZh01veIKeFvK/UvXLiwvLz8iiuuiPkw/2sk/UGDBrlcLimuqt/vT0lJ6fscTxJ4UXby3kOtF58xWKemclITOV6IMGyWXh2l2esuGJlqt9AsV9fsmDimVJb4Bzz1n4BE8yv1C1TYIgidgo/3a92JlIoE6WHRY1AmsAzuCjchMmKyJgEgylJ/P0TvR/l6B4Zhfr9f8vRHUZTBYOiuBoz9GBCxKv8knH766d2dP/+VehKL5fB+pl6v7+OIll7PYtIBAK6ZPLJnHo2KOm9cOQAgN806KN0mD59TgfpPWCTHMAxFKQpXojQt4/Hv9TWX2UcRokJklU4/TQhGpQFv2l6bn5Mp7x31QzAMc2K6fq/X63a7TSaTzWYTRTFG+j1b+W/ru0nyXHtSHh2NRiWvWZKHlSMmHukgXvd1AELIbDZLv9va2iiSZFg6wRLX4OA0apYUQUJCwp49e+w2myU+vqWlJTklpXbPHr1abSDEgNas1WhUKpWIqhh3osJkCIVCkhYB93hIj5fPS1YgjBZ4SqVXAJKFnCpYH2UxFQUAECMqG0mRPmdApSBJrZ6O+kQOo7UeiACCIN7DOswKgESCIFGXVgj4sBQrHoqEPCFLcnxI0dlc4x5WNl6m/t+1OD0uCoj1GwzDICEqSR0ncKFWn49Whk0aQu9t8kRZljSbwxZVFpmG/50p4JRc7RmNRrVaLYqi1BO67/5JJ1Sl339nXf9JlHVUKpVKpfr5558VCoVer8/MzKyrqzMajQ0NDQihsrKy9vb2nJyjm6I7OttxhTInI+VgdRURZ3b4+HilurWlBUJIKZWNDQ00w/z4ww/I5UrNympXq3PiVU6Ho6PDNWx4U0dQK6gcqYqMppYmDMMUDQ3qmkOCieKUyH2oVZeRSupJksSA66BIqJra8bq6yPCL9dt+2GtIVobUXk1bjjPapMsJ42ESQAAIzL3lEJeXA4ImlR+Y7BZvMOSrZUpTUKM+EDrQxOcFtuyu6hv1I3iSFM4DwK7/hHWy6gSe4xiRZQPJML5LhXCMRu1qHVRDkBaXt+ijpXmDcqXDPjJ19jecgFFvz2lAMvSUND8xXX/M7Ee27DpZI3rUqFGxP/Pz8wEANtthLU1OTs6xDHVCETrJFBcM+N9bccBoNEUB+48JpZbERLVGI4piQmKiy+kcOXZsbW1tfEqKwufr6uzEMKyjswMhjGO5NCyjo6sDw3EqEsUzMlBVtdjSAXIzwnpjR32XKd6QkWEKWkoM+kST3VViDURd/oLhOc62oNbMK6KUQqlS+oys3gEREDmuTsmXeAgdoDpBxOPyODweRm9qUxkqs9JbaZ+b8AOsj24IsJDfrVQbZOr/IzUGnV1ukxIBCMyKeMEY/+Jj/3z6jf/wXLtJkzj/7Y8rx+gpRikiWdHfH3FcivjuJC4tEwOBQDQaldz4GI3Gnj795dXeSVxzVFVV2e12KeaaFEohLi7O7XYTBFFYWHisRQlJqhQYOn/aB5t3N4AwnVmQlpegrQx0qbXmn7fuiI+LU6tVnV2dQ4cOc3Q5tDodwzBqtTorK33ZsqrCQszldnZ2dSXFa3UWQdBwiFQEWx1ivB4Q5p379pCEJzXVRClAJIKESJA06JAosn7GEp/YWh1U2aNdu0PqPD6OSEMi0CFrTvlIev9ipzklFPRlWlM27tk76sxCXXz8/l2HMgsKnJsDoLO9j11XozPJUv/R3u84x2dshFMUhal1GBUW2kNIb7IokKO57sUH7z/jgnM7ur6ML9O5243JqcoBGq/jlAfLsn1X9HWXE8PhsMfjMZlMRqPxCF3/EeKkTP0nS+qXJH2DwQAA4DguNTWV47jk5GTQ67ktBHmTxQIwAkQZoFePGzLox70NU84+46empsGZFlpvwhVknErzy0/LVICMYKTdnhoJhxmajkQ4JHICgASOa/RGEacof8SXlkFxtCU7vrW6/Y7bKx0OGgAeIUDgNKY1AcRCCAHgaURmDsqgeeWIoUk6ihBEEUIAIAAUqOHiIvuX0/qSrupDZ190iU6rWfrjjlQTfP+9b8LegMvn7O/U2s/fL7Y8P17qRwg5DvEpdj6q0DgbW1+8d+ErL0/Up2aFcd6iTejUhJUElPZ8YgHqZAxoQpF+aDSauLg48OuuT0yzz3GcIAgxXT8A4O92mrf/SP2RSCQWVKD76Ov9TBYEYMVOz4pZt9/78lfDy3OXr9tx/20XNTipGj64WSNAMQyiAEWRqBVHa+I1ftTY1NTY2FRYWGi12hCMsgzKzc0J+P2g7cdOFnQ62DKMrd90SCTw+oPtSZk2JIgAAIiHO5qjNrsCIdDQFdy3ry0YCE48pyJCR/SZabCbqXnJiLOVnevDqnQ3q6FpWqvVZg+yIw89dLhFp9Hu2LWunzcENoBG9fHeZTQaFBilMyYseO07o10BbCWcxmQ2G5p1PlwJlWFTjBTkAdnfEPO8dAJTPujmtS0YDPr9fsmTD0VRBEHIBl0nHRzHtbW1tba21tTUsCzLsmxTU1NNTc1RmybWsiqSTE0WvJHgdeeP/Pz7n8fm621GbNGXi0fio42QIAAkICQhRuE4ryQoXsxOs4wpTs/P0bLRCBAxQRA2bdpM4Pg2MS3EKUtGZ4mBkJIijRGEiy4QoJlgFADEeEPhSEgUkLvDZzWq09Js404fZjIqBU50tLb+f09zgBQiX9TsrA01dkS6fB5vuilOmWQwCz5tegvD9Xd1wim75hVFMYponlC9+sDbHS1dr7xxkyrRpyTJcCReG9STzVajzSIPwv7cfCcsH3Ac5/V6EUIEQRiNRsmU8ChdX1b4/OWIRCLRaFShUEhSv1arlcJkmkwmDMPcbnfPZo2dA0AAdYYiBmCtyFKMKEy++9bLtu7Yc/5FFx50OMbHDV8V3kBjEFfgGA4BDhMyrCoFwOLtrM9PqhWEgtaSiVqt1hcMjc83exoC3qBgUpBGX4DNtoc9Cm8okphmYWlOadLaCdLdEE4utdbtbMxKUXk7art4ZfmQwWu/WKJUq/VmkyCICCEQ7YqKBFRiLYFWJaEUgJgq2iBBB6CorMJw2DddwskzNRgA7ttOjAIIgtAmgs3L9+3euH/a61e3N7GoAQeIB6AjKamSjCPkk1z9GVKAnRNY8ElUYrFYYl7bui8IJNlf+vPvfKTrZEGtVqvV6ldffTU3NzcnJ8fpdDIMk52dLa3PCgsLe7mX5kVKRVKdB+5Z0DwkP+2OJxZeMzqVTOALrMqmsGesvmxtcEfzbge+Ibw7EBo5oiA1zVBZbsVELFnParW8x82azeZEs3bbyp8UGqUxSQN4fl19WxIk1GqFDtd+923tqFHlra0d+UVKbaa9o+5gRlFKc3Wbv8MXp05wd7jLzji7rq5O7HQfrD5w4YUXKYON9SH96Qm5Tf6mLt5rUydCCIO+sAohs80A9vV3+zHiVKUACGHAwURr9usscXhXcnpOphTAiyAItVoFupmNytLfQEf3HnKED5/YHq9SqVSpVEqlUgrfBmRd/0kCQui+++6Tfg8aNOiIpF7UcTgbzg65GtX2wdnRz5dtvOT04qyKSgzCUJApizM0en1pDlVxRZHbJGbEKUReKCxKbKluDXpDFePM/ggmEjgUxXBdawoSKRFQW3YBnj/zjAn1EV9dszOzxGjQe5YvXSkIosUbh6xhgCv8Hi7CQkNOsi3Nrtcb6+s7DHo9hmETzjzH09HA+/225LK2qkNZqempZCYSBQwICjWVmaoP+SMQ6+96RWIAjeo+dqyYhxabLmUHHHTbzePNcUaGYcxmc3cjv1gnk8X/fsgOx+W0+aglSAofifGlKLWRSERSBAEAJIfeMk7KiO7o6CBJ0uv1GgwGhUIhifyiKBqNxqamptzc3K1btxYWFppMpiPu1ApRMy5sP9B09qjyAxt3orNLjQbbzh070tLTcpWk35xgDkOQTEUgKrUpBJ5LyrVRKsUvK/cUHmoxAQFCyMbHxxnNGAb50lJgTdCnpX3y4JsHa5pXfL1x5rz7u5zesLuLd9HRcDC3cpiz+ZDWpNH7Q16fLxxmlCJSqFR6i4VlWANpwnVWRguThmeJAY4PesIs5DlWIzJepDTFaVmm76xyctYHp6zAKwhCU3Pz+LGjVSpVTyM/6cffMF7HQGGH43Xb112ro1AoKIpSqVQ4jkej0VAo5HK5AACS205BEKQ+IFt2nax53WazRaPRmBIfAGAwGHw+n16vLy4uBgBIZ756LgIQBITSOLQk5/a73njn8fM5z6EuhsjLGiTyzq0NkaKsVFrk9/20oWDsSACQiBAOQOO+FnuyMdLQph43usbFgLSsHNGHKRS//PRTpKGuhIi+9OJNHQ0HkIJaVIWNja7fAoafN3qQt6tp1dffDB8/MilM72PDsK3LPiSnI+pUoEhHXROEmNlMal31SJ8CRQFqcIVOiwuIauOqdfHxBgWsbgLB/n5WvL9b+Jzw+IQQpqSkUBTV/UC/FI9Xo9FYLBabzSZ5dpRHY/8kiBPLr1Qq4+LiIIQ+n6+9vd3r9fI8j2FYc3PzmjVrtmzZEvMKJXtsPVnzOgBAOlndHUaj8ag5uzeyE+kcba2pOga5vrWkmUlWeaDN5TZu9FrqPPwBUqtVBEKTLr1s+8qfaAQxCJCIbFmJWF0XlZVBUYpdUMdEI51OV2tnxzmjRl0wdJiW0gf9LAfijebc8/PVdfrx42zK1sYdrraWgsKUqJ+tRa7i4UMyy0uqthwym+MffXppBFAtTibA613IpPY3YdJ7IoBjkM+Mi9/fEHQeqs13Rfp9SLFTUNffMyyXJAlK/kMwDKNpOhQKSapeSQv/j95VAAAgAElEQVQsD8iBTv3d0dbWhmGYdFK0rq6uvr6+paUFIWS1WocOHSoJ/kDW9Q80YBgeUMWJUXdefn5jI8jLLTPamwZHze1QFWrgSjKGRWsPIQW19VDtzTdcs3i9p6zYE6dRBIM01eoQx+Uho3GKmodaA9IBEAyGXA5NepYOg2x7mxEn+Jbmek+jyMd//dPOzCRbxdA0LkrV1zUodbQL39XmgAaz+pWXvxg7NmvVqn233nY6gRE1dbRLUBiUQaNCJ70hLgheWzxnrsVYDKoi/VnbA069sOyxUHzShKFQKCRtr3SQxOfzSU67YvE65BHVPyHtx57Amk8y5+/s7Fy5cqXH44nt4V922WVlZWWdnZ2SMCHX8IADoda1NzchhBITEzq7wP5tdJfaaspXm8iC1Cyjo7lDa0kUnM6hiN1YXTOpzLJ/ZRNSRXBOVHMcUFJse2e7P5iUO4hQKASrVQOhv6Oj0x8AELk9HoEEKgQLS1M62ltXbaiyp5soQ1z5mRWte6vdnoiKIPUlidddNcqBopW8qn37vqTKfIaOFpNEqyoEBF2MxklW5CCEEIpI6O/12f+p/8QEQAhhUlISz/PRaNTj8UhOgCU3Xk1NTdXV1RMnTpQPc/Vn6qdpuu/Uf0QnIQiivLw8IyNDWtLZbDZBEDo7O0G3OH+yrn9ggaej+YVFZqOhoaGxsLCwocadpWSNelWzIxzweYNef4o9ydfYqAiF87dub2ZZfX6+UiNuaGAmXHu1EkAqOUXr93q5CKHWsy0t6pRUZYqtwG7//KsvLxo/oaNlv4pDWiSUFSWcfXZFQ/1m0YXt3tOwvdXrdftaO7ruZoaY3bQuVeMk8URbEoSQFwQXAW0HeCEXIQBwAhd4QavGGOFkBmA51ai/72JajAJIknQ4HAzDYBhGEATP87W1tXV1dS0tLRzHJSYm6nQ6t9stC4D9EyqV6vfswFssFik8rzQN+Hw+ySnQH6VTknEyuJ8NAGTBMGklVzk4w9fWhcWZU+Mtm75dZOeF4JLvYTCI5+cJw4ZETKZAIFSewZ5vT3AzAXfQ3bY/kJqWaiSImt07SkaPd3bt1+gpf21AbTQKoqC255jsKa7q/W1BtHTlEiHMQtwrJDimnHt9S9uh1q4Um1pssANzkAsHwzBRAwEQBc4QjQsQgiZAEyZd7b79Cfp4n9msC6uC2gHgD7y/U7+08I8dw+k79eM4znEcjuObNm2qr693uVxSj1EqlVOnTjUYDF6vN/aIARvQ+ZSFVquNRCKSN54TQ8xGSNrJ79m+8jbvwAKGE527dqSVVZB19ZFgmGLCH27U3171pdjqrdBolMOHhX7ZpLvhWo5mcAyL5/l4oxGoCrFkIdLWQhBC4aDERUs3XH392PioMRDwkwQBcJz3OG2UQpOWRjc0dG76iYi3jxiREg3TadkWOohrtUwksKkw35RmY6DFYKWRFuJEHAU9LKvkho4s39xWU+wwtgpOY4vZoOIxPhBs9mpsA0Ok6O/UT1EUwzAnQP0x7N27Nycnp6ysjOM4o9FYWVlJ07TH45GUwjF2kJf//QpmszkQCPR9Sj7hMO4yBgwijHZfNROI4EYDHQwc4qLnjwtxMB6efp4rEkI8T8aZhS1bySQ7lZgY9fuImn27M/JtBEl5W/WVZW17G86ozF78zbbzLxrp7vAKXh+Fa9X5paV+79KvvxozdAhtTlC4nHRy6pgx2hXf7U7Kiku1MZDKEEVUs5c1BpU4rtIP4pVuWpvr59nO1qqwIqgM63kaU7VGmfQuIlLAGOlkr64aRwPgoHh/p36VSkXTdB/DePYU7kRRlI4O8jyvUCgQQn6/X9L7y0OpP6OwsHDevHlFRUWxffs/FnKIngEHWq3Jf3Ca2NTo4QSD3Z4aDWGANqoPhniRRAwkMDLOKHr8EQyPtHd6tFpFbjElCkZrQk1we1dwaVrSOF8oMvHczN27ajIyLWZdoefgAR0ephUqa3KGSu9ldV1xZdzOHcus+soLL71w7aLvfAUlmDeeE5yrNrTiSg0fjZ4zcZAmArqadfEZZUn23anhRm9EtHlSMY/HUc6a9in0mS4GDYzVZH9/S41G83uM8KSoHX6/PxwOe73eo+p8ZfRD2O12kiT37NnTx33+38wTyxBTBMm6/gGm8IFwy85dHMNYExJaGhshhAcPtUcQhcMwTgsUpaWUGrXJqC4vUxQXqUxGtyDwTpegUNBBE9WZLnoiqmCUD4BBWaV4WB0QOa3RxOGUQFEp6ZAnvYwjIVBTlGUdo+F5R0OLPSuHYFSiEMIgf9ftE266trQsS5sSrxAoLUERNe1Oj9cQVIxuY8O+9l1BU5xpJ2wx6sLKsAiROkKoI/0+7Hk/fz+j0RgMBvue/6jjGXaDPIQGCh5++OHVq1cfPHiwL+zfm593CBFC4XC4q6uro6ND9to2QAEhNGq1+rQMncEQjkR4XszJyggzWJQAMBgIBwK+QMDDMBCAcDickJhYnJRkzc9nw2F7nNUgmuoC9TxCYksLzrGdLi8EsIPnkdUa4QVlyKLUheprOoKOdijwjDmOw8nMgryN2zZ0tNfb7EWRgKvjQMeI80eJjCYxPTsptTDbEMQ7Ww7U1WhARjQ+mYjsb1WQWSqVLqhQ1qU7I5luhaGf12d/p/7ExESPxyP3+78hEEIzZ8789ttvq6urf5P9e6ZK3iACgUB7e3tjY6PT6aQoym63dz/3K1fyQJL6Mczn9W5bsSxK081NTYKI9HqVGIIJSiFsMAKCQBQlen28IJiMxtaODofT2eZ2qXEcj4+HJBmnSTFkZuFabXuXA3r9e9evtyhIWHtIEwxyflcoYM8blm4aXNTld3g6qxKziJ1r146dcKZIYnv2V7dFA+Zx2Def//z91z8t+O9HqG2/iubCek2CDirsDNscgEZ7GtnU4XPUaG1sMa5OZ1Wq/r751N+pv7y8/Kuvvuq7tN7H7b5YQI9Yr5KHVj+U8hBCc+fOXbp06b59+3pX0RwRetfr9TY3Nzc2NrrdboSQ2WzOzMxUqVQcx8X6krwEHHCigFmrIfQGIIr5xUURvx/DSQ4AT3OjiiTVapUuO0vLcxCDajWWjBgRIT4ccQWDBEHq7HaSZenWFiY+3tnY0OnzaRUKtd6AcILHcYzjeA9nsAR8jkZbpgECrHZng0hRAQfYucO7Z9WGCF/raHcWpOt1CQa9LaHLEQTJcaur6g1YhKwNJhbp1V66LXFwrqIjXhMCAvA78Wikv/curP+398cff3z33Xf3ZaD2MY8oisFgMBQKSflFUZSVAP2Z/d988821a9fu2rUL9E1BDyE0m81JSUmZmZlZWVlxcXE8zzc2NoZCoe52XMfrIU7GyQXP84NycjUZ6YFgcFBevinOEgoGSAf0REkBwMaDNYCmCY/PGwjR0S5lShIpsoVpRgfN1Le2KnBcm5YWl59/YNMms14ncHxSzqBOhokmJcHMDGV2jkaXX1uLAs6QI9gJMC69ILmwOOXjj1fgkCg5q9SmKY2nKAFxvgQMlKk+tEY319fecO21vMUcylSovJBXkJQ2HmUPS+mgmW2OVCHBLKr6eX0OgCNdGo1m3rx5d9xxx8svv/x7yuF5PhwOS957DAaDxWKReES29Oj/7P/aa6898MADPM8PHjz4qBafPR03sSzr9/sjkQhCSK1WW61WiqK6Z5Ol/oEFgiAgQpBU4jh+8MCBiJZrcrXQ3tB5uWdBAYtPS2W7HIxep3a1EwmWRUs3pKRkCnhASeJpOIiyLAZhOBTMKSzsamnWKqmwsdWC5R3avc+oVjUxDNPliqvMjuhqyUR88ftMZi6vUmMEDOmVxo4dbe1aP5tk9aVyiMUxCFQc2IpFUratjXP6TAZNIIFVMLzXJ7z3dZU3GK0Ylj9o+2rQ3iFL/X/A4E9ISJg5c+a0adP6qMmJ/ZZC7/p8vtbW1ubmZun4blJSksVikS3BBxb7v/jii3v37t20aVP3oAu9dAOlUpmQkJCWlpadnW00GiORSM8y5bodQBAR+mnHdk7kNK2tmTarltICAEx2i9vlam9oFhMSEAFJk3H5ksWciCoqigL+YFs7oycpgw4gAAKBwLqVKyPuFkKvyx9WafLbSEwRRpwqPdOQaE0fWhEN8xAj9m31hommaNSXwEevu2Hc+NPSFcmoM1kb0LDq1UxuozluOy5igACwSStyiUqMDgGH/mfM6u7aoTUZbfHGc0oorjWiiPTJfRs8eapmbKAM/qSkpDfeeGPatGl93+6DEIZCIa/Xy7KsUqm0WCxpaWkWiyUcDvv9flnoG1jsDwB45plnGhoa1q5de1Qxv2f+mNI/HA4bjcbueTAMk6l/YIEiCWeYURA4LgiHOjoREjGIuSMeJAIFpSAxHE+xU2nJkaYu1OrieValIgvyE90NTbUOV1NDPUVRNq3ikr1GIehDaoMxMxtTqSyEcsvixYDjWhwerU6hDiUUq4tHJWfrTEKeUUOwiEBQgSsQAIhHbCFRE24/qHHwCCXyuAkaXLxuUVLS55ZAM+auTqCsxZqLJ2f5MTuRk9RHNz6OtlqS0p6UrogNoMFvt9tnzZo1bdq0vgvsGo0mISHBarVqtVqWZVtbW1taWnAcNxj+Z3ol63wHEB599FGGYRYtWnQE3R+1S2AYZrFYUlJSJA/+3Td4V6xYMW7cOLk+BxD8UXpMfk4gQjcpqcZDNRbKKCKRZZk97dUGmyXqDwQYlhPRtTfc0PzZ6p3frDbbzV0dji4UEYkooyI72psNVvtHec7UgiKWZdra2kSXK1mlPr2sDAZ8yaEAcLUBEvhbPQhHJbnZAQMFAmEsEOLiNBiOQwwjzcqSLMPY8vwrNPaiZLub1C42epzQjQMMQggAsgeEjr3NlEYFi1NA36J0KVVqnFAAmfp/k/1tNtubb745ffr0Y7F/z/lTEISuri63283zvMFgyMzM1Ov13bPJ0VoGFqZOnRofH//RRx/1JfMR2iHJj/eyZct0Op0UCkrGwJL8bRTZRZCnlZWrEEnzDEEo7Mn2KB0N+oNGo4kXRSwVt9w+AoVrOz74IF0DOVGwJlgZ0l9VtZ+zJykyrRqDhcIwvV7fztBUdg60WLTGdPOQIZlDsxHiszMsFRXFgGUYJdlO8M0mCusis6r4ES7t4AiRbiXzsADGddldnV1cgOjmsAEBpEi2mRUAxwRcrxWLUvt5XQ4wo0aJ/WfPnj19+vQ+UjaGYfHx8cnJyWazWRTF9vb27tOGvOofiLjmmmvKy8vnzp3b93ZECElRembMmDFhwoRbb71VrsaBBQWEtR7/tkMNBIY6SVzUqs/Pm3Dj0MuLrHksG2Ei0Ug4pLAlqOJ0C2vV5029sOD8icFVe8Z5oKIxWtqBnZ1R8FNHfYOnKxgKkxpNdVUVjuFISfmCwfqabY7qg7w/mGAHXRB1BgMOAxkyRBlTM62sMZS1p53OaoocynQ3Q3oD6oDPHHVp7C74//z+GgUd4+zc4woTJIkQolRUP6/PgWfPDiG0Wq1z5syZNm1aT4f7Rz3aAwDw+/2BQIAkSbvd3t2KX3LiL4+rAYfzzjtv8uTJL7/8ckyt3wvpKxQKv9//2muv/fzzz1999ZUs7w9ECBynr6s/t2iQGEh0BiIbDjQgpaquY7NHaIG4Um/QqJUU1GsjnPX+IlddLd7q86uuvGBVSzPDCjTPwcbaq1btGOyGiAm3tbdHwpkIsSIASBS1CQnIaAyxgOCIVF0aqTAYOByJJAAQAlzkIeIhQBgEmKTBRzgQ21kGcLEQW4KTTUFmSqHLLRtO+x3t0fDWrs5+Xp8DMiw7hDAxMXHBggVXX331K6+8olAoflP60+l0sdTYXI0Q8ng83fX+MgYQxowZYzAYHnvssWeeeaYn3eM4TlFUe3v7ihUrfD5fZWXlJ5980l0akDHAqJ/n4+3Jh2rFnHhHEBrdSn5/cweBbAVqPWkjD+ytyjFmAQAABhnBoDcYVClJfCRSculFXJR1+Hxemz195Glp/oDnk88T8wZljRrq5hIwDONxXGUwgqa6+lq+ZEyiY1+DXmtoISgSHFOpAAUgxrEjucz9vCOCaBbwNlq/9/vd6/2RYCA89Z6JX/ONFk1cP69PYoD2AwihwWD44osvLrnkkpdffrlnlOdj3RWjBpIkt2zZUl1dPXPmTNlf/wBFSUnJ888/f9dddz3//PNqtdrv93d1dTU1NR06dCgYDJpMpsLCwscff9xsNsuavYEOlVqj1aprDjWrSEVX20F7erGfNGMI/FjDqEWVhuRwHBMEESJegPlxycDv8+uUWrapxeGPpKamFBYWMgwj2mzKrEyhsdH57kdiRTkxZnTTvn1me7JJxfndbDTq0yFdh9EC8DpXczguGxOPZgICAYbMbcm+pEM0FUcpbbw5swyLH5zCeCIRljOlxyeua97Luvo7hQ7oIYEQEgRh8uTJL7zwgk6nQwiJouhyuXrhcUkejEQis2bNuvLKKy+55BKZ9wc0EEI0TT/55JM4jpvNZrvdnpeXV1paKunx5Mb9K0FHAkq1/k8qfOWKFcNHjGvct91osLQ0HAIIZWTnHgySyQnAzbLFRp2f43QaFQAAYBhN02qKCvgD7QKWQBCAY8Vg0JKT29ncbFQpIxAjVCrdzxsAhMGy0riEhL3r1+vUOksBBqLJVTyjUHp9tf6EkgBLY6SCYxlOoSAO035MahYS27riMozaNIPOF2jmlUryYNtedVwV5YiIkbb1e/971+O/+VEBTzuGKwAStcYEWeo/Ptkfx/Hly5dPnDjxP//5j8lk6j0/RVFNTU2ffPJJXl7el19+eYT+R8YA7QMqleqFF17ofZ0nY8BL/UpV097dGKVSxZvoalZnNG3b8kt6Vm7Aq+uMBhVBqrNlmyk+Lt1q7fC4I75QYkqSXqdl6uuFtMyQo4vU6f0+L+/o6FIoDekZXNXeDRnpaZt+ET45CM6bmJibQ1fX8jDi7sCjGpzl/ZgS83mdAEEQwViGw0WdGNb6POHEgojIAwCA0UNrKINKYJ0+LwhFv2qsMjKKNqbLd8BLUWQgFJCl/r9C7oMQnn/++Q8++GB8fPwREXcJgqAoqqqq6ocffohGo6NHj77tttvkgSRDxsCS+gcoL/Vbqf8UOc4u1fLVV199/vnn63S6UCjkdDpbW1vr6uoUCoVGoxk8ePBVV12l0WhkDYAMGQOR+r1eL8/zdXV1paWlDodDrVZzHNfc3JyWloYQoigKx3GPx1PbRd/7wicTxxQfaurqcPpplgMAFGbZP37htoaGBhzH7XZ70O8ZdsPrOakJ4SjDckKq1YwQ+uzlO/76GpOp/w9j/w8++CAcDhsMhqSkpKysrJSUlL7PwDJkyOjPUr80io8Yy30c2t2zHcsD4F9PEWF/V3uH02ZNkKlfhgwZAxVMNMREA3I9HMdkGQ6QCgWp1GkN8X/xo+UQJTJkyPjDUFdb29zcjOOYgiSQKCBR/Dv8gwC43G4IEEkSH7/yHEESSBQBEnmOdbncJIH5/QGv10/imN/nbw9x/1zXJYgiEkVKpcWJk3PuV5b6ZciQ8YdJ/UuXfKNWqV1u9/79B558/BGapv8OHx4Kh1et2XDJhecKCIQ2LAdlo7UqpdMT5AWeEyDPRJQqNRIRw0ZxUrUlRJRnZuLB5gzj4dNIOKn866V+mfplyJDxxyAa9uOAk5TmOI4xDAPA32WDDcMwyTkYjuOiKCKEMAwCBDDpoNnhXQSEYRgUBQgAj4CIAAAAw/FIlDXHJ8nUL0OGjAEKtH7tGpyQnWIdBwSeHzv+jL/+uTL1y5AhQ8bfDvI2rwwZMmTI1C9DhgwZMmTqlyFDhgwZMvXLkCFDhgyZ+mXIkCFDhkz9MmTIkCFDpn4ZMmTIkCFTvwwZMmTIkKlfhgwZMmTI1C9DhgwZMmTqlzHw8dGHC1atWtnz+r59e99++626ulq5imTI+GtwHD58JId8O3fuqK46wDCM1WobM3acWq3+86LbSCV3dXX+/NOP/kAgMTFxwoQzlUpl99T29ja7/Y90etfV1ZmYaJV+79ixfefOHRzL3nb7nd2/cdMvG/cf2M8yzB13TpX7UN/xyy8bb7n5hk8+/aK4uESqT4SQIAinjx9ttdo+/+JruYpkyOh31L93757777vb4XAgUUQAQAghhJdedvmjjz7x57H/Ky+/+MEH70EIEAIQQhzHZzz7/LnnTpJSz5t8znnnXXDrbX9YUM1Vq1bededtB2sapD/feWfeu+/MYxhmzlvzBg8eEvvGa66+or6+NhQK79lbJfeh48Ijj/z7x3VrV/ywVqVSSfV5/313r1+/7vtlP8THx8tBNGXI+GvQJ4UPQmj37l3XX3uVTq+f89bbu/Yc2LO3auUPa2688eZvvv7q5puu/5NG7M4dOz78cMFVV1+zecvOPXur1qz9acjQYQ/9+wGPxyNlaGpqwgniD3xiU1MTRSm7X+F5Picn98f162LfyPP87t0709Iy5N5zAsu4Z555jlQobrnlBqk+165ZvWbN6vvun56QkAAhDIVCX3/95fvvvbNp0y9SfunGObNn7dixPVbOjh3b58yeFUvavWvn9u3bFi54v7Ojo+dDe5bp9/vnzJ7V3Nwslc9z3Ftz3pRSJXzx+WcrVyzfvWun9JQf16979935SxYvQgjJnm5lnDqjsS84Y8LYq668HCEkRSGI/VixfFlZaeHSpYsRQtu3b5v95hsIoZUrl7///rt1dbWx26XMW7duee+9dz777BOfzxdLit21ft3ad96Zt3jRd6IoSvnffWdecVFe7HZRFEOhUEZ68oIF7yOE5s9/u7Ki5K47b5Nuj5Xz/vvvrli+TCo8HA5/9dUX7747/+eff+r+8kdN2r5921133lZZUbJgwfvbt2+THlFaUvDWW7PPm3xO7ENWrVpZWJD71luzpXeTwLLssmXfv/vu/I8+Wnjw4MHYs3qpk78nRFHcuWNHaUnBF59/hhAaP270NVdfISWtX7e2ory4tCS/uCivvKxIui5VY3FR3vz5b8cKmT//7VjlFxflPfjA/YNyMnJz0vfs2X3E445aJkJo3NjTXn75Ran8rVs2D64svenG62JNWVyU9+23X8+fN3fI4NJ/3HJjYUFuSVHe4MrScWNP43keyZAx8NEn6t+5c0dJcf6O7du6U2cMl1960Y03XisNyLLSwlmzZhYW5JaW5JeWFHz66cex0XvTjdeVlRYUF+WVFOeXlRauWbM6NoyPNcA2/PxTaUnBJ598dMQUIiEt1T5yxJDKipL0NHtsJrj3nn8WFw26+uopCKHNmzdVVpSUFOcXF+WVlRZeMeWSWAlHTZr95huVFSUjRwwpKhwk8bVEMdVVVQX5OR6PR3ru4489cs3VUxYu/CDGPjt37qisKCkuyisuyistKSgrLZw7d07s645aJ39z/OfpJyecPuazTz+urCj2ejyiKDI0XVlRfOUVl7ndboTQ119/WVFe/OqrL8f4vRfqHzF8sMPh6PmUXsp86cXnzzpzvJTtzTffmDTx7NKSAql7LFm6uKQoj2PZ+fPfHjF88O233eL3+xFCn336SWVFyXfffiM3n4xTAH1S+FRXHUAIlVVUHlWxM+K0UVUHDki/1Wr1Tz+u37xlx9ZtuwdXDnn+uRnRaBRCOGf2rD17dr/00mt79lZt3Lhl1KjR0+6/h2YOx+0kCBLH8Y2/bN29t2r69H8Hg8GlSxYDAEaeNurqq6+Z8cxTI4YPvvfef3388YcOR1dspdLY1BYIBO6+576GxjZpGa5QKOLi4vbsrf7ww08FQZh61+3l5RU//rRxz96qN2bNqa+vf+WVFyGEx0q6486pd99zXyAQ2Luvuvv+7aC8PKVSuX7dWukp69avHTv2dJZhYhnuuXtqRmbmxl+27tlbtfGXrZWVgxd88G4s9ah18jdfaD762BMEQbzwwnOPPPKE0WSCEK5evYrnhedfeNlkMgEALrrokjFjxy3/fmlfCjz77HPi448S2rSXMidOmtzW1trU1AgA2PTLxgcffMhgMOzatRNC+MOK5aeNGk2QJACAjkZnPPuCTqcDAFw+5QqOY11ul6wq+J2t38eLJ+VN/j4v0Cfql6jqWOp8jUYdC75M0/TzL7ysVqsJgnhmxnOiKK5btwYAsGTJ4ilTrjzjzLMAABqt9o1Zc1iWXf3DD4fvOsYAQwhNf+Ch1Wt+vPXW28Oh0MsvvXDGhHF33nErx3GHN6khZFlW+iG95513/Uuq0NWrf4hGI/Pmv2cwGAEAo0aNnjLlihXLl/eexLLsUae3kaeN+vHHdRDCxsZGt8s5dtx41K391q3f8MUX32i1WiSi5qZGg8EQCARj9x6rTv6+pgUQIoSmXHEVx3EXXXyJdLGjs0MUxdTU1Fj95+cXdHZ19hwqPQeM7RgmXr2UWVBQmJCQuHLFcgDAli2byysqLrr4kk2/bAQArF+/btLk8w5vAwiC2WyO3Y4QQKIo0/eJYc7sWRnpSUeMr6NePClv8rd6AQBAn/ZIExISAQCBgF+vN/RMbWlpSUxMPLwFynHp6enSb6vNhhCSdt7a2loXLvxg9uw3YnfpdLqW1ubDdwmC2WzuNsIBEsWY1VB8fMKNN91y4023AACWLl0y45mn7rv3X7PefKvnm4iCIMl3AIC21jaDwZiRnhyrXoqiGIbtPelYGDdu/PPPzQAA/Lh+rdFoysnJ+fHHdbFUjuNmPPPUunVrXS4XhkGFgvp/G8XHqJO/OfuL/59DlRQFIRRFAcMOR3YNBoNqtfp/jSsejm0NIYxGIt3vxXH8qDZmvZc5efL5q1atHDfu9KTkJK1WV1k5ZM7sWRUVlYIgnHvupGMOS9kG6UShoCidTt+XiyflTf5KDBs+4oEHHjq5zdEn6h87bjyE8MsvPr/p5n/03CJetXLlpMnn9RwY0thWazSSKua6626Y+s+7j4MbICwsyL36mmsffhMzfHkAABaRSURBVPix2OVJkyY3NzW+/fZbR19AdW9dhSIQCDQ0tvZcZPWSdGzqP/3xxx4+eLB6/Y/rxo0bf8Sb3v2vu/bu3XP55VdkZmVnZmb+9NOPs97471HJonudyOiO4pJSDMO++urLyy6bIl1ZvmxpQUFhrDUb6utjmdesWdWzvxxXmQihiZPOmz//7aVLF40ZMw4AMHTI0H/s2Lb0+yXjx5+OYfJRx5OjADnWjHtE0rFy9rzeR7vzXgo8ond1vyLd1ffXjqGiorKiorJn4cdbD3+6wker1V562ZTZs2cdcRST5/kbrr+GYZk77rxL+gylUvnDyhVS6vdLl0AIKysHAwCKi0u+/vrL7hqkt+a8WVNzsPfnnn32uT/9uP6Ii5s3b7LZbEdoD3reW1JaiuP4Bx+8F7vyww8rFy54H0LYS9KxpoG4uLjMjKw1a1Zv27p1zNjxR6Ru3Ljhmmuv++e/7pk0aXJ+fsGa1au6t86x6kTG/6Pp4pKiouIXnn/28cceeeut2ZMnne1yuf71r3ulqq6sHLxq1cpHHvn33LlzJp57pkql/p1lQgjz8vLs9qRPPvl42LDhCCFKqczJyf1+6ZJJk86TLThPCu9HIuFp998zcsSQivKiyy+/uPvC+sCBfddcfUV5edFpI4f+5+knY1a2c2bPysxI3rZta0V58WWXXgQhXLp08QUXTCorLRwzesQTjz/CceyxWrOlpfnsM0+vrCi5++67IpHIsQqEED7/3IyxY0aWlxVdccWlu3buhBA++cRjw4dVxpah9937r+ysNJ/PK33I119/mZGeHImEj/VFMYUPhDAjPenNWTMff/zRkSOGVJQX3377P3w+r/QyS5cuPvOM8eVlRbfdevNzzz7zx+qIiD62ymOPPdHc1Dh92n25uYNOO22USq1qamxatWoFx/Nvzn7LbI6LLb2feurx3Xt2Cbzw1VdfDB4yJDs7ByF0z733X3/tVWedOf6CCy7iOG7p0sUMw/zj1tt7f+gjjz4+edLZY8eMPOPMs6xWWzAQWL1mVVtr63//OyvGqt8vXYJB7IYbb+o57EtKS9+Y+fr+fXuzc3Krqw6sWbP63vum9Z6kpCilUvnCC8+eN/mCgsLC7gWOP33CRx8uhBCMGzf+iAbIzMz6cMECOkoTJLl0ySKn0wkhxtA0pVQeq07koc4yTDAY6N7cHyz4aMaMp1csXxYOh/MLCp7+z7OlZWVS0osvvfrwww8uX7ZUq9XdNfVfgUBg48aff9XhBLpvuR/RhY5VpoRzzjn3rbfeHD58pNSgpaXltbVfnHX2OUd9w96fJeP36wDvuP3WlpbmKVOuVKnVa1ev+ufUOxctXpaamnroUM01V1+ZlpZ22613uN3u7777pqbm4MIPP5FUN1ar7emnHr/jzqkZGRl79+x5+KEHR5522uTJ53vc7m+++crn8/135ps9H6fRaK65+opzzplIkuQXX3x2w/XXfPHlNz0LBABcf+1V+w/snzhxss1uX7L4u5tuum7hh59cdvmUr776oqbmYE5OLoRw566dJpNp44YN506cBCH84YcVZ599jlqtue7aq3p+UVpaWneNk06nX7jwA7s96frrb2xrb1u+7PsHpt8/b/5727ZtffSRh3JzB11++ZQVK5bt2rXzD1ZS9d0cGyG07PulN9143fBhlWUlBeecc8azzz4TM3mUTO5KivNqDh4cN/a0oUPKH3/8EUEQYuaY27dvu/LKy8rKCocNrfjn1DtcLqeUNPvNNyTrzBjS0+ySbaUoin6/76knHjvzjPGlJQVDh5TfcvMNO3dsj+Wc+9ZsyaqyZznS4YBnn/3PmNEjSkvyJ557ZsxItJckt9s16dyzSovz33//3e5liqK4deuWQbmZF190vpSze1Jra8uVV1xaVlowZvSIRx99eNUPK7MyU1ev+uE360RG96o4olp6Serejn0vv4+P6+N1GceL7ia5R71YWpL/5BOPxZJmz35j9+5dCKHbb//HJRdfELu+ceOGkuL83bt2SrcPrizd8SsnvPvOvLLSwkDAL/35y8YNb/9qZn3EQ4cNrfj226+lP5ctW1paUrBv396eBe7ds6estPDzzz/tdsJpnHQEZPzYUW+88TpCyOFwlBTnP/Ofpx579CGpn5QU5y9a9G0vX3SEdfJFF54XyzNjxtOV5SUIodtuvXniuWfGrp991uk9a+9Pt+vv49Dq2bR9HNh9GXi95+z94m8ywm9STO8f1cuDeq8TGTL+7tQ/b27JrxfvueefQwaXDRlcdus/bvroo4X+Xw9+Dh9Wefvtt8yf/7b07/333qmsKPlw4YJfRav8WGmNjQ3SwZqJ5571zDNPb970y1FH3Pz5b5eW5HcnjZKivI8/XtizwI8+XFBSnCcIQuzKq6+8NGRwGULopZdemDzpHITQkiWLbr75+ra21tNGDkUI/bByRXFRnnQy6VhfdAT1vzHz9Vj58+bNlZKGD6t8/fVXYtdfe/XlP5b6sd+/TOtj6hE5j/Vn79mOlbP3i31/7aNe7+WVYsq+P6rGZMg4VaFSKnteDIZCSpVKUj+89trM++6fnps7aNOmX1595aUxY0Z89tknAIBIJAK72ZbzgnDHHXflFxT03JZLS0v/btH3F1xwYSDg/+rLz++887ZzzzmT+fX8UHeIIupOGggAluV6FkgzDEKg+7a/WqPhOBYAMHnSeXV1tU6nY8uWzSNHnGa3J0XCYZ/Pu2Ll8jFjx0lWZ8f6oiNrRq2OPTT2VjQd7b6n9YfbhvyRlgw9daMy5DqRIUNCSmoqhmHV1VXduXXP7l0pKakS5c2bNzcrM/vDjz7duWvfW3PnFReXvvzSCwAAa6IVw/Gbb/7H//7dcmtFRWXPR+zds/v7pYuffOqZn37etGTp8nvuuc/lcn75xRdH2eQkCJfLJcm/ra2tEMKko50OsVltGIbF3D0BAKqqDlitNgBAXn6+1WrbsnnzmtX/196ZhjVxrXH8JIEAogh9HltZWsFWFglLEMIuQggBEhDBStW67woIVUH0arVaWwFBrRIQEUGxtlatQpAdUVlUNtvrAi6Az6Vq7a1QVs1y7ofRudMkTNICQvX8PmVmTs45M3Pyzsk773n/xY6OzgAAVzf3ioqKi2WlfH4AFkrQ3xmpMiPUNzB8cP8+vkn8POJM/6rVYfjCWgS6JggEEXd3Dw0NjdiNG7BF1CKRKPPokRs3Gri+fliB+rraTZuiW1paqFQqg2Gtra2tq6sLAPD196+uqsjOPoZNyTMy0k2MjYjp/HA0tUalpCQnJsYDAAwMDD/88COxWKynp6tgoq2ltTk2RiKRPO97vnlzDJ1O9/RiyxfzYnurqaltjFnf/uwZAODcubOXL5V7e/tgR/kBgZmZGZ2dnZYMBgDAgeV44Jt9YrGYy/XDTHl/Z6QKfr7+xcWFFRVXAABXrlwuKSka3NuhNug3GDk00DVBIBSyf//BsLBVQdP52AI9CoXi5ua+bNkKzKZv/Xx78IzAGUE8iUSKTcwFgjQAQFTU+tqamj0JcXG7dwEIIAARa6MUzvonTZo0K/STrMyjmUePQAioVIqNDZPHD5Qv2dvb+9GkSbY2lmpqahQK2JO4n0ajyRfT0NCIT0hc91mkp6e7VCql0WiTJ1uuWx+NTeZ4fH728SwHBxZW2N7eYf++JDwCkOSMVGFNWMSFC3kR4atFIpFUKjUzN79/7+5gGiU0IUW8NohLYP726hvEPxqRSFRSUvTo0SNNTU0m087c3AK/79gb14L8C0+ePNbT0+P4+Gpra+MD49q1q7du3dSg052dXY1NTLCddXW1V6ur8Ixb2M47t2/V1tWKxWJLS0t7e5b8uMK/lZeX+9tvv3E4XHypkEyFGB0dHYWF+d1dXZMtGSyWI7HCtEMpVtY2Tk7O2KYg+YCHp5eFuQX5GRFbESQfcHRyxp9kMh3IzTn/9OmvTs6uVy6XHz+eVX6pcjB/jW8weM5kpUFKbW3/QTEYQ01nZ+eG9ZHyUbzyAb4IxFuOhflHC+bP7evrgxA2Nzd7s6eFh60eQRE+I5z6+jqB4KBSb0wA3zc35zyakQ012cez8vPz8c3o6FhHJ2cwAnKqIBAjjY2xm+vr61gOTGsri6DpPIlE/Pm27YPopFFDlxgMgdoXQiGjtLXxsQshVKhsPMCkK0DlfC8kR1VPEYNADBHz5y/08vKuqLjc093zwYQP2GzO4A6/4Zn1y4vqiUSi/PwLGRnpJ04cb2pqwooVFOSf+v47/FtXrlxKERzEsrRBCB8+fChIPtDR0SHz4wQA5OUJM48ewZL7y/gZ5VtJT0+j0+n1BM0/+WLojcig3PR9exN1dHSsGOaC5ANY9hL8mhNta0L81x5TXWxtLGd9HHz9+jWFJniA+V7mz5szI4i/NiIM/y21tbWZGBuWlhaT9AHrc2pq8pzZs+yYVpfKL6Lbihg6jIyMQkNnL1q8hM3mgMGOFhmeqa5AcLC1teXHs2cggLZMu8dPHi9dshDLvE+lUikUyqrVYcuXr+zt7dmxY1vQjBB1dTUAQGqK4M6dWy6ubtbWNhQK5dT3J4XCXOLMEUIoFounB/o/efJYJBInJiYEBgbhRxsa6hW2suOLbYaGhtXVVUJhzqrVYf0VQwNxgDg6Od+8+e/q6qromFhLSwYAYMwYHbrGnxJcUyiUlSuW1tRcDwgIHK9vUFxUuGzposysbOyOE4sNPN/L7//9fffuXXidwtzzBgaGXl7eAACSPowZo3Py2xP2DixXN3cHFgvdVsQ/lWF5gyEjqucx1WXmzKDOzk4IYXd395LFC1xdHCCEz58/t2KY5wlzcYFWPo+bmpL8MpmG97Q9CXEyNcft/sp+ik1VVSWEsKSkmGnLwFc/99cKhJBhaYbp/ZIXQwzuUn5cdhHf39h4x4phXlZWgpcJnRWyaOE8+aoGnu+lr6/XimFWXFyEja7AAP+vv/pSaR+sGOZz54SiW/nW8rcTsRCTvoyEbC7D5uDGRfUghBfLK14+h/6sckWn052dXYqKCvz8eQ0Nde+9N35t5GfHsjKXr1jV3Pzgl7Y2fkCgjP+rtLSYw/HBYq28vNheXuzCwgLyVgBB7Yu8GGKoqautVVdXb21pSU9/Gf6sp6dXW1sjX9LTy1sozBEKc5hMO49pnnPnzNMZOxYA0FBfZ8tk4l9Xo9HU1dV//vlnaxtbAMCLFy+YTDvskIaGpoeHZ54wh832/uWXtrt3m+ITEiGESvvAYjmiO/XWgjn9oqNjFb6p6s/VGRf3VXNLGwCgu7v7i+1b4uKThv1Ehs30E0X1+lO5ghDy+AHbPt8CALh+7Zq7+1Rvb581q1cCAAoL8g0MDUxNzWSqffToUXDwRHzT1NSs8FWufHItLaWdQbwGenq6KRQKUdzG3oFlbW0j/1c1KWn/yZMncnPOV1dX1dbWxO3eFbtpS2jobNXzvUAIg0NmRkVGAACEwlxjY2NsOCntg/bo0eh979uMvKNSqasT1+TCgtzeatOPi+qRqFxRKBR/P97mTTE1NdcrKys+mT0HAGBubn7r5s3CwvyAgCD5ajU1Nbu7u/FNXPlduZbWXymG+NvuRfLj740fL5FI3N2mmkycSFz2JWNqsewotjbM49knpVJpXV3Nvr1JCfG7Q0Nn4/leVJm+eXqy1dXVKysrcnPOhYR8rHofkN0fai80iQxWf5uqBH2R16zwK6qPZKhMk4tCoRCD3MCwxowNZ1w/fs4kKldq6upublMvlV+sqqp0cnIBALi4uJ06dfL27Vt8vgI1JWsb24KCC/hmcdH/E1+Qa2nhal/kxRADGm1UKpVKlfavbM7h+NBotA0boh4/finp7O/HwcSSZEoOPN8LxvSg4MNpqffu3Q0OnvlX+4AYLMpKS0yMjR4+bIWvNAujIsPZbA/smjc01M+ZM8uOaeXu5rRr1w78pyojbk6MGZMX28LLqCiwRR5ppk6nb92yiWnL8OWyc3NzAGnUGd5PmSA3FePZ3rRZPxESlSsIoT8v4Mud202MTcaOHQshnDLFPjY22tjYZOLED+WfumvWhC9c8GlIyHRfX7+iwkKpVKJKK0S1L3LJLcRA+GCCMY1Gs2MywsMjlyxdLl+ATtdITNofGRnm78eRSKRUKkVXVy8zK1t+ojfwfC8vfT7BIfM+nW1vz9J7552/1AfEIOLpxTYyMjr9wylMLA8AcOlSeXj4WgDATzcaFi+ab2houHz5yra2tjOnf7jb1JRx9BhQtBIQd8XIi23hd1xFgS3ySLNjWUe1tUevWh1WWly05V+x48aNc3R0Uhh1RtTkkglyUzGebQj/W71+8BX8UJnKFRavaTrJeFNsNLbZ3tE+0eT9/QRxAxnKykr9fL1tbSZv3bLpcFqqKlpaRLUv8s4gBkhJcVF6ehqWuTf54De1tTXy+TY6OztPnz51JD2tIP8C7F8/RywWC3NzjqSnnT3zQ1dXFzGO4urV6oyM9BPZx5ofPMB39pfVI+1QSkN9nXzOCYV9wPuMGFwS4ndPdXfGLnVenpBhaYYpAC5ZvIDjPQ0v9t3Jb21tLH/66YZC7RdizBgxmktmCCkV2Gq8oyTKi+vjhR/y9/dZtmQRVE2Ti/hZ9Xi2oWAYTD+J8BZ5eaUCXqqEVZH3RxXNPwQCMeg2oaWlmWFpevVqNYRw5Yqln879BDvEcmAm7onHS0okEmsrC1yii8T0E8W2ZFAqsPXtiWw7ptXRjHRcGmzliqWYOBfWSlJSAl5bUlKCI8sOqqbJRfxM3spQMwy+fhLhLfLySgW8yGtQRZkLe+2M/oAjEK/ZJkyYYGxqanb27GmxWFxZWREUNAM71NfXN3r0aOLrIgjhC9ELVfwZ/e1XKrClMMpr0aIl+KY2QTNr1KhRIpEIAKCiJheO0lbefF8/AoFAhMyclbgnHls2EfBqHb6+vv7t27dwq/3wYSuVStUfrw8AoBDmbRDC9vZ2hTn35R8zRIGtlJTDgCCwtWPnLgih0iiv1tZWvMKmxiYDAwMAQH9RZzJPHvyjivFsQwQVDTgEAjESCA6eKRGL9+1NdHVzo9Pp2E4frm95+cVz584CANqfPYvduIFGo03z9AIAjHv3XTqdnpaWCgD4448/YmLWaWlpqdgWucCW0iiv/At5VVWVAIDi4qKyshKurz9QTZOLGOQ2vLFkyPQjEIgRgaam5tRpnn19vdMDZ2DuGghhVNR6U1PT7du2WltZeHq6NzY27kncq6mpCQDg8QJ0dHQOpQqsrSxYDkw/X15PT48qDUEIeXz+/fv3iAJbT5/+igtsYVFezS3N/n4caysLPo/b09OTLEjFnUjBwTNXrlhqbWURE73OxGRiWFgEFnXW3d09I4iH9efatas7d34t0zQe5JZ++JDSVoYUpNKFQCBGCjt3bj/345nrNTeIZppCoVRWVjQ23tHR0eFy/XDXP3ZIKMz59ckTJycXi8mTccUrhWJbMpALbAEAurq6CgvzO9rbDQ2NfLi+uB8Ga8XI6P08YY6+gQGX64cvEFOqyQUAKC0pbmltcXV1MzMzJ2kFmX4EAvHmA6FUIpF6TnPj+HC3bt2OLshQgxw+CARi+BEIDtpPsenr7Y2IiETz0dcAivBBIBDDD4fjq6U1ys+Pp6urh67GawA5fBAIBOKtAzl8EAgEApl+BAKBQCDTj0AgEAhk+hEIBAKBTD8CgUAgkOlHIBAIBDL9CAQCgRhB/A9d6CupDOA4oAAAAABJRU5ErkJggg==</pre>
 </div>
-<div created="20160622052542636" creator="limix" modified="20160707005405307" modifier="limix" tags="osm install ubuntu" title="osm.ubuntu">
+<div created="20160622052542636" creator="limix" modified="20160812090028192" modifier="limix" tags="osm install ubuntu" title="osm.ubuntu">
 <pre>!! 基础环境准备
 [[osm.ubuntu.install]]
 
@@ -15273,6 +15353,8 @@ max_connections = 1000
 listen_addresses = '*'
 effective_cache_size = 16GB
 bgwriter_lru_maxpages= 500
+#synchronous_commit=on // 异步提交
+
 
 
 shared_buffers: 数据库服务器将使用的共享内存缓冲区大小，该缓冲区为所有连接共用。从磁盘读入的数据（主要包括表和索引）都缓存在这里.// 例如生产现场的缓存是125G, 我分配了20G,创建索引的时候发现速度比较慢,因而后面该考虑增大该配置到40G,用于快速处理索引表信息.
@@ -15313,7 +15395,21 @@ exit
 !! 启动数据库
 ```
 // 检查配置参数是否完整
-cat /etc/postgresql/9.3/osm/postgresql.conf | grep 'heckpoint_segments\|maintenance_work_mem\|shared_buffers\|autovacuum'
+1. 检查数据库基础配置
+grep -x &quot;[^#]\w.*&quot; /etc/postgresql/9.3/osm/postgresql.conf
+2. 高可靠性配置 host-based authentication file
+grep -x &quot;[^#]\w.*&quot; /etc/postgresql/9.3/osm/pg_hba.conf
+3. 标示 ident configuration file
+/etc/postgresql/9.3/osm/pg_ident.conf
+
+cat /etc/postgresql/9.3/osm/postgresql.conf | grep 'checkpoint_segments\|maintenance_work_mem\|shared_buffers\|autovacuum'
+
+pg_ctlclusters 来启动需要的数据库实例
+pg_ctlcluster 9.3 osm restart
+
+/usr/lib/postgresql/9.3/bin/postgres -D /iflytek/data/pgsql/9.3/osm -c config_file=/etc/postgresql/9.3/osm/postgresql.conf
+
+
 
 show max_connections;
 service postgresql status
@@ -15337,7 +15433,7 @@ sudo make install
 ```
 lscpu
 // 注意:切换到用户 postgres 后执行 su postgres
-nohup osm2pgsql -U postgres -d gis-C 60000  --number-processes 100 --hstore -s -S ./default.style /iflytek/data/osm/src/planet-160530.osm.pbf &gt; log.file 2&gt;&amp;1 &amp;
+sudo -u postgres nohup osm2pgsql -U postgres -d gis-C 60000  --number-processes 100 --hstore -s -S ./default.style /iflytek/data/osm/src/planet-160530.osm.pbf &gt; log.file 2&gt;&amp;1 &amp;
 
 注意使用不要使用选项 -s 否则会将中间结果也放入到数据库当中,导入速度慢.正常模式,导入结束后丢弃,速度较快.
 ```
@@ -15596,18 +15692,30 @@ COMMIT
 VACUUM
 ```</pre>
 </div>
-<div created="20160626112213542" creator="limix" modified="20160626113745505" modifier="limix" tags="install ubuntu osm" title="osm.ubuntu.install">
+<div created="20160626112213542" creator="limix" modified="20160812010000407" modifier="limix" tags="install ubuntu osm" title="osm.ubuntu.install">
 <pre>!! 基础信息收集
+!!! 1. 通过通用命令
 ```
-// 通过通用命令
 uname -a
+// 桌面版操作系统
 Linux ispp103 3.16.0-30-generic #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 
-// 查看ubuntu的具体的版本号的方式
+// 192.168.76.30
+3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+!!! 2. 查看ubuntu的具体的版本号的方式
+```
+// 桌面版ubuntu
 cat /etc/issue
 Ubuntu 14.04.2 LTS \n \l
 
-// 查看发布版本
+// 192.168.76.30
+Ubuntu 14.04.3 LTS \n \l
+```
+
+!!! 3. 查看发布版本
+```
 root@ispp103:/etc/apt# sudo lsb_release -a
 No LSB modules are available.
 Distributor ID:	Ubuntu
@@ -15615,22 +15723,33 @@ Description:	Ubuntu 14.04.2 LTS
 Release:	14.04
 Codename:	trusty
 
-
-// 通过lsb_release命令
+// 192.168.76.30
 sudo lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.2 LTS
-Release:	14.04
-Codename:	trusty
+Distributor ID: Ubuntu
+Description:    Ubuntu 14.04.3 LTS
+Release:        14.04
+Codename:       trusty
+```
 
-// 通过os-release配置文件
+!!! 4. 通过os-release配置文件
+```
 cat /etc/os-release 
 NAME=&quot;Ubuntu&quot;
 VERSION=&quot;14.04.2 LTS, Trusty Tahr&quot;
 ID=ubuntu
 ID_LIKE=debian
 PRETTY_NAME=&quot;Ubuntu 14.04.2 LTS&quot;
+VERSION_ID=&quot;14.04&quot;
+HOME_URL=&quot;http://www.ubuntu.com/&quot;
+SUPPORT_URL=&quot;http://help.ubuntu.com/&quot;
+BUG_REPORT_URL=&quot;http://bugs.launchpad.net/ubuntu/&quot;
+
+// 192.168.76.30
+VERSION=&quot;14.04.3 LTS, Trusty Tahr&quot;
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME=&quot;Ubuntu 14.04.3 LTS&quot;
 VERSION_ID=&quot;14.04&quot;
 HOME_URL=&quot;http://www.ubuntu.com/&quot;
 SUPPORT_URL=&quot;http://help.ubuntu.com/&quot;
@@ -15648,6 +15767,7 @@ http://old-releases.ubuntu.com/releases/14.04.2/ubuntu-14.04.2-desktop-amd64.man
 !! 依赖软件
 ```
 sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libtiff4-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg node-carto
+使用 postgresql-9.5-postgis-2.2 依赖的软件有改变
 ```
 !! 依赖软件安装
 ```
@@ -15853,7 +15973,7 @@ SHOW work_mem;
 SELECT name, short_desc FROM pg_settings; 
 ````</pre>
 </div>
-<div created="20160516053922516" creator="limix" modified="20160517051046631" modifier="limix" tags="postgresql" title="postgresql.createdb" type="">
+<div created="20160516053922516" creator="limix" modified="20160812061641741" modifier="limix" tags="postgresql" title="postgresql.createdb" type="">
 <pre>!! 创建数据库实例
 ```
 sudo -u postgres -i
@@ -15863,6 +15983,7 @@ exit
 
 sudo useradd -m username
 sudo passwd username
+alter user postgres with PASSWORD 'iflytek';
 
 // 其中limix是访问数据库的用户名,gis是数据库的schema
 ```
@@ -15883,13 +16004,14 @@ exit
 
 </pre>
 </div>
-<div created="20160517044514913" creator="limix" modified="20160517044629555" modifier="limix" tags="postgresql glossary" title="postgresql.glossay" type="application/x-tiddler-dictionary">
-<pre>psql:postgresql命令行接口</pre>
+<div created="20160517044514913" creator="limix" modified="20160812074044453" modifier="limix" tags="postgresql glossary" title="postgresql.glossay" type="application/x-tiddler-dictionary">
+<pre>psql:postgresql命令行接口】
+GUCS:Grand Unified Configuration Settings 统一配置设置</pre>
 </div>
 <div created="20160517050824700" creator="limix" modified="20160519083621148" modifier="limix" tags="postgresql install" title="postgresql.install">
 <pre>&lt;&lt;tabs &quot;[tag[postgresql]tag[install]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20160513072611791" creator="limix" modified="20160625022628856" modifier="limix" tags="geo postgresql install todo" title="postgresql.install.source">
+<div created="20160513072611791" creator="limix" modified="20160815015636301" modifier="limix" tags="geo postgresql install" title="postgresql.install.source">
 <pre>!! 源代码安装
 !!! 下载源文件
 &gt; http://www.postgresql.org/ftp/source/v9.4.8
@@ -15924,7 +16046,7 @@ MANPATH=/usr/local/pgsql/share/man:$MANPATH
 export MANPATH
 ```
 
-!!! 添加系统管理服务
+!!! 添加系统管理服务 LIMIX_TODO 到底是怎样来操作的
 ```
 cp contrib/start-scripts/linux /etc/init.d/postgresql
 chmod +x /etc/init.d/postgresql
@@ -16072,6 +16194,87 @@ update [表名] set [目标字段名]=[目标值] where [该行特征];
 删除表中某行数据： 
 delete from [表名] where [该行特征]; 
 delete from [表名];--删空整个表 
+```</pre>
+</div>
+<div created="20160812073732216" creator="limix" modified="20160812084302275" modifier="limix" tags="postgresql" title="postgresql.tour">
+<pre>Grand Unified Configuration Settings
+
+!!8中基本类型
+
+```
+boolean: on|off true|false 例如 enable_seqscan
+integer: 700  例如 max_connections=700
+float: random_page_cost = 3.75
+Memory / Disk Size: work_mem = 512MB shared_buffers = 4096
+time: authentication_timeout = 30s
+string: log_directory = 'pg_log'
+enum: log_destination = 'csvlog'
+list: search_path = 'main, archive, “$user”'
+```
+
+!! 6中配置上下文
+```
+user: 会话级别配置 can be set on per-session basis at runtime
+
+superuser: 可运行时配置,但仅限于超级管理员使用
+
+sighup: 需要重启 requires a soft restart of the postmaster to change
+
+postmaster: can only be changed with a hard restart
+
+backend: developer settings which have to be set before session start
+
+internal: compile-time settings provided for reference
+```
+
+!! 存放位置
+```
+postgresql.conf
+$PGDATA/postgresql.conf
+
+SET
+pg_settings
+ALTER objects
+command-line switches &amp; PGOPTIONS
+UPDATE pg_settings SET setting = '12MB' WHERE name = 'work_mem';
+```
+
+!! 配置操作
+```
+SET enable_mergejoin = false;
+SHOW ALL; // 查看所有配置项目
+SELECT * FROM pg_settings
+```
+
+!! 常用配置
+```
+listen_address:
+// 最大连接数
+max_connections
+// 
+shared_buffers
+// 
+work_mem
+// 
+maintenance_work_mem
+// 
+max_fsm_pages
+// 同步提交 
+synchronous_commit
+// 
+checkpoint_segments
+//
+wal_buffers
+// 
+autovacuum
+//
+effective_cache_size
+// 
+default_statistics_target
+
+constraint_exclusion
+
+log_destination &amp; log settings
 ```</pre>
 </div>
 <div created="20160630052436090" creator="limix" modified="20160718092047220" modifier="limix" tags="redis" title="redis">
@@ -17865,7 +18068,7 @@ width:线宽
 <div created="20160520111624701" creator="limix" modified="20160521004519645" modifier="limix" tags="sld symbol point" title="sld.symbol.PointSymbolizer">
 <pre></pre>
 </div>
-<div created="20160423153330685" creator="limix" modified="20160725130852785" modifier="limix" tags="$:/tags/SideBar" title="todo">
+<div created="20160423153330685" creator="limix" modified="20160815015538170" modifier="limix" tags="$:/tags/SideBar" title="todo">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-expandable &quot;todo&quot;&gt;&gt;
 &lt;/div&gt;</pre>
@@ -17883,7 +18086,7 @@ conf/context.xml
 ```
 </pre>
 </div>
-<div created="20160625070520670" creator="limix" modified="20160719025828357" modifier="limix" tags="ubuntu" title="ubuntu">
+<div created="20160625070520670" creator="limix" modified="20160812025215539" modifier="limix" tags="ubuntu" title="ubuntu">
 <pre>!! 版本
 server版本,desktop版本
 区别:server版本和desktop版本的内核编译参数不同,server版支持SMP-对称多处理技术.内核是否支持对称多处理,可以通过 uname -a 查看内核参数.如果包含SMP表示支持对称多处理机制.
@@ -17892,11 +18095,7 @@ server版本,desktop版本
 
 
 !! APT-源
-* main Canonical支持的开源软件
-* universe 社区维护的开源软件
-* restricted 设备的专有驱动
-* multiverse 有版权和合法限制的源
-* source 源代码
+[[apt]]
 
 !! 添加本地源
 ```
@@ -17910,25 +18109,43 @@ deb file:///mnt/iso/ubuntu trusty restricted
 !!! 确认离线源的基础版本
 !!! 制作离线源
 ```
+0. 准备工作
+   // 1. 配置数据源
+   对 /etc/apt/sources.list.d/pgdg.list 添加行
+   deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+   // 2. 配置数据签名-并更新包
+   wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+  sudo apt-key add -
+sudo apt-get update // 此步骤不可以忘
+   
 1. 在和离线环境相同的操作系统上使用如下命令
    sudo apt-get clean 清理不需要的软件包
    sudo apt-get -d install XXXXX
+   
+   // 老版本
+   sudo apt-get -d install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libtiff4-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg node-carto cmake postgresql postgresql-contrib postgispostgresql-9.3-postgis-2.1
+   
+   // 新版本
+   sudo apt-get -d install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libtiff4-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg node-carto cmake postgresql postgresql-contrib postgis postgresql-9.5-postgis-2.2 libgdal1h
+   -- 新增 libgdal1h
+   -- 更改 postgresql-9.5-postgis-2.2
+   
    执行完成后结果: /var/cache/apt/archives/ 会存放需要用的离线包
 2. 在根目录下新建文件夹
-   sudo mkdir offlinePackage
-   sudo cp -r /var/cache/apt/archives  /offlinePackage
-   sudo chmod 777 -R /offlinPackage/
-   // 建立包体之间的依赖关联关系,如果出错-sudo apt-get install dpkg-dev
-   sudo dpkg-scanpackages /offlinePackage/ /dev/null |gzip &gt;/offlinePackage/Packages.gz
+   sudo apt-get install dpkg-dev
+   mkdir -p /iflytek/apt/offline
+   sudo cp -r /var/cache/apt/archives /iflytek/apt/offline/
+   sudo chmod 777 -R /iflytek/apt/offline
+   sudo dpkg-scanpackages /iflytek/apt/offline /dev/null |gzip &gt;/iflytek/apt/offline/archives/Packages.gz // 名字一定得是Packages.gz
 3. 打包压缩包
-   tar cvzf offlinePackage.tar.gz offlinePackage/  
+   tar cvzf offlinePackage.tar.gz /iflytek/apt/offline 
 ```
 !!! 离线环境添加离线源-安装软件
 ```
-   sudo tar -xvf offlinePackage.tar.gz
-   // 操作之前请备份sources.list,只保留制作的离线源
+   sudo tar -xvzf offlinePackage.tar.gz
+   // 操作之前请备份sources.list,只保留制作的离线源,主要deb file:/// 一定有空格
    sudo vi /etc/apt/sources.list
-     deb file:/// offlinePackage/
+     deb file:/// iflytek/apt/offline/archives/
    // 更新软件源
    sudo apt-get update
    sudo apt-get install XXXXX
@@ -17990,1298 +18207,13 @@ Ver Cluster Port Status Owner    Data directory              Log file
 <div created="20160518142647766" creator="limix" modified="20160520011804398" modifier="limix" tags="geo module" title="udig">
 <pre></pre>
 </div>
-<div title="Untitled">
-<pre>&lt;div class=&quot; tc-page-container-wrapper&quot;&gt;&lt;div&gt;&lt;div class=&quot;tc-page-container tc-page-view-pop tc-language-en-GB&quot;&gt;&lt;div class=&quot;tc-dropzone&quot;&gt;&lt;span class=&quot;tc-topbar tc-topbar-left&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tc-topbar tc-topbar-right&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;tc-topbar tc-topbar-right&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;/span&gt;&lt;div class=&quot;tc-sidebar-scrollable&quot; style=&quot;overflow: auto;&quot;&gt;&lt;div&gt;&lt;div class=&quot;tc-sidebar-header&quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;h1 class=&quot;tc-site-title&quot;&gt;limix's wiki&lt;/h1&gt;&lt;div class=&quot;tc-site-subtitle&quot;&gt;你的时间有限,做最值得做的事情&lt;/div&gt;&lt;p&gt;&lt;div class=&quot;tc-page-controls&quot;&gt;
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-
-
-
-
-
-
-
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-&lt;/span&gt;
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-&lt;/span&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-
-
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;p&gt;&lt;div class=&quot;tc-page-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;/div&gt;&lt;/p&gt;&lt;div class=&quot;tc-sidebar-lists&quot;&gt;&lt;p&gt;
-&lt;div class=&quot;tc-search&quot;&gt;
-&lt;input class=&quot;tc-popup-handle&quot; type=&quot;search&quot;&gt;
-&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;&lt;p&gt;&lt;div class=&quot;tc-search&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;tc-block-dropdown-wrapper tc-reveal&quot;&gt;&lt;/div&gt;
-
-&lt;/p&gt;&lt;p&gt;&lt;div class=&quot;tc-tab-set &quot;&gt;
-&lt;div class=&quot;tc-tab-buttons &quot;&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;&lt;div class=&quot;tc-tab-buttons &quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;tc-tab-divider &quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;tc-tab-content &quot;&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;&lt;p&gt;&lt;div class=&quot;tc-more-sidebar&quot;&gt;
-&lt;div class=&quot;tc-tab-set tc-vertical&quot;&gt;
-&lt;div class=&quot;tc-tab-buttons tc-vertical&quot;&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;tc-sidebar-scrollable&quot; style=&quot;overflow: auto;&quot;&gt;&lt;div&gt;&lt;div class=&quot;tc-sidebar-header&quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;div class=&quot;tc-sidebar-lists&quot;&gt;&lt;p&gt;&lt;div class=&quot;tc-tab-set &quot;&gt;&lt;div class=&quot;tc-tab-content &quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;p&gt;&lt;div class=&quot;tc-more-sidebar&quot;&gt;&lt;div class=&quot;tc-tab-set tc-vertical&quot;&gt;&lt;div class=&quot;tc-tab-buttons tc-vertical&quot;&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;tc-tab-content tc-vertical&quot;&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ant&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ant
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#apt&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-apt
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.conf&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.conf
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.protocol.basic&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.protocol.basic
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.protocol.proxy&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.protocol.proxy
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.restlet&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.restlet
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#cas.secure&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-cas.secure
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.arch&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.arch
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.arch.image&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.arch.image
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.icon&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.icon
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.install.mac&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.install.mac
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.compose&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.compose
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.engine&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.engine
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.hub&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.hub
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.machine&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.machine
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.registry&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.registry
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.swarm&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.swarm
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.module.toolbox&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.module.toolbox
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#docker.start&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-docker.start
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#dpkg&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-dpkg
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext.basic&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext.basic
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext.glossary.model&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext.glossary.model
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext.glossary.store&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext.glossary.store
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ext.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ext.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.business&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.business
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.business.%E4%BA%91%E9%BA%BB%E7%82%B9&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.business.云麻点
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.business.%E5%8A%A8%E6%80%81%E7%82%B9%E6%89%A9%E7%AE%97&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.business.动态点扩算
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.business.%E5%9B%BE%E6%A0%87%E8%81%9A%E5%90%88&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.business.图标聚合
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.business.%E7%83%AD%E5%8A%9B%E5%9B%BE&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.business.热力图
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.common&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.common
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.crs&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.crs
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.crs.projection&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.crs.projection
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.data&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.data
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.docker&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.docker
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.file&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.file
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.file.shape&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.file.shape
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.geoserver&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.geoserver
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.GeoWebCache&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.GeoWebCache
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.glossary.gridset&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.glossary.gridset
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.glossary.miss&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.glossary.miss
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.glossary.subgridset&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.glossary.subgridset
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.glossary.tile&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.glossary.tile
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.json-c.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.json-c.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.layer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.layer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.lifecycle&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.lifecycle
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.offline&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.offline
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.openlayer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.openlayer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.package&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.package
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.postgis.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.postgis.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.postgis.install.configure&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.postgis.install.configure
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.postgis.install.issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.postgis.install.issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.render&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.render
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.server.extention&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.server.extention
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.service.wms&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.service.wms
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.service.wms.feature&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.service.wms.feature
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.service.wms.parms&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.service.wms.parms
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.sld&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.sld
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geo.todo&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geo.todo
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geoserver&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geoserver
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geoserver.rest&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geoserver.rest
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#geoserver.stores&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-geoserver.stores
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#guava&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-guava
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#gwc.arch&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-gwc.arch
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#javascript&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-javascript
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-limix.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix.wiki&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-limix.wiki
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix.wiki.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-limix.wiki.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix.wiki.source&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-limix.wiki.source
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.command&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.command
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.disk&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.disk
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.grub&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.grub
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.package&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.package
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#linux.top&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-linux.top
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik.dep.libjpeg&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik.dep.libjpeg
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik.dep.libpng&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik.dep.libpng
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik.dep.libtiff&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik.dep.libtiff
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mapnik.style&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mapnik.style
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.conf&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.conf
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.database&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.database
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.dump&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.dump
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.password&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.password
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#mysql.user&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-mysql.user
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ne_110m_admin_0&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ne_110m_admin_0
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#nw&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-nw
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#nw.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-nw.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#nw.package.json&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-nw.package.json
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.control&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.control
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.domain&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.domain
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.features&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.features
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.interaction&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.interaction
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.layer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.layer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.map&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.map
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.proj&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.proj
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.quickstart&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.quickstart
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.source&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.source
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.source.TileWMS&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.source.TileWMS
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ol.view&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ol.view
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#openlayer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-openlayer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#openlayer.overlay&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-openlayer.overlay
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.component&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.component
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.misc&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.misc
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.osm2pgsql.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.osm2pgsql.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.properties&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.properties
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.schema&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.schema
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.schema.domain&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.schema.domain
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.schema.line&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.schema.line
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.schema.line.access&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.schema.line.access
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.tag.highway&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.tag.highway
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.tile&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.tile
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.tile.arch&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.tile.arch
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.ubuntu&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.ubuntu
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.ubuntu.check&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.ubuntu.check
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.ubuntu.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.ubuntu.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#osm.ubuntu.log&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-osm.ubuntu.log
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#pdca.problem&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-pdca.problem
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.common&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.common
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.createdb&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.createdb
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.glossay&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.glossay
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.install.source&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.install.source
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.install.yum&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.install.yum
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.issue&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.issue
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#postgresql.psql&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-postgresql.psql
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#redis&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-redis
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#redis.aof&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-redis.aof
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#redis.conf&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-redis.conf
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#redis.issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-redis.issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#samba&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-samba
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#samba.client&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-samba.client
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#samba.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-samba.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.glossary&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.glossary
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.glossary.words&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.glossary.words
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.layer.NamedLayer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.layer.NamedLayer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.layer.UserLayer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.layer.UserLayer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.osm.layer.builtup_area&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.osm.layer.builtup_area
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.osm.layer.shoreline_300&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.osm.layer.shoreline_300
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.rule&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.rule
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-01234&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-01234
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-01234.sld&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-01234.sld
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-5678&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-5678
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-5678.sld&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-5678.sld
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-other&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-other
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.admin-other.sld&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.admin-other.sld
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.sample.osm.direction&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.sample.osm.direction
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.schema.FeatureStyle.xsd&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.schema.FeatureStyle.xsd
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.schema.StyledLayerDescriptor.xsd&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.schema.StyledLayerDescriptor.xsd
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.schema.Symbolizer.xsd&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.schema.Symbolizer.xsd
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.schema.tree&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.schema.tree
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.style.FeatureTypeStyle&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.style.FeatureTypeStyle
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.style.UserStyle&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.style.UserStyle
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.symbol.LineSymbolizer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.symbol.LineSymbolizer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.symbol.PloygonSymbolizer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.symbol.PloygonSymbolizer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#sld.symbol.PointSymbolizer&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-sld.symbol.PointSymbolizer
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#todo&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-todo
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#tomcat.issues&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-tomcat.issues
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ubuntu&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ubuntu
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ubuntu.install&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ubuntu.install
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ubuntu.postgresql&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ubuntu.postgresql
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ubuntu.todo&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-ubuntu.todo
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#udig&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-udig
-&lt;/a&gt;
-&lt;/div&gt;&lt;div class=&quot;tc-menu-list-item&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#vim&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;
-vim
-&lt;/a&gt;
-&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;section class=&quot;tc-story-river&quot;&gt;&lt;section class=&quot;story-backdrop&quot;&gt;&lt;/section&gt;&lt;div style=&quot;transition: none 0s ease 0s ; transform: none; opacity: 1;&quot; class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-install tc-tagged-ubuntu tc-tagged-osm&quot;&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;
-&lt;div class=&quot;tc-titlebar&quot;&gt;
-&lt;span class=&quot;tc-tiddler-controls&quot;&gt;
-&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-            
-            
-            
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-    	
-	        
-	        
-        
-        
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;&lt;div class=&quot;tc-titlebar&quot;&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-
-&lt;span style=&quot;fill:;&quot; class=&quot;tc-tiddler-title-icon&quot;&gt;
-
-&lt;/span&gt;
-
-
-
-&lt;h2 class=&quot;tc-title&quot;&gt;
-osm.ubuntu.install
-&lt;/h2&gt;
-
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-subtitle&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix&quot; class=&quot;tc-tiddlylink tc-tiddlylink-missing&quot;&gt;
-limix
-&lt;/a&gt; 26th June 2016 at 7:37pm
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;div style=&quot;transition: none 0s ease 0s ; transform: none; opacity: 1;&quot; class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-install tc-tagged-ubuntu tc-tagged-osm&quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;tc-tiddler-body tc-reveal&quot;&gt;&lt;h2 class=&quot;&quot;&gt;基础信息收集&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;// 通过通用命令
-uname -a
-Linux ispp103 3.16.0-30-generic #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-
-// 查看ubuntu的具体的版本号的方式
-cat /etc/issue
-Ubuntu 14.04.2 LTS \n \l
-
-// 查看发布版本
-root@ispp103:/etc/apt# sudo lsb_release -a
-No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.2 LTS
-Release:	14.04
-Codename:	trusty
-
-
-// 通过lsb_release命令
-sudo lsb_release -a
-No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.2 LTS
-Release:	14.04
-Codename:	trusty
-
-// 通过os-release配置文件
-cat /etc/os-release 
-NAME=&quot;Ubuntu&quot;
-VERSION=&quot;14.04.2 LTS, Trusty Tahr&quot;
-ID=ubuntu
-ID_LIKE=debian
-PRETTY_NAME=&quot;Ubuntu 14.04.2 LTS&quot;
-VERSION_ID=&quot;14.04&quot;
-HOME_URL=&quot;http://www.ubuntu.com/&quot;
-SUPPORT_URL=&quot;http://help.ubuntu.com/&quot;
-BUG_REPORT_URL=&quot;http://bugs.launchpad.net/ubuntu/&quot;&lt;/code&gt;&lt;/pre&gt;&lt;h2 class=&quot;&quot;&gt;基础版本确认&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;http://old-releases.ubuntu.com/releases/14.04.2/ubuntu-14.04.2-desktop-amd64.manifest&lt;/code&gt;&lt;/pre&gt;&lt;h2 class=&quot;&quot;&gt;添加本地数据源&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#ubuntu&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;ubuntu&lt;/a&gt;&lt;/p&gt;&lt;h2 class=&quot;&quot;&gt;依赖软件&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libtiff4-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev libgeotiff-epsg node-carto&lt;/code&gt;&lt;/pre&gt;&lt;h2 class=&quot;&quot;&gt;依赖软件安装&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;sudo apt-get install postgresql postgresql-contrib postgis postgresql-9.3-postgis-2.1
-
-// 输出结果
-Creating new cluster 9.3/main ...
-  config /etc/postgresql/9.3/main
-  data   /var/lib/postgresql/9.3/main
-  locale en_US.UTF-8
-  port   5432
-  
-安装完软件之后,postgresql会默认创建一个postgresql用户
-可以通过如下命令更改该用户密码
-sudo passwd postgres&lt;/code&gt;&lt;/pre&gt;&lt;h3 class=&quot;&quot;&gt;检查内核参数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;1. 方式1: sudo sysctl kernel.shmmax
-   kernel.shmmax = 18446744073692774399
-2. 方式2：cat /proc/sys/kernel/shmmax
-   18446744073692774399&lt;/code&gt;&lt;/pre&gt;&lt;h3 class=&quot;&quot;&gt;修改内核参数方法[如果内核相关参数过小,可调整]&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;1. 添加内核配置参数: 配置文件: /etc/sysctl.conf
-# Increase kernel shared memory segments 
-# needed for large databases
-kernel.shmmax=268435456
-2. 检查更新后的内核配置参数
-sudo sysctl kernel.shmmax&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;div style=&quot;transition: none 0s ease 0s ; transform: none; opacity: 1;&quot; class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-ubuntu&quot;&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;
-&lt;div class=&quot;tc-titlebar&quot;&gt;
-&lt;span class=&quot;tc-tiddler-controls&quot;&gt;
-&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-            
-            
-            
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-    	
-	        
-	        
-        
-        
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;&lt;div class=&quot;tc-titlebar&quot;&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-
-&lt;span style=&quot;fill:;&quot; class=&quot;tc-tiddler-title-icon&quot;&gt;
-
-&lt;/span&gt;
-
-
-
-&lt;h2 class=&quot;tc-title&quot;&gt;
-ubuntu
-&lt;/h2&gt;
-
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-subtitle&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix&quot; class=&quot;tc-tiddlylink tc-tiddlylink-missing&quot;&gt;
-limix
-&lt;/a&gt; 26th June 2016 at 11:20am
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;transition: none 0s ease 0s ; transform: none; opacity: 1;&quot; class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-ubuntu&quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;tc-tiddler-body tc-reveal&quot;&gt;&lt;h2 class=&quot;&quot;&gt;版本&lt;/h2&gt;&lt;p&gt;server版本,desktop版本
-区别:server版本和desktop版本的内核编译参数不同,server版支持SMP-对称多处理技术.内核是否支持对称多处理,可以通过 uname -a 查看内核参数.如果包含SMP表示支持对称多处理机制.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;3.16.0-30-generic #40~14.04.1-Ubuntu SMP Thu Jan 15 17:43:14 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/p&gt;&lt;/blockquote&gt;&lt;h2 class=&quot;&quot;&gt;APT-源&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;main Canonical支持的开源软件&lt;/li&gt;&lt;li&gt;universe 社区维护的开源软件&lt;/li&gt;&lt;li&gt;restricted 设备的专有驱动&lt;/li&gt;&lt;li&gt;multiverse 有版权和合法限制的源&lt;/li&gt;&lt;li&gt;source 源代码&lt;/li&gt;&lt;/ul&gt;&lt;h2 class=&quot;&quot;&gt;添加本地源&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;cd /etc/apt
-sudo vi sources.list 
-deb file:///mnt/iso/ubuntu trusty main
-deb file:///mnt/iso/ubuntu trusty restricted&lt;/code&gt;&lt;/pre&gt;&lt;h2 class=&quot;&quot;&gt;制作离线源&lt;/h2&gt;&lt;h3 class=&quot;&quot;&gt;确认离线源的基础版本&lt;/h3&gt;&lt;h3 class=&quot;&quot;&gt;制作离线源&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;1. 在和离线环境相同的操作系统上使用如下命令
-   sudo apt-get clean 清理不需要的软件包
-   sudo apt-get -d install XXXXX
-   执行完成后结果: /var/cache/apt/archives/ 会存放需要用的离线包
-2. 在根目录下新建文件夹
-   sudo mkdir offlinePackage
-   sudo cp -r /var/cache/apt/archives  /offlinePackage
-   sudo chmod 777 -R /offlinPackage/
-   // 建立包体之间的依赖关联关系,如果出错-sudo apt-get install dpkg-dev
-   sudo dpkg-scanpackages /offlinePackage/ /dev/null |gzip &amp;gt;/offlinePackage/Packages.gz
-3. 打包压缩包
-   tar cvzf offlinePackage.tar.gz offlinePackage/  &lt;/code&gt;&lt;/pre&gt;&lt;h3 class=&quot;&quot;&gt;离线环境添加离线源-安装软件&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;   sudo tar -xvf offlinePackage.tar.gz
-   // 操作之前请备份sources.list,只保留制作的离线源
-   sudo vi /etc/apt/sources.list
-     deb file:/// offlinePackage/
-   // 更新软件源
-   sudo apt-get update
-   sudo apt-get install XXXXX&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a target=&quot;_blank&quot; class=&quot;tc-tiddlylink-external&quot; href=&quot;http://blog.csdn.net/wangqiulin123456/article/details/39582269http://blog.csdn.net/wangqiulin123456/article/details/39582269&quot;&gt;http://blog.csdn.net/wangqiulin123456/article/details/39582269http://blog.csdn.net/wangqiulin123456/article/details/39582269&lt;/a&gt;
-&lt;/p&gt;&lt;/div&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;div class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-wiki tc-tagged-todo&quot;&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;
-&lt;div class=&quot;tc-titlebar&quot;&gt;
-&lt;span class=&quot;tc-tiddler-controls&quot;&gt;
-&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-            
-            
-            
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-    	
-	        
-	        
-        
-        
-        
-    
-    &amp;lt;/g&amp;gt;
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;
-
-    
-        
-        
-        
-    
-
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;div class=&quot;tc-tiddler-title&quot;&gt;&lt;div class=&quot;tc-titlebar&quot;&gt;&lt;span class=&quot;tc-tiddler-controls&quot;&gt;&lt;span class=&quot; tc-reveal&quot;&gt;&lt;/span&gt;
-&lt;/span&gt;
-
-&lt;span&gt;
-
-&lt;span style=&quot;fill:;&quot; class=&quot;tc-tiddler-title-icon&quot;&gt;
-
-&lt;/span&gt;
-
-
-
-&lt;h2 class=&quot;tc-title&quot;&gt;
-limix.wiki
-&lt;/h2&gt;
-
-&lt;/span&gt;
-
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-subtitle&quot;&gt;
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix&quot; class=&quot;tc-tiddlylink tc-tiddlylink-missing&quot;&gt;
-limix
-&lt;/a&gt; 25th June 2016 at 11:23am
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot; tc-reveal&quot;&gt;
-&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-&lt;/span&gt;&lt;div class=&quot; tc-page-container-wrapper&quot;&gt;&lt;div&gt;&lt;div class=&quot;tc-page-container tc-page-view-pop tc-language-en-GB&quot;&gt;&lt;div class=&quot;tc-dropzone&quot;&gt;&lt;section class=&quot;tc-story-river&quot;&gt;&lt;div class=&quot;tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists   tc-tagged-wiki tc-tagged-todo&quot;&gt;&lt;div class=&quot; tc-reveal&quot;&gt;&lt;div class=&quot;tc-tags-wrapper&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;
-
-
-
-&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;tc-tiddler-body tc-reveal&quot;&gt;&lt;h2 class=&quot;&quot;&gt;目标意识-CSF&lt;/h2&gt;&lt;h2 class=&quot;&quot;&gt;巩固意识,哪些地方需要提高巩固&lt;/h2&gt;&lt;h2 class=&quot;&quot;&gt;LIMIX_INFO tiddlywiki,过于碎片化,不利于整体性提升.&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;Tabs&lt;/li&gt;&lt;li&gt;Tables&lt;/li&gt;&lt;li&gt;tag based list&lt;/li&gt;&lt;li&gt;tables of contents&lt;/li&gt;&lt;li&gt;filters 比较重要&lt;/li&gt;&lt;li&gt;macros 宏&lt;/li&gt;&lt;li&gt;tiddlers&lt;ol&gt;&lt;li&gt;standard &lt;/li&gt;&lt;li&gt;system&lt;/li&gt;&lt;li&gt;shadows&lt;/li&gt;&lt;li&gt;filter&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;title list&lt;/li&gt;&lt;li&gt;tagging&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;filter 最简单的是
-&lt;a href=&quot;file:///Users/limix/media/git/core/home.html#limix.wiki&quot; class=&quot;tc-tiddlylink tc-tiddlylink-resolves&quot;&gt;limix.wiki&lt;/a&gt;&lt;/p&gt;&lt;p&gt;[title[limix.wiki]]&lt;/p&gt;&lt;p&gt;[tag[wiki]]&lt;/p&gt;&lt;p&gt;[field:serving[4]]  [serving[4]]&lt;/p&gt;&lt;/div&gt;
-
-
-
-&lt;/div&gt;
-
-&lt;section class=&quot;story-frontdrop&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;div class=&quot;tc-alerts&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div id=&quot;styleArea&quot;&gt;
-
-&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
-</div>
-<div created="20160521000836688" creator="limix" modified="20160618110219158" modifier="limix" tags="vim misc todo" title="vim">
-<pre>删除空白行:g/^$/d
+<div created="20160521000836688" creator="limix" modified="20160810044306523" modifier="limix" tags="vim misc todo" title="vim">
+<pre>```
+// 删除空白行 :g/^$/d
+```
 
 mac: brew install macvim
-&gt; A full installation of Xcode.app is required to compile this software
-</pre>
+&gt; A full installation of Xcode.app is required to compile this software</pre>
 </div>
 
 </div>
