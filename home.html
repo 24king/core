@@ -305,6 +305,8 @@ Error message and password prompt
 
 <li>$:/state/tab-350824169</li>
 
+<li>$:/state/tab-661696358</li>
+
 <li>$:/state/tab-682358395</li>
 
 <li>$:/state/tab-741247627</li>
@@ -612,6 +614,16 @@ Error message and password prompt
 <li>dpkg</li>
 
 <li>Draft of 'paas.history'</li>
+
+<li>elasticsearch</li>
+
+<li>elasticsearch.cluster.settings</li>
+
+<li>elasticsearch.glossary</li>
+
+<li>elasticsearch.operate</li>
+
+<li>elasticsearch.plugin.ik</li>
 
 <li>ext</li>
 
@@ -939,6 +951,8 @@ Error message and password prompt
 
 <li>sld.symbol.PointSymbolizer</li>
 
+<li>svn.misc</li>
+
 <li>todo</li>
 
 <li>tomcat.issues</li>
@@ -954,6 +968,8 @@ Error message and password prompt
 <li>udig</li>
 
 <li>vim</li>
+
+<li>windows.samba</li>
 
 </ul>
 </p>
@@ -10010,7 +10026,7 @@ Error message and password prompt
 <div created="20160423014245865" creator="limix" modified="20160614202344669" modifier="limix" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div bag="default" created="20160417044928803" creator="limix" modified="20160815030100853" modifier="limix" revision="0" title="$:/state/sidebar">
+<div bag="default" created="20160417044928803" creator="limix" modified="20160818144103169" modifier="limix" revision="0" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20160423042126297" creator="limix" modified="20160423042128942" modifier="limix" title="$:/state/tab--1031830929">
@@ -10091,6 +10107,9 @@ Error message and password prompt
 <div created="20160423143050855" creator="limix" modified="20160423143117088" modifier="limix" title="$:/state/tab-350824169">
 <pre>docker.arch.image</pre>
 </div>
+<div created="20160815041900330" creator="limix" modified="20160815041906457" modifier="limix" title="$:/state/tab-661696358">
+<pre>$:/core/ui/TiddlerInfo/Tools</pre>
+</div>
 <div created="20160517141514685" creator="limix" modified="20160517141536532" modifier="limix" title="$:/state/tab-682358395">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
@@ -10112,8 +10131,8 @@ Error message and password prompt
 <div bag="default" created="20160417045715996" creator="limix" modified="20160815015105273" modifier="limix" revision="3" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div bag="default" created="20160417045702279" creator="limix" modified="20160815015103082" modifier="limix" revision="4" title="$:/state/tab/sidebar--1835078512">
-<pre>$:/core/ui/SideBar/More</pre>
+<div bag="default" created="20160417045702279" creator="limix" modified="20160820051037348" modifier="limix" revision="4" title="$:/state/tab/sidebar--1835078512">
+<pre>todo</pre>
 </div>
 <div bag="default" created="20160417044824502" creator="limix" modified="20160423043357202" modifier="limix" revision="1" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10259,7 +10278,7 @@ Error message and password prompt
 <div bag="default" created="20160417044412911" creator="l" modified="20160417044413452" modifier="limi" revision="0" title="$:/status/UserName">
 <pre>limix</pre>
 </div>
-<div list="geo.glossary osm.misc osm" title="$:/StoryList">
+<div list="elasticsearch.operate elasticsearch.glossary elasticsearch" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20160417044558629" creator="limix" modified="20160725125719152" modifier="limix" revision="0" title="$:/temp/advancedsearch">
@@ -10680,8 +10699,8 @@ This plugin contains tools to help slice up long texts into individual tiddlers.
 <div created="20160519075043527" creator="limix" modified="20160519075052529" modifier="limix" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div bag="default" created="20160417045758551" creator="limix" modified="20160815030213415" modifier="limix" revision="7" title="$:/temp/search">
-<pre>SRS</pre>
+<div bag="default" created="20160417045758551" creator="limix" modified="20160820051050730" modifier="limix" revision="7" title="$:/temp/search">
+<pre>elasticsearch</pre>
 </div>
 <div created="20160423032049173" creator="limix" modified="20160423032049174" modifier="limix" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/http://tiddlywiki.com/library/v5.1.11/index.html" url="http://tiddlywiki.com/library/v5.1.11/index.html">
 <pre>loaded</pre>
@@ -13709,6 +13728,127 @@ dpkg -i somepackage.deb
 <div created="20160727083229395" creator="limix" draft.of="paas.history" draft.title="paas.history" modified="20160727083810301" modifier="limix" tags="paas history" title="Draft of 'paas.history'">
 <pre></pre>
 </div>
+<div created="20160817041819194" creator="limix" modified="20160819161415692" modifier="limix" tags="" title="elasticsearch">
+<pre>```
+// 创建索引
+curl -XPUT http://localhost:9200/index
+
+// 创建mapping
+curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
+{
+    &quot;fulltext&quot;: {
+             &quot;_all&quot;: {
+            &quot;analyzer&quot;: &quot;ik_max_word&quot;,
+            &quot;search_analyzer&quot;: &quot;ik_max_word&quot;,
+            &quot;term_vector&quot;: &quot;no&quot;,
+            &quot;store&quot;: &quot;false&quot;
+        },
+        &quot;properties&quot;: {
+            &quot;content&quot;: {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;store&quot;: &quot;no&quot;,
+                &quot;term_vector&quot;: &quot;with_positions_offsets&quot;,
+                &quot;analyzer&quot;: &quot;ik_max_word&quot;,
+                &quot;search_analyzer&quot;: &quot;ik_max_word&quot;,
+                &quot;include_in_all&quot;: &quot;true&quot;,
+                &quot;boost&quot;: 8
+            }
+        }
+    }
+}'
+
+curl -XPOST http://localhost:9200/index/fulltext/1 -d'
+{&quot;content&quot;:&quot;周扒皮&quot;}
+'
+
+// 分词结果测试
+curl -XGET 'http://localhost:9200/index/_analyze?analyzer=ik_max_word&amp;pretty' -d '周扒皮'
+{
+  &quot;tokens&quot; : [ {
+    &quot;token&quot; : &quot;周&quot;,
+    &quot;start_offset&quot; : 0,
+    &quot;end_offset&quot; : 1,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 1
+  }, {
+    &quot;token&quot; : &quot;扒皮&quot;,
+    &quot;start_offset&quot; : 1,
+    &quot;end_offset&quot; : 3,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 2
+  }, {
+    &quot;token&quot; : &quot;皮&quot;,
+    &quot;start_offset&quot; : 2,
+    &quot;end_offset&quot; : 3,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 3
+  } ]
+}
+// 升级之后的结果
+{
+  &quot;tokens&quot; : [ {
+    &quot;token&quot; : &quot;周扒皮&quot;,
+    &quot;start_offset&quot; : 0,
+    &quot;end_offset&quot; : 3,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 1
+  }, {
+    &quot;token&quot; : &quot;周&quot;,
+    &quot;start_offset&quot; : 0,
+    &quot;end_offset&quot; : 1,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 2
+  }, {
+    &quot;token&quot; : &quot;扒皮&quot;,
+    &quot;start_offset&quot; : 1,
+    &quot;end_offset&quot; : 3,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 3
+  }, {
+    &quot;token&quot; : &quot;皮&quot;,
+    &quot;start_offset&quot; : 2,
+    &quot;end_offset&quot; : 3,
+    &quot;type&quot; : &quot;CN_WORD&quot;,
+    &quot;position&quot; : 4
+  } ]
+}
+
+
+curl -XPOST 'http://localhost:9200/index/_search' -d '
+{&quot;query&quot;:{&quot;bool&quot;:{&quot;must&quot;:[{&quot;query_string&quot;:{&quot;default_field&quot;:&quot;fulltext.content&quot;,&quot;query&quot;:&quot;周扒皮&quot;}}],&quot;must_not&quot;:[],&quot;should&quot;:[]}},&quot;from&quot;:0,&quot;size&quot;:10,&quot;sort&quot;:[],&quot;aggs&quot;:{}}'
+```</pre>
+</div>
+<div created="20160819043605198" creator="limix" modified="20160820051136244" modifier="limix" tags="elasticsearch cluster settings" title="elasticsearch.cluster.settings">
+<pre>```
+关闭自动同步
+curl -XPUT 'http://localhost:9200/_cluster/settings' -d '{
+&quot;transient&quot; : {
+    &quot;cluster.routing.allocation.disable_allocation&quot;: &quot;true&quot;
+}}'
+
+// 开启自动同步
+curl -XPUT 'http://localhost:9200/_cluster/settings' -d '{
+&quot;transient&quot; : {
+    &quot;cluster.routing.allocation.disable_allocation&quot;: &quot;false&quot;
+}}'
+```</pre>
+</div>
+<div created="20160820051232639" creator="limix" modified="20160820051418774" modifier="limix" tags="elasticsearch glossary" title="elasticsearch.glossary" type="application/x-tiddler-dictionary">
+<pre>index:索引
+indicies:索引
+plugin:插件
+plugins:插件</pre>
+</div>
+<div created="20160820050414141" creator="limix" modified="20160820051358695" modifier="limix" tags="elasticsearch operate" title="elasticsearch.operate">
+<pre>http://localhost:9200/_cat/plugins</pre>
+</div>
+<div created="20160819161421320" creator="limix" modified="20160820050405655" modifier="limix" tags="" title="elasticsearch.plugin.ik">
+<pre>```
+analysis-ik:代码中插件名称
+```
+
+</pre>
+</div>
 <div created="20160614201657488" creator="limix" modified="20160729060935380" modifier="limix" tags="ext $:/tags/SideBar" title="ext">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-expandable &quot;ext&quot;&gt;&gt;
@@ -14609,9 +14749,15 @@ boot
 ```
 </pre>
 </div>
-<div created="20160621145635584" creator="limix" modified="20160630024329469" modifier="limix" tags="linux misc" title="linux.misc">
+<div created="20160621145635584" creator="limix" modified="20160817064452731" modifier="limix" tags="linux misc" title="linux.misc">
 <pre>```
+grep -C 5 foo file
+grep -B 5 foo file
+grep -A 5 foo file
+
 /proc 虚拟文件系统 用于linux内核空间-用户空间通信
+
+unzip -d ik-new elasticsearch-analysis-ik-1.3.0.zip
 
 id limix
 lsof -Pn
@@ -16277,18 +16423,24 @@ constraint_exclusion
 log_destination &amp; log settings
 ```</pre>
 </div>
-<div created="20160630052436090" creator="limix" modified="20160718092047220" modifier="limix" tags="redis" title="redis">
-<pre>! 查询所有的key 
-```
-启动: redis-server --protected-mode no /etc/redis/6379.conf &amp;
-停止: redis-cli shutdown
-```
-
+<div created="20160630052436090" creator="limix" modified="20160820050645115" modifier="limix" tags="redis" title="redis">
+<pre>!! 查询所有的key 
 ```
 redis-cli
 keys *
+```
+!! 启动
+```
+redis-server --protected-mode no /etc/redis/6379.conf &amp;
 config set protected-mode no
-```</pre>
+```
+
+!! 停止
+```
+redis-cli shutdown
+```
+
+</pre>
 </div>
 <div created="20160707012131874" creator="limix" modified="20160707020027305" modifier="limix" tags="redis aof" title="redis.aof">
 <pre>!! About
@@ -18068,6 +18220,11 @@ width:线宽
 <div created="20160520111624701" creator="limix" modified="20160521004519645" modifier="limix" tags="sld symbol point" title="sld.symbol.PointSymbolizer">
 <pre></pre>
 </div>
+<div created="20160815091603205" creator="limix" modified="20160815091958904" modifier="limix" tags="svn" title="svn.misc">
+<pre>```
+svn plist
+```</pre>
+</div>
 <div created="20160423153330685" creator="limix" modified="20160815015538170" modifier="limix" tags="$:/tags/SideBar" title="todo">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-expandable &quot;todo&quot;&gt;&gt;
@@ -18214,6 +18371,20 @@ Ver Cluster Port Status Owner    Data directory              Log file
 
 mac: brew install macvim
 &gt; A full installation of Xcode.app is required to compile this software</pre>
+</div>
+<div created="20160817022038656" creator="limix" modified="20160817022206841" modifier="limix" tags="windows samba" title="windows.samba">
+<pre>```
+清除密码
+
+control keymgr.dll
+
+net use 
+
+net use //SSC-FILE/ipc$ /delete
+net use //SSC-WEB/ipc$ /delete
+
+http://blog.csdn.net/wangningyu/article/details/4641108
+```</pre>
 </div>
 
 </div>
