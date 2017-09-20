@@ -1,0 +1,625 @@
+{
+    "layout": [
+        {
+            "oozieRows": [
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Hive",
+                            "widgetType": "hive-document-widget",
+                            "oozieMovable": true,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e",
+                            "size": 12
+                        }
+                    ],
+                    "id": "ad7f1a59-c92e-167e-9a23-331cc1daeeb1",
+                    "columns": []
+                },
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Java program",
+                            "widgetType": "java-widget",
+                            "oozieMovable": true,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "ab2b6683-378e-bee7-d8b3-091d6098d168",
+                            "size": 12
+                        }
+                    ],
+                    "id": "e20011f6-bd34-d440-b54c-47b63a737f99",
+                    "columns": []
+                }
+            ],
+            "rows": [
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Start",
+                            "widgetType": "start-widget",
+                            "oozieMovable": false,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "3f107997-04cc-8733-60a9-a4bb62cebffc",
+                            "size": 12
+                        }
+                    ],
+                    "id": "3fd38a68-f2c0-2b56-b4b5-32a15fdd565c",
+                    "columns": []
+                },
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Hive",
+                            "widgetType": "hive-document-widget",
+                            "oozieMovable": true,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e",
+                            "size": 12
+                        }
+                    ],
+                    "id": "ad7f1a59-c92e-167e-9a23-331cc1daeeb1",
+                    "columns": []
+                },
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Java program",
+                            "widgetType": "java-widget",
+                            "oozieMovable": true,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "ab2b6683-378e-bee7-d8b3-091d6098d168",
+                            "size": 12
+                        }
+                    ],
+                    "id": "e20011f6-bd34-d440-b54c-47b63a737f99",
+                    "columns": []
+                },
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "End",
+                            "widgetType": "end-widget",
+                            "oozieMovable": false,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "33430f0f-ebfa-c3ec-f237-3e77efa03d0a",
+                            "size": 12
+                        }
+                    ],
+                    "id": "bf7c0cf5-2610-f3ac-c234-30ef1cc95611",
+                    "columns": []
+                },
+                {
+                    "enableOozieDropOnBefore": true,
+                    "enableOozieDropOnSide": true,
+                    "enableOozieDrop": false,
+                    "widgets": [
+                        {
+                            "status": "",
+                            "logsURL": "",
+                            "name": "Kill",
+                            "widgetType": "kill-widget",
+                            "oozieMovable": true,
+                            "ooziePropertiesExpanded": false,
+                            "externalIdUrl": "",
+                            "properties": {},
+                            "externalId": "",
+                            "isLoading": true,
+                            "offset": 0,
+                            "actionURL": "",
+                            "progress": 0,
+                            "klass": "card card-widget span12",
+                            "oozieExpanded": false,
+                            "id": "17c9c895-5a16-7443-bb81-f34b30b21548",
+                            "size": 12
+                        }
+                    ],
+                    "id": "db3fc880-e299-a17c-4754-1ace744b12f9",
+                    "columns": []
+                }
+            ],
+            "oozieEndRow": {
+                "enableOozieDropOnBefore": true,
+                "enableOozieDropOnSide": true,
+                "enableOozieDrop": false,
+                "widgets": [
+                    {
+                        "status": "",
+                        "logsURL": "",
+                        "name": "End",
+                        "widgetType": "end-widget",
+                        "oozieMovable": false,
+                        "ooziePropertiesExpanded": false,
+                        "externalIdUrl": "",
+                        "properties": {},
+                        "externalId": "",
+                        "isLoading": true,
+                        "offset": 0,
+                        "actionURL": "",
+                        "progress": 0,
+                        "klass": "card card-widget span12",
+                        "oozieExpanded": false,
+                        "id": "33430f0f-ebfa-c3ec-f237-3e77efa03d0a",
+                        "size": 12
+                    }
+                ],
+                "id": "bf7c0cf5-2610-f3ac-c234-30ef1cc95611",
+                "columns": []
+            },
+            "oozieKillRow": {
+                "enableOozieDropOnBefore": true,
+                "enableOozieDropOnSide": true,
+                "enableOozieDrop": false,
+                "widgets": [
+                    {
+                        "status": "",
+                        "logsURL": "",
+                        "name": "Kill",
+                        "widgetType": "kill-widget",
+                        "oozieMovable": true,
+                        "ooziePropertiesExpanded": false,
+                        "externalIdUrl": "",
+                        "properties": {},
+                        "externalId": "",
+                        "isLoading": true,
+                        "offset": 0,
+                        "actionURL": "",
+                        "progress": 0,
+                        "klass": "card card-widget span12",
+                        "oozieExpanded": false,
+                        "id": "17c9c895-5a16-7443-bb81-f34b30b21548",
+                        "size": 12
+                    }
+                ],
+                "id": "db3fc880-e299-a17c-4754-1ace744b12f9",
+                "columns": []
+            },
+            "enableOozieDropOnAfter": true,
+            "oozieStartRow": {
+                "enableOozieDropOnBefore": true,
+                "enableOozieDropOnSide": true,
+                "enableOozieDrop": false,
+                "widgets": [
+                    {
+                        "status": "",
+                        "logsURL": "",
+                        "name": "Start",
+                        "widgetType": "start-widget",
+                        "oozieMovable": false,
+                        "ooziePropertiesExpanded": false,
+                        "externalIdUrl": "",
+                        "properties": {},
+                        "externalId": "",
+                        "isLoading": true,
+                        "offset": 0,
+                        "actionURL": "",
+                        "progress": 0,
+                        "klass": "card card-widget span12",
+                        "oozieExpanded": false,
+                        "id": "3f107997-04cc-8733-60a9-a4bb62cebffc",
+                        "size": 12
+                    }
+                ],
+                "id": "3fd38a68-f2c0-2b56-b4b5-32a15fdd565c",
+                "columns": []
+            },
+            "klass": "card card-home card-column span12",
+            "enableOozieDropOnBefore": true,
+            "drops": [
+                "temp"
+            ],
+            "id": "f3f1f5a3-03f1-063b-f2d0-75f02709d0af",
+            "size": 12
+        }
+    ],
+    "workflow": {
+        "properties": {
+            "job_xml": "",
+            "description": "工作流其实没有什么东西",
+            "parameters": [
+                {
+                    "name": "oozie.use.system.libpath",
+                    "value": true
+                }
+            ],
+            "sla_enabled": false,
+            "deployment_dir": "/user/hue/oozie/workspaces/hue-oozie-1505290294.81",
+            "schema_version": "uri:oozie:workflow:0.5",
+            "properties": [],
+            "show_arrows": true,
+            "wf1_id": null,
+            "sla": [
+                {
+                    "key": "enabled",
+                    "value": false
+                },
+                {
+                    "key": "nominal-time",
+                    "value": "${nominal_time}"
+                },
+                {
+                    "key": "should-start",
+                    "value": ""
+                },
+                {
+                    "key": "should-end",
+                    "value": "${30 * MINUTES}"
+                },
+                {
+                    "key": "max-duration",
+                    "value": ""
+                },
+                {
+                    "key": "alert-events",
+                    "value": ""
+                },
+                {
+                    "key": "alert-contact",
+                    "value": ""
+                },
+                {
+                    "key": "notification-msg",
+                    "value": ""
+                },
+                {
+                    "key": "upstream-apps",
+                    "value": ""
+                }
+            ]
+        },
+        "name": "workflow1001",
+        "hasKillNode": true,
+        "versions": [
+            "uri:oozie:workflow:0.4",
+            "uri:oozie:workflow:0.4.5",
+            "uri:oozie:workflow:0.5"
+        ],
+        "isDirty": false,
+        "movedNode": null,
+        "linkMapping": {
+            "17c9c895-5a16-7443-bb81-f34b30b21548": [],
+            "33430f0f-ebfa-c3ec-f237-3e77efa03d0a": [],
+            "3f107997-04cc-8733-60a9-a4bb62cebffc": [
+                "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e"
+            ],
+            "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e": [
+                "ab2b6683-378e-bee7-d8b3-091d6098d168"
+            ],
+            "ab2b6683-378e-bee7-d8b3-091d6098d168": [
+                "33430f0f-ebfa-c3ec-f237-3e77efa03d0a"
+            ]
+        },
+        "nodeIds": [
+            "3f107997-04cc-8733-60a9-a4bb62cebffc",
+            "33430f0f-ebfa-c3ec-f237-3e77efa03d0a",
+            "17c9c895-5a16-7443-bb81-f34b30b21548",
+            "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e",
+            "ab2b6683-378e-bee7-d8b3-091d6098d168"
+        ],
+        "nodes": [
+            {
+                "name": "Start",
+                "associatedDocumentLoading": true,
+                "children": [
+                    {
+                        "to": "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e"
+                    }
+                ],
+                "actionParametersFetched": false,
+                "properties": {},
+                "associatedDocumentUuid": null,
+                "type": "start-widget",
+                "id": "3f107997-04cc-8733-60a9-a4bb62cebffc",
+                "actionParameters": []
+            },
+            {
+                "name": "End",
+                "associatedDocumentLoading": true,
+                "children": [],
+                "actionParametersFetched": false,
+                "properties": {
+                    "body": "",
+                    "cc": "",
+                    "to": "",
+                    "enableMail": false,
+                    "attachment": "",
+                    "content_type": "text/plain",
+                    "subject": ""
+                },
+                "associatedDocumentUuid": null,
+                "type": "end-widget",
+                "id": "33430f0f-ebfa-c3ec-f237-3e77efa03d0a",
+                "actionParameters": []
+            },
+            {
+                "name": "Kill",
+                "associatedDocumentLoading": true,
+                "children": [],
+                "actionParametersFetched": false,
+                "properties": {
+                    "body": "",
+                    "cc": "",
+                    "to": "",
+                    "enableMail": false,
+                    "message": "Action failed, error message[${wf:errorMessage(wf:lastErrorNode())}]",
+                    "subject": ""
+                },
+                "associatedDocumentUuid": null,
+                "type": "kill-widget",
+                "id": "17c9c895-5a16-7443-bb81-f34b30b21548",
+                "actionParameters": []
+            },
+            {
+                "name": "hive-1ef2",
+                "actionParametersUI": [],
+                "associatedDocumentLoading": false,
+                "children": [
+                    {
+                        "to": "ab2b6683-378e-bee7-d8b3-091d6098d168"
+                    },
+                    {
+                        "error": "17c9c895-5a16-7443-bb81-f34b30b21548"
+                    }
+                ],
+                "actionParametersFetched": true,
+                "id": "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e",
+                "associatedDocumentUuid": "2817d0bb-19f4-74af-b232-53fdca0e195b",
+                "type": "hive-document-widget",
+                "properties": {
+                    "files": [
+                        {
+                            "value": "/user/hue/oozie/commons-codec-1.3.jar"
+                        }
+                    ],
+                    "job_xml": "",
+                    "uuid": "2817d0bb-19f4-74af-b232-53fdca0e195b",
+                    "parameters": [],
+                    "retry_interval": [],
+                    "retry_max": [],
+                    "job_properties": [],
+                    "jdbc_url": "",
+                    "archives": [],
+                    "prepares": [],
+                    "credentials": [
+                        "hive2"
+                    ],
+                    "password": "",
+                    "sla": [
+                        {
+                            "key": "enabled",
+                            "value": false
+                        },
+                        {
+                            "key": "nominal-time",
+                            "value": "${nominal_time}"
+                        },
+                        {
+                            "key": "should-start",
+                            "value": ""
+                        },
+                        {
+                            "key": "should-end",
+                            "value": "${30 * MINUTES}"
+                        },
+                        {
+                            "key": "max-duration",
+                            "value": ""
+                        },
+                        {
+                            "key": "alert-events",
+                            "value": ""
+                        },
+                        {
+                            "key": "alert-contact",
+                            "value": ""
+                        },
+                        {
+                            "key": "notification-msg",
+                            "value": ""
+                        },
+                        {
+                            "key": "upstream-apps",
+                            "value": ""
+                        }
+                    ],
+                    "arguments": []
+                },
+                "actionParameters": [],
+                "associatedDocument": {
+                    "absoluteUrl": "/editor?editor=11",
+                    "parent_uuid": "2efa6c12-7259-452c-a842-fb93abb026de",
+                    "perms": {
+                        "read": {
+                            "users": [],
+                            "groups": []
+                        },
+                        "write": {
+                            "users": [],
+                            "groups": [
+                                {
+                                    "id": 1,
+                                    "name": "default"
+                                }
+                            ]
+                        }
+                    },
+                    "description": "hue文档管理",
+                    "uuid": "2817d0bb-19f4-74af-b232-53fdca0e195b",
+                    "owner": "hue",
+                    "isSelected": false,
+                    "last_modified_ts": 1505254871,
+                    "last_modified": "2017-09-12T22:21Z",
+                    "is_managed": false,
+                    "path": "/hive.doc",
+                    "$order": 1,
+                    "type": "query-hive",
+                    "id": 11,
+                    "doc1_id": 15,
+                    "name": "hive.doc"
+                }
+            },
+            {
+                "name": "java-ab2b",
+                "associatedDocumentLoading": true,
+                "children": [
+                    {
+                        "to": "33430f0f-ebfa-c3ec-f237-3e77efa03d0a"
+                    },
+                    {
+                        "error": "17c9c895-5a16-7443-bb81-f34b30b21548"
+                    }
+                ],
+                "actionParametersFetched": false,
+                "properties": {
+                    "files": [],
+                    "job_xml": "",
+                    "jar_path": "/user/hue/oozie/commons-codec-1.3.jar",
+                    "java_opts": [],
+                    "retry_max": [],
+                    "retry_interval": [],
+                    "job_properties": [],
+                    "capture_output": false,
+                    "main_class": "com.limix",
+                    "arguments": [],
+                    "prepares": [],
+                    "credentials": [],
+                    "sla": [
+                        {
+                            "value": false,
+                            "key": "enabled"
+                        },
+                        {
+                            "value": "${nominal_time}",
+                            "key": "nominal-time"
+                        },
+                        {
+                            "value": "",
+                            "key": "should-start"
+                        },
+                        {
+                            "value": "${30 * MINUTES}",
+                            "key": "should-end"
+                        },
+                        {
+                            "value": "",
+                            "key": "max-duration"
+                        },
+                        {
+                            "value": "",
+                            "key": "alert-events"
+                        },
+                        {
+                            "value": "",
+                            "key": "alert-contact"
+                        },
+                        {
+                            "value": "",
+                            "key": "notification-msg"
+                        },
+                        {
+                            "value": "",
+                            "key": "upstream-apps"
+                        }
+                    ],
+                    "archives": []
+                },
+                "associatedDocumentUuid": null,
+                "type": "java-widget",
+                "id": "ab2b6683-378e-bee7-d8b3-091d6098d168",
+                "actionParameters": []
+            }
+        ],
+        "id": 17,
+        "nodeNamesMapping": {
+            "17c9c895-5a16-7443-bb81-f34b30b21548": "Kill",
+            "33430f0f-ebfa-c3ec-f237-3e77efa03d0a": "End",
+            "3f107997-04cc-8733-60a9-a4bb62cebffc": "Start",
+            "1ef2e8c7-2aa0-1758-5fdb-0b4ff53e313e": "hive-1ef2",
+            "ab2b6683-378e-bee7-d8b3-091d6098d168": "java-ab2b"
+        },
+        "uuid": "ad9f6cdd-9a3d-a4f6-77e3-a9d090c53589"
+    }
+}
